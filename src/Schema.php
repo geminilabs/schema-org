@@ -2,7 +2,7 @@
 
 namespace GeminiLabs\SchemaOrg;
 
-use BadMethodCallException;
+use GeminiLabs\SchemaOrg\Unknown;
 
 /**
  * Factory class for all Schema.org types.
@@ -595,16 +595,16 @@ use BadMethodCallException;
  * @method static Menu menu( null|string $type )
  * @method static MenuItem menuItem( null|string $type )
  * @method static MenuSection menuSection( null|string $type )
+ * @method static Unknown unknown( null|string $type )
  */
 class Schema
 {
     public static function __callStatic( $name, $arguments )
     {
         $className = sprintf( '%s\%s', __NAMESPACE__, ucfirst( $name ));
-        if( class_exists( $className )) {
-            $type = isset( $arguments[0] ) ? $arguments[0] : null;
-            return new $className( $type );
-        }
-        throw new BadMethodCallException;
+        $type = isset( $arguments[0] ) ? $arguments[0] : null;
+        return class_exists( $className )
+            ? new $className()
+            : new Unknown( $type );
     }
 }

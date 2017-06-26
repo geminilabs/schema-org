@@ -42,9 +42,9 @@ abstract class BaseType implements Type
 
     public function __construct( $type = null )
     {
-        $this->type = $type;
         $this->allowed = [];
         $this->properties = [];
+        $this->type = $type;
         $this->setAllowedProperties();
     }
 
@@ -102,13 +102,11 @@ abstract class BaseType implements Type
      */
     public function getType()
     {
-        if( !empty( $this->type ) && is_string( $this->type )) {
-            return $this->type;
-        }
         $type = ( new ReflectionClass( $this ))->getShortName();
-        return $type == 'Unknown'
-            ? 'Thing'
-            : $type;
+        if( !empty( $this->type ) && $type != $this->type ) {
+            return ucfirst( $this->type );
+        }
+        return $type == 'Unknown' ? 'Thing' : $type;
     }
 
     /**
