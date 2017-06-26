@@ -9,7 +9,7 @@ class Filters
         $indentation = $options[0] ?? 0;
         $docblockPrefix = str_repeat(' ', $indentation * 4).' * ';
 
-        $lineLength = 80 - 3 - ($indentation * 4);
+        $lineLength = 100 - 3 - ($indentation * 4);
 
         $text = str_replace('<br />', '', $text);
 

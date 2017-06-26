@@ -1,16 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
+
+use BadMethodCallException;
 
 /**
  * Factory class for all Schema.org types.
+ *
+{% for type in types %} * @method static {{ type.name }} {{ type.name | lcfirst }}( null|string $type )
+{% endfor %}
  */
 class Schema
 {
-{% for type in types %}    public static function {{ type.name | lcfirst }}(): {{ type.name }}
+    public static function __callStatic( $name, $arguments )
     {
-        return new {{ type.name }}();
+        $className = sprintf( '%s\%s', __NAMESPACE__, ucfirst( $name ));
+        if( class_exists( $className )) {
+            $type = isset( $arguments[0] ) ? $arguments[0] : null;
+            return new $className( $type );
+        }
+        throw new BadMethodCallException;
     }
-
-{% endfor %}
 }

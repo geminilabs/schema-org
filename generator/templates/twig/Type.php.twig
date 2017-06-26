@@ -1,27 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * {{ type.description | doc(0) }}
  *
  * @see {{ type.resource }}
+{% if type.properties %} *
+{% for property in type.properties %} * @method static {{ property.name }}( {{ property.ranges | join('|') }} ${{ property.name }} )
+{% endfor %}
+{% endif %}
  */
 class {{ type.name }} extends {{ type.parent }}
 {
-{% for property in type.properties %}    /**
-     * {{ property.description | doc(1) }}
-     *
-     * @param {{ property.ranges | join('|') }} ${{ property.name }}
-     *
-     * @return static
-     *
-     * @see {{ property.resource }}
+{% if type.properties %}    /**
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function {{ property.name }}(${{ property.name }})
-    {
-        return $this->setProperty('{{ property.name }}', ${{ property.name }});
-    }
-
+    const PROPERTIES = [
+{% for property in type.properties %}        '{{ property.name }}',
 {% endfor %}
+    ];
+{% endif %}
 }
