@@ -2,8 +2,9 @@
 
 namespace Spatie\Skeleton\Test;
 
+use BadMethodCallException;
 use DateTime;
-use Spatie\SchemaOrg\BaseType;
+use GeminiLabs\SchemaOrg\BaseType;
 use PHPUnit\Framework\TestCase;
 
 class BaseTypeTest extends TestCase
@@ -43,11 +44,11 @@ class BaseTypeTest extends TestCase
     {
         $type = new DummyType();
 
-        $type->if(true, function (DummyType $type) {
+        $type->doif(true, function (DummyType $type) {
             $type->setProperty('foo', 'bar');
         });
 
-        $type->if(false, function (DummyType $type) {
+        $type->doif(false, function (DummyType $type) {
             $type->setProperty('baz', 'qux');
         });
 
@@ -159,13 +160,15 @@ class BaseTypeTest extends TestCase
     }
 
     /** @test */
-    public function it_can_set_a_property_via_a_magic_call_method()
+    public function it_cant_set_a_property_via_a_magic_call_method()
     {
         $type = new DummyType();
 
+        $this->expectException(\BadMethodCallException::class);
+
         $type->foo('bar');
 
-        $this->assertEquals(['foo' => 'bar'], $type->getProperties());
+        // $this->assertEquals(['foo' => 'bar'], $type->getProperties());
     }
 }
 

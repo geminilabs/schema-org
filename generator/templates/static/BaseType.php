@@ -2,6 +2,7 @@
 
 namespace GeminiLabs\SchemaOrg;
 
+use BadMethodCallException;
 use DateTime;
 use DateTimeInterface;
 use GeminiLabs\SchemaOrg\Exceptions\InvalidProperty;
@@ -10,8 +11,6 @@ use ReflectionClass;
 
 abstract class BaseType implements Type
 {
-    const CONTEXT = 'http://schema.org';
-
     const PROPERTIES = [];
 
     /**
@@ -34,8 +33,8 @@ abstract class BaseType implements Type
      */
     public function __call( $method, array $arguments )
     {
-        if( !in_array( $method, $this->allowed )) {
-            throw new InvalidProperty;
+        if( !method_exists( $this, $method ) && !in_array( $method, $this->allowed )) {
+            throw new BadMethodCallException;
         }
         $argument = isset( $arguments[0] ) ? $arguments[0] : '';
         return $this->setProperty( $method, $argument );
@@ -68,6 +67,14 @@ abstract class BaseType implements Type
             $callback( $this );
         }
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getContext()
+    {
+        return 'http://schema.org';
     }
 
     /**
@@ -136,7 +143,7 @@ abstract class BaseType implements Type
     public function toArray()
     {
         return [
-            '@context' => static::CONTEXT,
+            '@context' => $this->getContext(),
             '@type' => $this->getType(),
         ] + $this->serializeProperty( $this->getProperties() );
     }

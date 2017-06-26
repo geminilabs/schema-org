@@ -1,17 +1,24 @@
 {
-    "name": "spatie/schema-org",
-    "description": "A fluent builder Schema.org types and ld+json generator",
+    "name": "geminilabs/schema-org",
+    "description": "[Fork of spatie/schema-org] A fluent builder Schema.org types and ld+json generator",
     "keywords": [
+        "geminilabs",
         "spatie",
         "schema-org"
     ],
-    "homepage": "https://github.com/spatie/schema-org",
+    "homepage": "https://github.com/geminilabs/schema-org",
     "license": "MIT",
     "authors": [
         {
             "name": "Sebastian De Deyne",
             "email": "sebastian@spatie.be",
             "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Paul Ryley",
+            "email": "paul@geminilabs.io",
+            "homepage": "https://geminilabs.io",
             "role": "Developer"
         }
     ],
@@ -28,7 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\SchemaOrg\\": "src"
+            "GeminiLabs\\SchemaOrg\\": "src"
         }
     },
     "autoload-dev": {

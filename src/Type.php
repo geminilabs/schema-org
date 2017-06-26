@@ -8,7 +8,7 @@ interface Type
      * Set a property for this type, if the property is not allowed then throw an error.
      * @param string $method
      * @return void
-     * @throws InvalidProperty
+     * @throws BadMethodCallException
      */
     public function __call( $method, array $arguments );
 
