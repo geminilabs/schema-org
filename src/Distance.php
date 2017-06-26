@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Properties that take Distances as values are of the form '&lt;Number&gt;
- * &lt;Length unit of measure&gt;'. E.g., '7 ft'.
+ * Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of
+ * measure&gt;'. E.g., '7 ft'.
  *
  * @see http://schema.org/Distance
  */

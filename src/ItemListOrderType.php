@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Enumerated for values for itemListOrder for indicating how an ordered
- * ItemList is organized.
+ * Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
  *
  * @see http://schema.org/ItemListOrderType
  */

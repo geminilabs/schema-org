@@ -1,41 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A set of characteristics describing parents, who can be interested in viewing
- * some content.
+ * A set of characteristics describing parents, who can be interested in viewing some content.
  *
  * @see http://schema.org/ParentAudience
+ *
+ * @method static childMaxAge( float|int $childMaxAge )
+ * @method static childMinAge( float|int $childMinAge )
  */
 class ParentAudience extends PeopleAudience
 {
     /**
-     * Maximal age of the child.
-     *
-     * @param float|int $childMaxAge
-     *
-     * @return static
-     *
-     * @see http://schema.org/childMaxAge
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function childMaxAge($childMaxAge)
-    {
-        return $this->setProperty('childMaxAge', $childMaxAge);
-    }
-
-    /**
-     * Minimal age of the child.
-     *
-     * @param float|int $childMinAge
-     *
-     * @return static
-     *
-     * @see http://schema.org/childMinAge
-     */
-    public function childMinAge($childMinAge)
-    {
-        return $this->setProperty('childMinAge', $childMinAge);
-    }
-
+    const PROPERTIES = [
+        'childMaxAge',
+        'childMinAge',
+    ];
 }

@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of notifying someone that a future event/action is going to happen as
- * expected.
+ * The act of notifying someone that a future event/action is going to happen as expected.
  * 
  * Related actions:
  * 

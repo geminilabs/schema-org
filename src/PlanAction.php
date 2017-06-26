@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of planning the execution of an event/task/action/reservation/plan to
- * a future date.
+ * The act of planning the execution of an event/task/action/reservation/plan to a future date.
  *
  * @see http://schema.org/PlanAction
+ *
+ * @method static scheduledTime( \DateTimeInterface $scheduledTime )
  */
 class PlanAction extends OrganizeAction
 {
     /**
-     * The time the object is scheduled to.
-     *
-     * @param \DateTimeInterface $scheduledTime
-     *
-     * @return static
-     *
-     * @see http://schema.org/scheduledTime
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function scheduledTime($scheduledTime)
-    {
-        return $this->setProperty('scheduledTime', $scheduledTime);
-    }
-
+    const PROPERTIES = [
+        'scheduledTime',
+    ];
 }

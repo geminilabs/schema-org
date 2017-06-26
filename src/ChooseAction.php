@@ -1,41 +1,23 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of expressing a preference from a set of options or a large or
- * unbounded set of choices/options.
+ * The act of expressing a preference from a set of options or a large or unbounded set of
+ * choices/options.
  *
  * @see http://schema.org/ChooseAction
+ *
+ * @method static option( string|Thing $option )
+ * @method static actionOption( string|Thing $actionOption )
  */
 class ChooseAction extends AssessAction
 {
     /**
-     * A sub property of object. The options subject to this action.
-     *
-     * @param string|\Spatie\SchemaOrg\Thing $option
-     *
-     * @return static
-     *
-     * @see http://schema.org/option
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function option($option)
-    {
-        return $this->setProperty('option', $option);
-    }
-
-    /**
-     * A sub property of object. The options subject to this action.
-     *
-     * @param string|\Spatie\SchemaOrg\Thing $actionOption
-     *
-     * @return static
-     *
-     * @see http://schema.org/actionOption
-     */
-    public function actionOption($actionOption)
-    {
-        return $this->setProperty('actionOption', $actionOption);
-    }
-
+    const PROPERTIES = [
+        'option',
+        'actionOption',
+    ];
 }

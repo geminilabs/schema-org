@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * RsvpResponseType is an enumeration type whose instances represent responding
- * to an RSVP request.
+ * RsvpResponseType is an enumeration type whose instances represent responding to an RSVP request.
  *
  * @see http://schema.org/RsvpResponseType
  */

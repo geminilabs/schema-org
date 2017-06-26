@@ -1,56 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A financial product for the loaning of an amount of money under agreed terms
- * and charges.
+ * A financial product for the loaning of an amount of money under agreed terms and charges.
  *
  * @see http://schema.org/LoanOrCredit
+ *
+ * @method static amount( MonetaryAmount|float|int $amount )
+ * @method static loanTerm( QuantitativeValue $loanTerm )
+ * @method static requiredCollateral( Thing|string $requiredCollateral )
  */
 class LoanOrCredit extends FinancialProduct
 {
     /**
-     * The amount of money.
-     *
-     * @param \Spatie\SchemaOrg\MonetaryAmount|float|int $amount
-     *
-     * @return static
-     *
-     * @see http://schema.org/amount
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function amount($amount)
-    {
-        return $this->setProperty('amount', $amount);
-    }
-
-    /**
-     * The duration of the loan or credit agreement.
-     *
-     * @param \Spatie\SchemaOrg\QuantitativeValue $loanTerm
-     *
-     * @return static
-     *
-     * @see http://schema.org/loanTerm
-     */
-    public function loanTerm($loanTerm)
-    {
-        return $this->setProperty('loanTerm', $loanTerm);
-    }
-
-    /**
-     * Assets required to secure loan or credit repayments. It may take form of
-     * third party pledge, goods, financial instruments (cash, securities, etc.)
-     *
-     * @param \Spatie\SchemaOrg\Thing|string $requiredCollateral
-     *
-     * @return static
-     *
-     * @see http://schema.org/requiredCollateral
-     */
-    public function requiredCollateral($requiredCollateral)
-    {
-        return $this->setProperty('requiredCollateral', $requiredCollateral);
-    }
-
+    const PROPERTIES = [
+        'amount',
+        'loanTerm',
+        'requiredCollateral',
+    ];
 }

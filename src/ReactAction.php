@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of responding instinctively and emotionally to an object, expressing
- * a sentiment.
+ * The act of responding instinctively and emotionally to an object, expressing a sentiment.
  *
  * @see http://schema.org/ReactAction
  */

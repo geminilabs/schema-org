@@ -1,28 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A post to a social media platform, including blog posts, tweets, Facebook
- * posts, etc.
+ * A post to a social media platform, including blog posts, tweets, Facebook posts, etc.
  *
  * @see http://schema.org/SocialMediaPosting
+ *
+ * @method static sharedContent( CreativeWork $sharedContent )
  */
 class SocialMediaPosting extends Article
 {
     /**
-     * A CreativeWork such as an image, video, or audio clip shared as part of
-     * this posting.
-     *
-     * @param \Spatie\SchemaOrg\CreativeWork $sharedContent
-     *
-     * @return static
-     *
-     * @see http://schema.org/sharedContent
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function sharedContent($sharedContent)
-    {
-        return $this->setProperty('sharedContent', $sharedContent);
-    }
-
+    const PROPERTIES = [
+        'sharedContent',
+    ];
 }

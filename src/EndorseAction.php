@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent approves/certifies/likes/supports/sanction an object.
  *
  * @see http://schema.org/EndorseAction
+ *
+ * @method static endorsee( Organization|Person $endorsee )
  */
 class EndorseAction extends ReactAction
 {
     /**
-     * A sub property of participant. The person/organization being supported.
-     *
-     * @param \Spatie\SchemaOrg\Organization|\Spatie\SchemaOrg\Person $endorsee
-     *
-     * @return static
-     *
-     * @see http://schema.org/endorsee
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function endorsee($endorsee)
-    {
-        return $this->setProperty('endorsee', $endorsee);
-    }
-
+    const PROPERTIES = [
+        'endorsee',
+    ];
 }

@@ -1,56 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A TV episode which can be part of a series or season.
  *
  * @see http://schema.org/TVEpisode
+ *
+ * @method static countryOfOrigin( Country $countryOfOrigin )
+ * @method static partOfTVSeries( TVSeries $partOfTVSeries )
+ * @method static subtitleLanguage( string|Language $subtitleLanguage )
  */
 class TVEpisode extends Episode
 {
     /**
-     * The country of the principal offices of the production company or
-     * individual responsible for the movie or program.
-     *
-     * @param \Spatie\SchemaOrg\Country $countryOfOrigin
-     *
-     * @return static
-     *
-     * @see http://schema.org/countryOfOrigin
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function countryOfOrigin($countryOfOrigin)
-    {
-        return $this->setProperty('countryOfOrigin', $countryOfOrigin);
-    }
-
-    /**
-     * The TV series to which this episode or season belongs.
-     *
-     * @param \Spatie\SchemaOrg\TVSeries $partOfTVSeries
-     *
-     * @return static
-     *
-     * @see http://schema.org/partOfTVSeries
-     */
-    public function partOfTVSeries($partOfTVSeries)
-    {
-        return $this->setProperty('partOfTVSeries', $partOfTVSeries);
-    }
-
-    /**
-     * Languages in which subtitles/captions are available, in [IETF BCP 47
-     * standard format](http://tools.ietf.org/html/bcp47).
-     *
-     * @param string|\Spatie\SchemaOrg\Language $subtitleLanguage
-     *
-     * @return static
-     *
-     * @see http://schema.org/subtitleLanguage
-     */
-    public function subtitleLanguage($subtitleLanguage)
-    {
-        return $this->setProperty('subtitleLanguage', $subtitleLanguage);
-    }
-
+    const PROPERTIES = [
+        'countryOfOrigin',
+        'partOfTVSeries',
+        'subtitleLanguage',
+    ];
 }

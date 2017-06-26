@@ -1,55 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A set of characteristics belonging to businesses, e.g. who compose an item's
- * target audience.
+ * A set of characteristics belonging to businesses, e.g. who compose an item's target audience.
  *
  * @see http://schema.org/BusinessAudience
+ *
+ * @method static numberOfEmployees( QuantitativeValue $numberOfEmployees )
+ * @method static yearlyRevenue( QuantitativeValue $yearlyRevenue )
+ * @method static yearsInOperation( QuantitativeValue $yearsInOperation )
  */
 class BusinessAudience extends Audience
 {
     /**
-     * The number of employees in an organization e.g. business.
-     *
-     * @param \Spatie\SchemaOrg\QuantitativeValue $numberOfEmployees
-     *
-     * @return static
-     *
-     * @see http://schema.org/numberOfEmployees
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function numberOfEmployees($numberOfEmployees)
-    {
-        return $this->setProperty('numberOfEmployees', $numberOfEmployees);
-    }
-
-    /**
-     * The size of the business in annual revenue.
-     *
-     * @param \Spatie\SchemaOrg\QuantitativeValue $yearlyRevenue
-     *
-     * @return static
-     *
-     * @see http://schema.org/yearlyRevenue
-     */
-    public function yearlyRevenue($yearlyRevenue)
-    {
-        return $this->setProperty('yearlyRevenue', $yearlyRevenue);
-    }
-
-    /**
-     * The age of the business.
-     *
-     * @param \Spatie\SchemaOrg\QuantitativeValue $yearsInOperation
-     *
-     * @return static
-     *
-     * @see http://schema.org/yearsInOperation
-     */
-    public function yearsInOperation($yearsInOperation)
-    {
-        return $this->setProperty('yearsInOperation', $yearsInOperation);
-    }
-
+    const PROPERTIES = [
+        'numberOfEmployees',
+        'yearlyRevenue',
+        'yearsInOperation',
+    ];
 }

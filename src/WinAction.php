@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of achieving victory in a competitive activity.
  *
  * @see http://schema.org/WinAction
+ *
+ * @method static loser( Person $loser )
  */
 class WinAction extends AchieveAction
 {
     /**
-     * A sub property of participant. The loser of the action.
-     *
-     * @param \Spatie\SchemaOrg\Person $loser
-     *
-     * @return static
-     *
-     * @see http://schema.org/loser
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function loser($loser)
-    {
-        return $this->setProperty('loser', $loser);
-    }
-
+    const PROPERTIES = [
+        'loser',
+    ];
 }

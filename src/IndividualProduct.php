@@ -1,29 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A single, identifiable product instance (e.g. a laptop with a particular
- * serial number).
+ * A single, identifiable product instance (e.g. a laptop with a particular serial number).
  *
  * @see http://schema.org/IndividualProduct
+ *
+ * @method static serialNumber( string $serialNumber )
  */
 class IndividualProduct extends Product
 {
     /**
-     * The serial number or any alphanumeric identifier of a particular product.
-     * When attached to an offer, it is a shortcut for the serial number of the
-     * product included in the offer.
-     *
-     * @param string $serialNumber
-     *
-     * @return static
-     *
-     * @see http://schema.org/serialNumber
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function serialNumber($serialNumber)
-    {
-        return $this->setProperty('serialNumber', $serialNumber);
-    }
-
+    const PROPERTIES = [
+        'serialNumber',
+    ];
 }

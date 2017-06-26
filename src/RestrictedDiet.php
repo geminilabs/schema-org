@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A diet restricted to certain foods or preparations for cultural, religious,
- * health or lifestyle reasons.
+ * A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle
+ * reasons.
  *
  * @see http://schema.org/RestrictedDiet
  */

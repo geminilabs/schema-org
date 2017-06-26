@@ -1,28 +1,21 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A PerformanceRole is a Role that some entity places with regard to a
- * theatrical performance, e.g. in a Movie, TVSeries etc.
+ * A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g.
+ * in a Movie, TVSeries etc.
  *
  * @see http://schema.org/PerformanceRole
+ *
+ * @method static characterName( string $characterName )
  */
 class PerformanceRole extends Role
 {
     /**
-     * The name of a character played in some acting or performing role, i.e. in
-     * a PerformanceRole.
-     *
-     * @param string $characterName
-     *
-     * @return static
-     *
-     * @see http://schema.org/characterName
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function characterName($characterName)
-    {
-        return $this->setProperty('characterName', $characterName);
-    }
-
+    const PROPERTIES = [
+        'characterName',
+    ];
 }

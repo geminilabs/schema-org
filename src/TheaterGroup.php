@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A theater group or company, for example, the Royal Shakespeare Company or
- * Druid Theatre.
+ * A theater group or company, for example, the Royal Shakespeare Company or Druid Theatre.
  *
  * @see http://schema.org/TheaterGroup
  */

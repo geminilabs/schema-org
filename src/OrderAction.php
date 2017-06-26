@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent orders an object/product/service to be delivered/sent.
  *
  * @see http://schema.org/OrderAction
+ *
+ * @method static deliveryMethod( DeliveryMethod $deliveryMethod )
  */
 class OrderAction extends TradeAction
 {
     /**
-     * A sub property of instrument. The method of delivery.
-     *
-     * @param \Spatie\SchemaOrg\DeliveryMethod $deliveryMethod
-     *
-     * @return static
-     *
-     * @see http://schema.org/deliveryMethod
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function deliveryMethod($deliveryMethod)
-    {
-        return $this->setProperty('deliveryMethod', $deliveryMethod);
-    }
-
+    const PROPERTIES = [
+        'deliveryMethod',
+    ];
 }

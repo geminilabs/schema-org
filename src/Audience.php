@@ -1,41 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Intended audience for an item, i.e. the group for whom the item was created.
  *
  * @see http://schema.org/Audience
+ *
+ * @method static audienceType( string $audienceType )
+ * @method static geographicArea( AdministrativeArea $geographicArea )
  */
 class Audience extends Intangible
 {
     /**
-     * The target group associated with a given audience (e.g. veterans, car
-     * owners, musicians, etc.).
-     *
-     * @param string $audienceType
-     *
-     * @return static
-     *
-     * @see http://schema.org/audienceType
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function audienceType($audienceType)
-    {
-        return $this->setProperty('audienceType', $audienceType);
-    }
-
-    /**
-     * The geographic area associated with the audience.
-     *
-     * @param \Spatie\SchemaOrg\AdministrativeArea $geographicArea
-     *
-     * @return static
-     *
-     * @see http://schema.org/geographicArea
-     */
-    public function geographicArea($geographicArea)
-    {
-        return $this->setProperty('geographicArea', $geographicArea);
-    }
-
+    const PROPERTIES = [
+        'audienceType',
+        'geographicArea',
+    ];
 }

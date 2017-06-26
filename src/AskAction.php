@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of posing a question / favor to someone.
@@ -10,21 +10,15 @@ namespace Spatie\SchemaOrg;
  * * [[ReplyAction]]: Appears generally as a response to AskAction.
  *
  * @see http://schema.org/AskAction
+ *
+ * @method static question( Question $question )
  */
 class AskAction extends CommunicateAction
 {
     /**
-     * A sub property of object. A question.
-     *
-     * @param \Spatie\SchemaOrg\Question $question
-     *
-     * @return static
-     *
-     * @see http://schema.org/question
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function question($question)
-    {
-        return $this->setProperty('question', $question);
-    }
-
+    const PROPERTIES = [
+        'question',
+    ];
 }

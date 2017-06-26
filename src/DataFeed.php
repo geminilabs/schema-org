@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A single feed providing structured information about one or more entities or
- * topics.
+ * A single feed providing structured information about one or more entities or topics.
  *
  * @see http://schema.org/DataFeed
+ *
+ * @method static dataFeedElement( string|Thing|DataFeedItem $dataFeedElement )
  */
 class DataFeed extends Dataset
 {
     /**
-     * An item within in a data feed. Data feeds may have many elements.
-     *
-     * @param string|\Spatie\SchemaOrg\Thing|\Spatie\SchemaOrg\DataFeedItem $dataFeedElement
-     *
-     * @return static
-     *
-     * @see http://schema.org/dataFeedElement
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function dataFeedElement($dataFeedElement)
-    {
-        return $this->setProperty('dataFeedElement', $dataFeedElement);
-    }
-
+    const PROPERTIES = [
+        'dataFeedElement',
+    ];
 }

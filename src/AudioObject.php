@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An audio file.
  *
  * @see http://schema.org/AudioObject
+ *
+ * @method static transcript( string $transcript )
  */
 class AudioObject extends MediaObject
 {
     /**
-     * If this MediaObject is an AudioObject or VideoObject, the transcript of
-     * that object.
-     *
-     * @param string $transcript
-     *
-     * @return static
-     *
-     * @see http://schema.org/transcript
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function transcript($transcript)
-    {
-        return $this->setProperty('transcript', $transcript);
-    }
-
+    const PROPERTIES = [
+        'transcript',
+    ];
 }

@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An EducationalAudience.
  *
  * @see http://schema.org/EducationalAudience
+ *
+ * @method static educationalRole( string $educationalRole )
  */
 class EducationalAudience extends Audience
 {
     /**
-     * An educationalRole of an EducationalAudience.
-     *
-     * @param string $educationalRole
-     *
-     * @return static
-     *
-     * @see http://schema.org/educationalRole
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function educationalRole($educationalRole)
-    {
-        return $this->setProperty('educationalRole', $educationalRole);
-    }
-
+    const PROPERTIES = [
+        'educationalRole',
+    ];
 }

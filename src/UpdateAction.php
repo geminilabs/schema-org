@@ -1,40 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of managing by changing/editing the state of the object.
  *
  * @see http://schema.org/UpdateAction
+ *
+ * @method static collection( Thing $collection )
+ * @method static targetCollection( Thing $targetCollection )
  */
 class UpdateAction extends Action
 {
     /**
-     * A sub property of object. The collection target of the action.
-     *
-     * @param \Spatie\SchemaOrg\Thing $collection
-     *
-     * @return static
-     *
-     * @see http://schema.org/collection
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function collection($collection)
-    {
-        return $this->setProperty('collection', $collection);
-    }
-
-    /**
-     * A sub property of object. The collection target of the action.
-     *
-     * @param \Spatie\SchemaOrg\Thing $targetCollection
-     *
-     * @return static
-     *
-     * @see http://schema.org/targetCollection
-     */
-    public function targetCollection($targetCollection)
-    {
-        return $this->setProperty('targetCollection', $targetCollection);
-    }
-
+    const PROPERTIES = [
+        'collection',
+        'targetCollection',
+    ];
 }

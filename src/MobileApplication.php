@@ -1,28 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A software application designed specifically to work well on a mobile device
- * such as a telephone.
+ * A software application designed specifically to work well on a mobile device such as a telephone.
  *
  * @see http://schema.org/MobileApplication
+ *
+ * @method static carrierRequirements( string $carrierRequirements )
  */
 class MobileApplication extends SoftwareApplication
 {
     /**
-     * Specifies specific carrier(s) requirements for the application (e.g. an
-     * application may only work on a specific carrier network).
-     *
-     * @param string $carrierRequirements
-     *
-     * @return static
-     *
-     * @see http://schema.org/carrierRequirements
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function carrierRequirements($carrierRequirements)
-    {
-        return $this->setProperty('carrierRequirements', $carrierRequirements);
-    }
-
+    const PROPERTIES = [
+        'carrierRequirements',
+    ];
 }

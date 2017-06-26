@@ -1,27 +1,21 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A fact-checking review of claims made (or reported) in some creative work
- * (referenced via itemReviewed).
+ * A fact-checking review of claims made (or reported) in some creative work (referenced via
+ * itemReviewed).
  *
  * @see http://schema.org/ClaimReview
+ *
+ * @method static claimReviewed( string $claimReviewed )
  */
 class ClaimReview extends Review
 {
     /**
-     * A short summary of the specific claims reviewed in a ClaimReview.
-     *
-     * @param string $claimReviewed
-     *
-     * @return static
-     *
-     * @see http://schema.org/claimReviewed
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function claimReviewed($claimReviewed)
-    {
-        return $this->setProperty('claimReviewed', $claimReviewed);
-    }
-
+    const PROPERTIES = [
+        'claimReviewed',
+    ];
 }

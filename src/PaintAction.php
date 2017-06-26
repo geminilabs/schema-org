@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of producing a painting, typically with paint and canvas as
- * instruments.
+ * The act of producing a painting, typically with paint and canvas as instruments.
  *
  * @see http://schema.org/PaintAction
  */

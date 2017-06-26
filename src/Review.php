@@ -1,57 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A review of an item - for example, of a restaurant, movie, or store.
  *
  * @see http://schema.org/Review
+ *
+ * @method static itemReviewed( Thing $itemReviewed )
+ * @method static reviewBody( string $reviewBody )
+ * @method static reviewRating( Rating $reviewRating )
  */
 class Review extends CreativeWork
 {
     /**
-     * The item that is being reviewed/rated.
-     *
-     * @param \Spatie\SchemaOrg\Thing $itemReviewed
-     *
-     * @return static
-     *
-     * @see http://schema.org/itemReviewed
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function itemReviewed($itemReviewed)
-    {
-        return $this->setProperty('itemReviewed', $itemReviewed);
-    }
-
-    /**
-     * The actual body of the review.
-     *
-     * @param string $reviewBody
-     *
-     * @return static
-     *
-     * @see http://schema.org/reviewBody
-     */
-    public function reviewBody($reviewBody)
-    {
-        return $this->setProperty('reviewBody', $reviewBody);
-    }
-
-    /**
-     * The rating given in this review. Note that reviews can themselves be
-     * rated. The ```reviewRating``` applies to rating given by the review. The
-     * [[aggregateRating]] property applies to the review itself, as a creative
-     * work.
-     *
-     * @param \Spatie\SchemaOrg\Rating $reviewRating
-     *
-     * @return static
-     *
-     * @see http://schema.org/reviewRating
-     */
-    public function reviewRating($reviewRating)
-    {
-        return $this->setProperty('reviewRating', $reviewRating);
-    }
-
+    const PROPERTIES = [
+        'itemReviewed',
+        'reviewBody',
+        'reviewRating',
+    ];
 }

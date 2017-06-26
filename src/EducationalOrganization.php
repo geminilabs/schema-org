@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An educational organization.
  *
  * @see http://schema.org/EducationalOrganization
+ *
+ * @method static alumni( Person $alumni )
  */
 class EducationalOrganization extends Organization
 {
     /**
-     * Alumni of an organization.
-     *
-     * @param \Spatie\SchemaOrg\Person $alumni
-     *
-     * @return static
-     *
-     * @see http://schema.org/alumni
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function alumni($alumni)
-    {
-        return $this->setProperty('alumni', $alumni);
-    }
-
+    const PROPERTIES = [
+        'alumni',
+    ];
 }

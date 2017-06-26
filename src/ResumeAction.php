@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of resuming a device or application which was formerly paused (e.g.
- * resume music playback or resume a timer).
+ * The act of resuming a device or application which was formerly paused (e.g. resume music playback
+ * or resume a timer).
  *
  * @see http://schema.org/ResumeAction
  */

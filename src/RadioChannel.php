@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A unique instance of a radio BroadcastService on a CableOrSatelliteService
- * lineup.
+ * A unique instance of a radio BroadcastService on a CableOrSatelliteService lineup.
  *
  * @see http://schema.org/RadioChannel
  */

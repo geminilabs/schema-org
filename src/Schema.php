@@ -1,2950 +1,610 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
+
+use BadMethodCallException;
 
 /**
  * Factory class for all Schema.org types.
+ *
+ * @method static Thing thing( null|string $type )
+ * @method static CreativeWork creativeWork( null|string $type )
+ * @method static WebPage webPage( null|string $type )
+ * @method static AboutPage aboutPage( null|string $type )
+ * @method static Organization organization( null|string $type )
+ * @method static Place place( null|string $type )
+ * @method static LocalBusiness localBusiness( null|string $type )
+ * @method static MedicalOrganization medicalOrganization( null|string $type )
+ * @method static Dentist dentist( null|string $type )
+ * @method static Hospital hospital( null|string $type )
+ * @method static Pharmacy pharmacy( null|string $type )
+ * @method static FinancialService financialService( null|string $type )
+ * @method static ProfessionalService professionalService( null|string $type )
+ * @method static LegalService legalService( null|string $type )
+ * @method static AccountingService accountingService( null|string $type )
+ * @method static AdministrativeArea administrativeArea( null|string $type )
+ * @method static EntertainmentBusiness entertainmentBusiness( null|string $type )
+ * @method static AdultEntertainment adultEntertainment( null|string $type )
+ * @method static Intangible intangible( null|string $type )
+ * @method static Offer offer( null|string $type )
+ * @method static AggregateOffer aggregateOffer( null|string $type )
+ * @method static Rating rating( null|string $type )
+ * @method static AggregateRating aggregateRating( null|string $type )
+ * @method static CivicStructure civicStructure( null|string $type )
+ * @method static Airport airport( null|string $type )
+ * @method static AmusementPark amusementPark( null|string $type )
+ * @method static AnimalShelter animalShelter( null|string $type )
+ * @method static Residence residence( null|string $type )
+ * @method static ApartmentComplex apartmentComplex( null|string $type )
+ * @method static Aquarium aquarium( null|string $type )
+ * @method static ArtGallery artGallery( null|string $type )
+ * @method static Article article( null|string $type )
+ * @method static Attorney attorney( null|string $type )
+ * @method static Audience audience( null|string $type )
+ * @method static MediaObject mediaObject( null|string $type )
+ * @method static AudioObject audioObject( null|string $type )
+ * @method static AutomotiveBusiness automotiveBusiness( null|string $type )
+ * @method static AutoBodyShop autoBodyShop( null|string $type )
+ * @method static AutoDealer autoDealer( null|string $type )
+ * @method static Store store( null|string $type )
+ * @method static AutoPartsStore autoPartsStore( null|string $type )
+ * @method static AutoRental autoRental( null|string $type )
+ * @method static AutoRepair autoRepair( null|string $type )
+ * @method static AutoWash autoWash( null|string $type )
+ * @method static AutomatedTeller automatedTeller( null|string $type )
+ * @method static FoodEstablishment foodEstablishment( null|string $type )
+ * @method static Bakery bakery( null|string $type )
+ * @method static BankOrCreditUnion bankOrCreditUnion( null|string $type )
+ * @method static Barcode barcode( null|string $type )
+ * @method static BarOrPub barOrPub( null|string $type )
+ * @method static Beach beach( null|string $type )
+ * @method static HealthAndBeautyBusiness healthAndBeautyBusiness( null|string $type )
+ * @method static BeautySalon beautySalon( null|string $type )
+ * @method static LodgingBusiness lodgingBusiness( null|string $type )
+ * @method static BedAndBreakfast bedAndBreakfast( null|string $type )
+ * @method static BikeStore bikeStore( null|string $type )
+ * @method static Blog blog( null|string $type )
+ * @method static BlogPosting blogPosting( null|string $type )
+ * @method static Landform landform( null|string $type )
+ * @method static BodyOfWater bodyOfWater( null|string $type )
+ * @method static Book book( null|string $type )
+ * @method static BookFormatType bookFormatType( null|string $type )
+ * @method static BookStore bookStore( null|string $type )
+ * @method static SportsActivityLocation sportsActivityLocation( null|string $type )
+ * @method static BowlingAlley bowlingAlley( null|string $type )
+ * @method static Brewery brewery( null|string $type )
+ * @method static PlaceOfWorship placeOfWorship( null|string $type )
+ * @method static BuddhistTemple buddhistTemple( null|string $type )
+ * @method static BusStation busStation( null|string $type )
+ * @method static BusStop busStop( null|string $type )
+ * @method static Event event( null|string $type )
+ * @method static BusinessEvent businessEvent( null|string $type )
+ * @method static CafeOrCoffeeShop cafeOrCoffeeShop( null|string $type )
+ * @method static Campground campground( null|string $type )
+ * @method static Canal canal( null|string $type )
+ * @method static Casino casino( null|string $type )
+ * @method static CatholicChurch catholicChurch( null|string $type )
+ * @method static Cemetery cemetery( null|string $type )
+ * @method static CheckoutPage checkoutPage( null|string $type )
+ * @method static ChildCare childCare( null|string $type )
+ * @method static ChildrensEvent childrensEvent( null|string $type )
+ * @method static Church church( null|string $type )
+ * @method static City city( null|string $type )
+ * @method static GovernmentBuilding governmentBuilding( null|string $type )
+ * @method static CityHall cityHall( null|string $type )
+ * @method static ClothingStore clothingStore( null|string $type )
+ * @method static CollectionPage collectionPage( null|string $type )
+ * @method static EducationalOrganization educationalOrganization( null|string $type )
+ * @method static CollegeOrUniversity collegeOrUniversity( null|string $type )
+ * @method static ComedyClub comedyClub( null|string $type )
+ * @method static ComedyEvent comedyEvent( null|string $type )
+ * @method static Comment comment( null|string $type )
+ * @method static ComputerStore computerStore( null|string $type )
+ * @method static ContactPage contactPage( null|string $type )
+ * @method static StructuredValue structuredValue( null|string $type )
+ * @method static ContactPoint contactPoint( null|string $type )
+ * @method static Continent continent( null|string $type )
+ * @method static ConvenienceStore convenienceStore( null|string $type )
+ * @method static Corporation corporation( null|string $type )
+ * @method static Country country( null|string $type )
+ * @method static Courthouse courthouse( null|string $type )
+ * @method static Crematorium crematorium( null|string $type )
+ * @method static DanceEvent danceEvent( null|string $type )
+ * @method static PerformingGroup performingGroup( null|string $type )
+ * @method static DanceGroup danceGroup( null|string $type )
+ * @method static DaySpa daySpa( null|string $type )
+ * @method static DefenceEstablishment defenceEstablishment( null|string $type )
+ * @method static DepartmentStore departmentStore( null|string $type )
+ * @method static Quantity quantity( null|string $type )
+ * @method static Distance distance( null|string $type )
+ * @method static DryCleaningOrLaundry dryCleaningOrLaundry( null|string $type )
+ * @method static Duration duration( null|string $type )
+ * @method static EducationEvent educationEvent( null|string $type )
+ * @method static HomeAndConstructionBusiness homeAndConstructionBusiness( null|string $type )
+ * @method static Electrician electrician( null|string $type )
+ * @method static ElectronicsStore electronicsStore( null|string $type )
+ * @method static ElementarySchool elementarySchool( null|string $type )
+ * @method static Embassy embassy( null|string $type )
+ * @method static EmergencyService emergencyService( null|string $type )
+ * @method static EmploymentAgency employmentAgency( null|string $type )
+ * @method static Energy energy( null|string $type )
+ * @method static EventVenue eventVenue( null|string $type )
+ * @method static ExerciseGym exerciseGym( null|string $type )
+ * @method static FastFoodRestaurant fastFoodRestaurant( null|string $type )
+ * @method static Festival festival( null|string $type )
+ * @method static FireStation fireStation( null|string $type )
+ * @method static Florist florist( null|string $type )
+ * @method static FoodEvent foodEvent( null|string $type )
+ * @method static FurnitureStore furnitureStore( null|string $type )
+ * @method static GardenStore gardenStore( null|string $type )
+ * @method static GasStation gasStation( null|string $type )
+ * @method static GatedResidenceCommunity gatedResidenceCommunity( null|string $type )
+ * @method static GeneralContractor generalContractor( null|string $type )
+ * @method static GeoCoordinates geoCoordinates( null|string $type )
+ * @method static GeoShape geoShape( null|string $type )
+ * @method static GeoCircle geoCircle( null|string $type )
+ * @method static GolfCourse golfCourse( null|string $type )
+ * @method static GovernmentOffice governmentOffice( null|string $type )
+ * @method static GovernmentOrganization governmentOrganization( null|string $type )
+ * @method static GroceryStore groceryStore( null|string $type )
+ * @method static HVACBusiness hVACBusiness( null|string $type )
+ * @method static HairSalon hairSalon( null|string $type )
+ * @method static HardwareStore hardwareStore( null|string $type )
+ * @method static HealthClub healthClub( null|string $type )
+ * @method static HighSchool highSchool( null|string $type )
+ * @method static HinduTemple hinduTemple( null|string $type )
+ * @method static HobbyShop hobbyShop( null|string $type )
+ * @method static HomeGoodsStore homeGoodsStore( null|string $type )
+ * @method static Hostel hostel( null|string $type )
+ * @method static Hotel hotel( null|string $type )
+ * @method static HousePainter housePainter( null|string $type )
+ * @method static IceCreamShop iceCreamShop( null|string $type )
+ * @method static ImageGallery imageGallery( null|string $type )
+ * @method static ImageObject imageObject( null|string $type )
+ * @method static InsuranceAgency insuranceAgency( null|string $type )
+ * @method static InternetCafe internetCafe( null|string $type )
+ * @method static ItemAvailability itemAvailability( null|string $type )
+ * @method static ItemList itemList( null|string $type )
+ * @method static BreadcrumbList breadcrumbList( null|string $type )
+ * @method static OfferCatalog offerCatalog( null|string $type )
+ * @method static ItemPage itemPage( null|string $type )
+ * @method static JewelryStore jewelryStore( null|string $type )
+ * @method static JobPosting jobPosting( null|string $type )
+ * @method static LakeBodyOfWater lakeBodyOfWater( null|string $type )
+ * @method static LandmarksOrHistoricalBuildings landmarksOrHistoricalBuildings( null|string $type )
+ * @method static Language language( null|string $type )
+ * @method static ComputerLanguage computerLanguage( null|string $type )
+ * @method static LegislativeBuilding legislativeBuilding( null|string $type )
+ * @method static Library library( null|string $type )
+ * @method static LiquorStore liquorStore( null|string $type )
+ * @method static LiteraryEvent literaryEvent( null|string $type )
+ * @method static Locksmith locksmith( null|string $type )
+ * @method static Map map( null|string $type )
+ * @method static MapCategoryType mapCategoryType( null|string $type )
+ * @method static Mass mass( null|string $type )
+ * @method static PeopleAudience peopleAudience( null|string $type )
+ * @method static ScholarlyArticle scholarlyArticle( null|string $type )
+ * @method static Specialty specialty( null|string $type )
+ * @method static MensClothingStore mensClothingStore( null|string $type )
+ * @method static MiddleSchool middleSchool( null|string $type )
+ * @method static SoftwareApplication softwareApplication( null|string $type )
+ * @method static MobileApplication mobileApplication( null|string $type )
+ * @method static MobilePhoneStore mobilePhoneStore( null|string $type )
+ * @method static Mosque mosque( null|string $type )
+ * @method static Motel motel( null|string $type )
+ * @method static MotorcycleDealer motorcycleDealer( null|string $type )
+ * @method static MotorcycleRepair motorcycleRepair( null|string $type )
+ * @method static Mountain mountain( null|string $type )
+ * @method static Movie movie( null|string $type )
+ * @method static MovieClip movieClip( null|string $type )
+ * @method static MovieRentalStore movieRentalStore( null|string $type )
+ * @method static MovieTheater movieTheater( null|string $type )
+ * @method static MovingCompany movingCompany( null|string $type )
+ * @method static Museum museum( null|string $type )
+ * @method static MusicPlaylist musicPlaylist( null|string $type )
+ * @method static MusicAlbum musicAlbum( null|string $type )
+ * @method static MusicEvent musicEvent( null|string $type )
+ * @method static MusicGroup musicGroup( null|string $type )
+ * @method static MusicRecording musicRecording( null|string $type )
+ * @method static MusicStore musicStore( null|string $type )
+ * @method static MusicVenue musicVenue( null|string $type )
+ * @method static MusicVideoObject musicVideoObject( null|string $type )
+ * @method static NGO nGO( null|string $type )
+ * @method static NailSalon nailSalon( null|string $type )
+ * @method static NewsArticle newsArticle( null|string $type )
+ * @method static NightClub nightClub( null|string $type )
+ * @method static Photograph photograph( null|string $type )
+ * @method static Notary notary( null|string $type )
+ * @method static OceanBodyOfWater oceanBodyOfWater( null|string $type )
+ * @method static OfferItemCondition offerItemCondition( null|string $type )
+ * @method static OfficeEquipmentStore officeEquipmentStore( null|string $type )
+ * @method static OutletStore outletStore( null|string $type )
+ * @method static Painting painting( null|string $type )
+ * @method static Park park( null|string $type )
+ * @method static ParkingFacility parkingFacility( null|string $type )
+ * @method static PawnShop pawnShop( null|string $type )
+ * @method static PerformingArtsTheater performingArtsTheater( null|string $type )
+ * @method static Person person( null|string $type )
+ * @method static PetStore petStore( null|string $type )
+ * @method static Playground playground( null|string $type )
+ * @method static Plumber plumber( null|string $type )
+ * @method static PoliceStation policeStation( null|string $type )
+ * @method static Pond pond( null|string $type )
+ * @method static PostOffice postOffice( null|string $type )
+ * @method static PostalAddress postalAddress( null|string $type )
+ * @method static Preschool preschool( null|string $type )
+ * @method static Product product( null|string $type )
+ * @method static ProfilePage profilePage( null|string $type )
+ * @method static PublicSwimmingPool publicSwimmingPool( null|string $type )
+ * @method static RVPark rVPark( null|string $type )
+ * @method static RadioStation radioStation( null|string $type )
+ * @method static RealEstateAgent realEstateAgent( null|string $type )
+ * @method static RecyclingCenter recyclingCenter( null|string $type )
+ * @method static Reservoir reservoir( null|string $type )
+ * @method static Restaurant restaurant( null|string $type )
+ * @method static RestrictedDiet restrictedDiet( null|string $type )
+ * @method static Review review( null|string $type )
+ * @method static RiverBodyOfWater riverBodyOfWater( null|string $type )
+ * @method static RoofingContractor roofingContractor( null|string $type )
+ * @method static SaleEvent saleEvent( null|string $type )
+ * @method static School school( null|string $type )
+ * @method static Sculpture sculpture( null|string $type )
+ * @method static ScreeningEvent screeningEvent( null|string $type )
+ * @method static SeaBodyOfWater seaBodyOfWater( null|string $type )
+ * @method static SearchResultsPage searchResultsPage( null|string $type )
+ * @method static SelfStorage selfStorage( null|string $type )
+ * @method static ShoeStore shoeStore( null|string $type )
+ * @method static ShoppingCenter shoppingCenter( null|string $type )
+ * @method static SingleFamilyResidence singleFamilyResidence( null|string $type )
+ * @method static WebPageElement webPageElement( null|string $type )
+ * @method static SiteNavigationElement siteNavigationElement( null|string $type )
+ * @method static SkiResort skiResort( null|string $type )
+ * @method static SocialEvent socialEvent( null|string $type )
+ * @method static SportingGoodsStore sportingGoodsStore( null|string $type )
+ * @method static SportsClub sportsClub( null|string $type )
+ * @method static SportsEvent sportsEvent( null|string $type )
+ * @method static SportsTeam sportsTeam( null|string $type )
+ * @method static StadiumOrArena stadiumOrArena( null|string $type )
+ * @method static State state( null|string $type )
+ * @method static SubwayStation subwayStation( null|string $type )
+ * @method static Synagogue synagogue( null|string $type )
+ * @method static Episode episode( null|string $type )
+ * @method static TVEpisode tVEpisode( null|string $type )
+ * @method static Season season( null|string $type )
+ * @method static CreativeWorkSeason creativeWorkSeason( null|string $type )
+ * @method static TVSeason tVSeason( null|string $type )
+ * @method static Series series( null|string $type )
+ * @method static CreativeWorkSeries creativeWorkSeries( null|string $type )
+ * @method static TVSeries tVSeries( null|string $type )
+ * @method static VideoGameSeries videoGameSeries( null|string $type )
+ * @method static Table table( null|string $type )
+ * @method static TattooParlor tattooParlor( null|string $type )
+ * @method static TaxiStand taxiStand( null|string $type )
+ * @method static TelevisionStation televisionStation( null|string $type )
+ * @method static TennisComplex tennisComplex( null|string $type )
+ * @method static TheaterEvent theaterEvent( null|string $type )
+ * @method static TheaterGroup theaterGroup( null|string $type )
+ * @method static TireShop tireShop( null|string $type )
+ * @method static TouristAttraction touristAttraction( null|string $type )
+ * @method static TouristInformationCenter touristInformationCenter( null|string $type )
+ * @method static ToyStore toyStore( null|string $type )
+ * @method static TrainStation trainStation( null|string $type )
+ * @method static TravelAgency travelAgency( null|string $type )
+ * @method static UserInteraction userInteraction( null|string $type )
+ * @method static UserBlocks userBlocks( null|string $type )
+ * @method static UserCheckins userCheckins( null|string $type )
+ * @method static UserComments userComments( null|string $type )
+ * @method static UserDownloads userDownloads( null|string $type )
+ * @method static UserLikes userLikes( null|string $type )
+ * @method static UserPageVisits userPageVisits( null|string $type )
+ * @method static UserPlays userPlays( null|string $type )
+ * @method static UserPlusOnes userPlusOnes( null|string $type )
+ * @method static UserTweets userTweets( null|string $type )
+ * @method static VideoGallery videoGallery( null|string $type )
+ * @method static VideoObject videoObject( null|string $type )
+ * @method static VisualArtsEvent visualArtsEvent( null|string $type )
+ * @method static ExhibitionEvent exhibitionEvent( null|string $type )
+ * @method static Volcano volcano( null|string $type )
+ * @method static WPAdBlock wPAdBlock( null|string $type )
+ * @method static WPFooter wPFooter( null|string $type )
+ * @method static WPHeader wPHeader( null|string $type )
+ * @method static WPSideBar wPSideBar( null|string $type )
+ * @method static Waterfall waterfall( null|string $type )
+ * @method static WebApplication webApplication( null|string $type )
+ * @method static WholesaleStore wholesaleStore( null|string $type )
+ * @method static Winery winery( null|string $type )
+ * @method static Zoo zoo( null|string $type )
+ * @method static Brand brand( null|string $type )
+ * @method static BusinessEntityType businessEntityType( null|string $type )
+ * @method static CreditCard creditCard( null|string $type )
+ * @method static BusinessFunction businessFunction( null|string $type )
+ * @method static PaymentMethod paymentMethod( null|string $type )
+ * @method static DayOfWeek dayOfWeek( null|string $type )
+ * @method static PriceSpecification priceSpecification( null|string $type )
+ * @method static DeliveryChargeSpecification deliveryChargeSpecification( null|string $type )
+ * @method static DeliveryMethod deliveryMethod( null|string $type )
+ * @method static Demand demand( null|string $type )
+ * @method static IndividualProduct individualProduct( null|string $type )
+ * @method static OpeningHoursSpecification openingHoursSpecification( null|string $type )
+ * @method static OwnershipInfo ownershipInfo( null|string $type )
+ * @method static ParcelService parcelService( null|string $type )
+ * @method static PaymentChargeSpecification paymentChargeSpecification( null|string $type )
+ * @method static ProductModel productModel( null|string $type )
+ * @method static QualitativeValue qualitativeValue( null|string $type )
+ * @method static QuantitativeValue quantitativeValue( null|string $type )
+ * @method static SomeProducts someProducts( null|string $type )
+ * @method static TypeAndQuantityNode typeAndQuantityNode( null|string $type )
+ * @method static UnitPriceSpecification unitPriceSpecification( null|string $type )
+ * @method static WarrantyPromise warrantyPromise( null|string $type )
+ * @method static WarrantyScope warrantyScope( null|string $type )
+ * @method static TechArticle techArticle( null|string $type )
+ * @method static APIReference aPIReference( null|string $type )
+ * @method static Code code( null|string $type )
+ * @method static SoftwareSourceCode softwareSourceCode( null|string $type )
+ * @method static ParentAudience parentAudience( null|string $type )
+ * @method static AlignmentObject alignmentObject( null|string $type )
+ * @method static EducationalAudience educationalAudience( null|string $type )
+ * @method static DataCatalog dataCatalog( null|string $type )
+ * @method static DataDownload dataDownload( null|string $type )
+ * @method static Dataset dataset( null|string $type )
+ * @method static PublicationEvent publicationEvent( null|string $type )
+ * @method static BroadcastEvent broadcastEvent( null|string $type )
+ * @method static BroadcastService broadcastService( null|string $type )
+ * @method static Clip clip( null|string $type )
+ * @method static OnDemandEvent onDemandEvent( null|string $type )
+ * @method static RadioClip radioClip( null|string $type )
+ * @method static RadioEpisode radioEpisode( null|string $type )
+ * @method static RadioSeason radioSeason( null|string $type )
+ * @method static RadioSeries radioSeries( null|string $type )
+ * @method static TVClip tVClip( null|string $type )
+ * @method static BusinessAudience businessAudience( null|string $type )
+ * @method static ContactPointOption contactPointOption( null|string $type )
+ * @method static Permit permit( null|string $type )
+ * @method static GovernmentPermit governmentPermit( null|string $type )
+ * @method static Service service( null|string $type )
+ * @method static GovernmentService governmentService( null|string $type )
+ * @method static ServiceChannel serviceChannel( null|string $type )
+ * @method static EventStatusType eventStatusType( null|string $type )
+ * @method static DeliveryEvent deliveryEvent( null|string $type )
+ * @method static LockerDelivery lockerDelivery( null|string $type )
+ * @method static Order order( null|string $type )
+ * @method static OrderStatus orderStatus( null|string $type )
+ * @method static ParcelDelivery parcelDelivery( null|string $type )
+ * @method static OrderItem orderItem( null|string $type )
+ * @method static Action action( null|string $type )
+ * @method static OrganizeAction organizeAction( null|string $type )
+ * @method static AllocateAction allocateAction( null|string $type )
+ * @method static AcceptAction acceptAction( null|string $type )
+ * @method static AchieveAction achieveAction( null|string $type )
+ * @method static UpdateAction updateAction( null|string $type )
+ * @method static AddAction addAction( null|string $type )
+ * @method static AssessAction assessAction( null|string $type )
+ * @method static ReactAction reactAction( null|string $type )
+ * @method static AgreeAction agreeAction( null|string $type )
+ * @method static InsertAction insertAction( null|string $type )
+ * @method static AppendAction appendAction( null|string $type )
+ * @method static ApplyAction applyAction( null|string $type )
+ * @method static MoveAction moveAction( null|string $type )
+ * @method static ArriveAction arriveAction( null|string $type )
+ * @method static InteractAction interactAction( null|string $type )
+ * @method static CommunicateAction communicateAction( null|string $type )
+ * @method static AskAction askAction( null|string $type )
+ * @method static AssignAction assignAction( null|string $type )
+ * @method static AuthorizeAction authorizeAction( null|string $type )
+ * @method static BefriendAction befriendAction( null|string $type )
+ * @method static BookmarkAction bookmarkAction( null|string $type )
+ * @method static TransferAction transferAction( null|string $type )
+ * @method static BorrowAction borrowAction( null|string $type )
+ * @method static TradeAction tradeAction( null|string $type )
+ * @method static BuyAction buyAction( null|string $type )
+ * @method static PlanAction planAction( null|string $type )
+ * @method static CancelAction cancelAction( null|string $type )
+ * @method static FindAction findAction( null|string $type )
+ * @method static CheckAction checkAction( null|string $type )
+ * @method static CheckInAction checkInAction( null|string $type )
+ * @method static CheckOutAction checkOutAction( null|string $type )
+ * @method static ChooseAction chooseAction( null|string $type )
+ * @method static CommentAction commentAction( null|string $type )
+ * @method static InformAction informAction( null|string $type )
+ * @method static ConfirmAction confirmAction( null|string $type )
+ * @method static ConsumeAction consumeAction( null|string $type )
+ * @method static CreateAction createAction( null|string $type )
+ * @method static CookAction cookAction( null|string $type )
+ * @method static DeleteAction deleteAction( null|string $type )
+ * @method static DepartAction departAction( null|string $type )
+ * @method static DisagreeAction disagreeAction( null|string $type )
+ * @method static DiscoverAction discoverAction( null|string $type )
+ * @method static DislikeAction dislikeAction( null|string $type )
+ * @method static DonateAction donateAction( null|string $type )
+ * @method static DownloadAction downloadAction( null|string $type )
+ * @method static DrawAction drawAction( null|string $type )
+ * @method static DrinkAction drinkAction( null|string $type )
+ * @method static EatAction eatAction( null|string $type )
+ * @method static EndorseAction endorseAction( null|string $type )
+ * @method static ControlAction controlAction( null|string $type )
+ * @method static ActivateAction activateAction( null|string $type )
+ * @method static DeactivateAction deactivateAction( null|string $type )
+ * @method static ResumeAction resumeAction( null|string $type )
+ * @method static SuspendAction suspendAction( null|string $type )
+ * @method static PlayAction playAction( null|string $type )
+ * @method static ExerciseAction exerciseAction( null|string $type )
+ * @method static FilmAction filmAction( null|string $type )
+ * @method static FollowAction followAction( null|string $type )
+ * @method static GiveAction giveAction( null|string $type )
+ * @method static IgnoreAction ignoreAction( null|string $type )
+ * @method static InstallAction installAction( null|string $type )
+ * @method static InviteAction inviteAction( null|string $type )
+ * @method static JoinAction joinAction( null|string $type )
+ * @method static LeaveAction leaveAction( null|string $type )
+ * @method static LendAction lendAction( null|string $type )
+ * @method static LikeAction likeAction( null|string $type )
+ * @method static ListenAction listenAction( null|string $type )
+ * @method static LoseAction loseAction( null|string $type )
+ * @method static MarryAction marryAction( null|string $type )
+ * @method static OrderAction orderAction( null|string $type )
+ * @method static PaintAction paintAction( null|string $type )
+ * @method static PayAction payAction( null|string $type )
+ * @method static PerformAction performAction( null|string $type )
+ * @method static PhotographAction photographAction( null|string $type )
+ * @method static PrependAction prependAction( null|string $type )
+ * @method static QuoteAction quoteAction( null|string $type )
+ * @method static ReadAction readAction( null|string $type )
+ * @method static ReceiveAction receiveAction( null|string $type )
+ * @method static RegisterAction registerAction( null|string $type )
+ * @method static RejectAction rejectAction( null|string $type )
+ * @method static RentAction rentAction( null|string $type )
+ * @method static ReplaceAction replaceAction( null|string $type )
+ * @method static ReplyAction replyAction( null|string $type )
+ * @method static ReserveAction reserveAction( null|string $type )
+ * @method static ReturnAction returnAction( null|string $type )
+ * @method static ReviewAction reviewAction( null|string $type )
+ * @method static RsvpAction rsvpAction( null|string $type )
+ * @method static RsvpResponseType rsvpResponseType( null|string $type )
+ * @method static ScheduleAction scheduleAction( null|string $type )
+ * @method static SearchAction searchAction( null|string $type )
+ * @method static SellAction sellAction( null|string $type )
+ * @method static SendAction sendAction( null|string $type )
+ * @method static ShareAction shareAction( null|string $type )
+ * @method static SubscribeAction subscribeAction( null|string $type )
+ * @method static TakeAction takeAction( null|string $type )
+ * @method static TieAction tieAction( null|string $type )
+ * @method static TipAction tipAction( null|string $type )
+ * @method static TrackAction trackAction( null|string $type )
+ * @method static TravelAction travelAction( null|string $type )
+ * @method static UnRegisterAction unRegisterAction( null|string $type )
+ * @method static UseAction useAction( null|string $type )
+ * @method static ViewAction viewAction( null|string $type )
+ * @method static VoteAction voteAction( null|string $type )
+ * @method static WantAction wantAction( null|string $type )
+ * @method static WatchAction watchAction( null|string $type )
+ * @method static WearAction wearAction( null|string $type )
+ * @method static WinAction winAction( null|string $type )
+ * @method static WriteAction writeAction( null|string $type )
+ * @method static GenderType genderType( null|string $type )
+ * @method static ItemListOrderType itemListOrderType( null|string $type )
+ * @method static Reservation reservation( null|string $type )
+ * @method static BusReservation busReservation( null|string $type )
+ * @method static EventReservation eventReservation( null|string $type )
+ * @method static FlightReservation flightReservation( null|string $type )
+ * @method static FoodEstablishmentReservation foodEstablishmentReservation( null|string $type )
+ * @method static LodgingReservation lodgingReservation( null|string $type )
+ * @method static RentalCarReservation rentalCarReservation( null|string $type )
+ * @method static TaxiReservation taxiReservation( null|string $type )
+ * @method static TrainReservation trainReservation( null|string $type )
+ * @method static ReservationPackage reservationPackage( null|string $type )
+ * @method static ReservationStatusType reservationStatusType( null|string $type )
+ * @method static BusTrip busTrip( null|string $type )
+ * @method static TrainTrip trainTrip( null|string $type )
+ * @method static Flight flight( null|string $type )
+ * @method static Airline airline( null|string $type )
+ * @method static ProgramMembership programMembership( null|string $type )
+ * @method static Ticket ticket( null|string $type )
+ * @method static Seat seat( null|string $type )
+ * @method static Taxi taxi( null|string $type )
+ * @method static TaxiService taxiService( null|string $type )
+ * @method static Vehicle vehicle( null|string $type )
+ * @method static Car car( null|string $type )
+ * @method static BoardingPolicyType boardingPolicyType( null|string $type )
+ * @method static QAPage qAPage( null|string $type )
+ * @method static Question question( null|string $type )
+ * @method static Answer answer( null|string $type )
+ * @method static EmailMessage emailMessage( null|string $type )
+ * @method static ActionStatusType actionStatusType( null|string $type )
+ * @method static EntryPoint entryPoint( null|string $type )
+ * @method static PropertyValueSpecification propertyValueSpecification( null|string $type )
+ * @method static Role role( null|string $type )
+ * @method static PerformanceRole performanceRole( null|string $type )
+ * @method static OrganizationRole organizationRole( null|string $type )
+ * @method static EmployeeRole employeeRole( null|string $type )
+ * @method static WebSite webSite( null|string $type )
+ * @method static Periodical periodical( null|string $type )
+ * @method static PublicationVolume publicationVolume( null|string $type )
+ * @method static PublicationIssue publicationIssue( null|string $type )
+ * @method static ListItem listItem( null|string $type )
+ * @method static MovieSeries movieSeries( null|string $type )
+ * @method static BookSeries bookSeries( null|string $type )
+ * @method static VideoGame videoGame( null|string $type )
+ * @method static VideoGameClip videoGameClip( null|string $type )
+ * @method static GameServer gameServer( null|string $type )
+ * @method static Game game( null|string $type )
+ * @method static GamePlayMode gamePlayMode( null|string $type )
+ * @method static GameServerStatus gameServerStatus( null|string $type )
+ * @method static MusicAlbumProductionType musicAlbumProductionType( null|string $type )
+ * @method static MusicAlbumReleaseType musicAlbumReleaseType( null|string $type )
+ * @method static MusicComposition musicComposition( null|string $type )
+ * @method static MusicRelease musicRelease( null|string $type )
+ * @method static MusicReleaseFormatType musicReleaseFormatType( null|string $type )
+ * @method static SportsOrganization sportsOrganization( null|string $type )
+ * @method static DatedMoneySpecification datedMoneySpecification( null|string $type )
+ * @method static VisualArtwork visualArtwork( null|string $type )
+ * @method static Invoice invoice( null|string $type )
+ * @method static PropertyValue propertyValue( null|string $type )
+ * @method static CableOrSatelliteService cableOrSatelliteService( null|string $type )
+ * @method static BroadcastChannel broadcastChannel( null|string $type )
+ * @method static TelevisionChannel televisionChannel( null|string $type )
+ * @method static RadioChannel radioChannel( null|string $type )
+ * @method static EngineSpecification engineSpecification( null|string $type )
+ * @method static Bridge bridge( null|string $type )
+ * @method static DriveWheelConfigurationValue driveWheelConfigurationValue( null|string $type )
+ * @method static SteeringPositionValue steeringPositionValue( null|string $type )
+ * @method static InteractionCounter interactionCounter( null|string $type )
+ * @method static SocialMediaPosting socialMediaPosting( null|string $type )
+ * @method static DiscussionForumPosting discussionForumPosting( null|string $type )
+ * @method static LiveBlogPosting liveBlogPosting( null|string $type )
+ * @method static PaymentStatusType paymentStatusType( null|string $type )
+ * @method static Report report( null|string $type )
+ * @method static Enumeration enumeration( null|string $type )
+ * @method static NutritionInformation nutritionInformation( null|string $type )
+ * @method static Recipe recipe( null|string $type )
+ * @method static DataFeed dataFeed( null|string $type )
+ * @method static DataFeedItem dataFeedItem( null|string $type )
+ * @method static CompoundPriceSpecification compoundPriceSpecification( null|string $type )
+ * @method static MonetaryAmount monetaryAmount( null|string $type )
+ * @method static FinancialProduct financialProduct( null|string $type )
+ * @method static BankAccount bankAccount( null|string $type )
+ * @method static DepositAccount depositAccount( null|string $type )
+ * @method static LoanOrCredit loanOrCredit( null|string $type )
+ * @method static PaymentCard paymentCard( null|string $type )
+ * @method static InvestmentOrDeposit investmentOrDeposit( null|string $type )
+ * @method static PaymentService paymentService( null|string $type )
+ * @method static CurrencyConversionService currencyConversionService( null|string $type )
+ * @method static Conversation conversation( null|string $type )
+ * @method static Message message( null|string $type )
+ * @method static DigitalDocument digitalDocument( null|string $type )
+ * @method static PresentationDigitalDocument presentationDigitalDocument( null|string $type )
+ * @method static SpreadsheetDigitalDocument spreadsheetDigitalDocument( null|string $type )
+ * @method static TextDigitalDocument textDigitalDocument( null|string $type )
+ * @method static NoteDigitalDocument noteDigitalDocument( null|string $type )
+ * @method static DigitalDocumentPermission digitalDocumentPermission( null|string $type )
+ * @method static DigitalDocumentPermissionType digitalDocumentPermissionType( null|string $type )
+ * @method static Resort resort( null|string $type )
+ * @method static Accommodation accommodation( null|string $type )
+ * @method static Room room( null|string $type )
+ * @method static HotelRoom hotelRoom( null|string $type )
+ * @method static MeetingRoom meetingRoom( null|string $type )
+ * @method static CampingPitch campingPitch( null|string $type )
+ * @method static Suite suite( null|string $type )
+ * @method static House house( null|string $type )
+ * @method static Apartment apartment( null|string $type )
+ * @method static FoodService foodService( null|string $type )
+ * @method static LocationFeatureSpecification locationFeatureSpecification( null|string $type )
+ * @method static BedDetails bedDetails( null|string $type )
+ * @method static Course course( null|string $type )
+ * @method static CourseInstance courseInstance( null|string $type )
+ * @method static ClaimReview claimReview( null|string $type )
+ * @method static Menu menu( null|string $type )
+ * @method static MenuItem menuItem( null|string $type )
+ * @method static MenuSection menuSection( null|string $type )
  */
 class Schema
 {
-    public static function thing(): Thing
-    {
-        return new Thing();
-    }
-
-    public static function creativeWork(): CreativeWork
-    {
-        return new CreativeWork();
-    }
-
-    public static function webPage(): WebPage
-    {
-        return new WebPage();
-    }
-
-    public static function aboutPage(): AboutPage
-    {
-        return new AboutPage();
-    }
-
-    public static function organization(): Organization
-    {
-        return new Organization();
-    }
-
-    public static function place(): Place
-    {
-        return new Place();
-    }
-
-    public static function localBusiness(): LocalBusiness
-    {
-        return new LocalBusiness();
-    }
-
-    public static function medicalOrganization(): MedicalOrganization
-    {
-        return new MedicalOrganization();
-    }
-
-    public static function dentist(): Dentist
-    {
-        return new Dentist();
-    }
-
-    public static function hospital(): Hospital
-    {
-        return new Hospital();
-    }
-
-    public static function pharmacy(): Pharmacy
-    {
-        return new Pharmacy();
-    }
-
-    public static function financialService(): FinancialService
-    {
-        return new FinancialService();
-    }
-
-    public static function professionalService(): ProfessionalService
-    {
-        return new ProfessionalService();
-    }
-
-    public static function legalService(): LegalService
-    {
-        return new LegalService();
-    }
-
-    public static function accountingService(): AccountingService
-    {
-        return new AccountingService();
-    }
-
-    public static function administrativeArea(): AdministrativeArea
-    {
-        return new AdministrativeArea();
-    }
-
-    public static function entertainmentBusiness(): EntertainmentBusiness
-    {
-        return new EntertainmentBusiness();
-    }
-
-    public static function adultEntertainment(): AdultEntertainment
-    {
-        return new AdultEntertainment();
-    }
-
-    public static function intangible(): Intangible
-    {
-        return new Intangible();
-    }
-
-    public static function offer(): Offer
-    {
-        return new Offer();
-    }
-
-    public static function aggregateOffer(): AggregateOffer
-    {
-        return new AggregateOffer();
-    }
-
-    public static function rating(): Rating
-    {
-        return new Rating();
-    }
-
-    public static function aggregateRating(): AggregateRating
-    {
-        return new AggregateRating();
-    }
-
-    public static function civicStructure(): CivicStructure
-    {
-        return new CivicStructure();
-    }
-
-    public static function airport(): Airport
-    {
-        return new Airport();
-    }
-
-    public static function amusementPark(): AmusementPark
-    {
-        return new AmusementPark();
-    }
-
-    public static function animalShelter(): AnimalShelter
-    {
-        return new AnimalShelter();
-    }
-
-    public static function residence(): Residence
-    {
-        return new Residence();
-    }
-
-    public static function apartmentComplex(): ApartmentComplex
-    {
-        return new ApartmentComplex();
-    }
-
-    public static function aquarium(): Aquarium
-    {
-        return new Aquarium();
-    }
-
-    public static function artGallery(): ArtGallery
-    {
-        return new ArtGallery();
-    }
-
-    public static function article(): Article
-    {
-        return new Article();
-    }
-
-    public static function attorney(): Attorney
-    {
-        return new Attorney();
-    }
-
-    public static function audience(): Audience
-    {
-        return new Audience();
-    }
-
-    public static function mediaObject(): MediaObject
-    {
-        return new MediaObject();
-    }
-
-    public static function audioObject(): AudioObject
-    {
-        return new AudioObject();
-    }
-
-    public static function automotiveBusiness(): AutomotiveBusiness
-    {
-        return new AutomotiveBusiness();
-    }
-
-    public static function autoBodyShop(): AutoBodyShop
-    {
-        return new AutoBodyShop();
-    }
-
-    public static function autoDealer(): AutoDealer
-    {
-        return new AutoDealer();
-    }
-
-    public static function store(): Store
-    {
-        return new Store();
-    }
-
-    public static function autoPartsStore(): AutoPartsStore
-    {
-        return new AutoPartsStore();
-    }
-
-    public static function autoRental(): AutoRental
-    {
-        return new AutoRental();
-    }
-
-    public static function autoRepair(): AutoRepair
-    {
-        return new AutoRepair();
-    }
-
-    public static function autoWash(): AutoWash
-    {
-        return new AutoWash();
-    }
-
-    public static function automatedTeller(): AutomatedTeller
-    {
-        return new AutomatedTeller();
-    }
-
-    public static function foodEstablishment(): FoodEstablishment
-    {
-        return new FoodEstablishment();
-    }
-
-    public static function bakery(): Bakery
-    {
-        return new Bakery();
-    }
-
-    public static function bankOrCreditUnion(): BankOrCreditUnion
-    {
-        return new BankOrCreditUnion();
-    }
-
-    public static function barcode(): Barcode
-    {
-        return new Barcode();
-    }
-
-    public static function barOrPub(): BarOrPub
-    {
-        return new BarOrPub();
-    }
-
-    public static function beach(): Beach
-    {
-        return new Beach();
-    }
-
-    public static function healthAndBeautyBusiness(): HealthAndBeautyBusiness
-    {
-        return new HealthAndBeautyBusiness();
-    }
-
-    public static function beautySalon(): BeautySalon
-    {
-        return new BeautySalon();
-    }
-
-    public static function lodgingBusiness(): LodgingBusiness
-    {
-        return new LodgingBusiness();
-    }
-
-    public static function bedAndBreakfast(): BedAndBreakfast
-    {
-        return new BedAndBreakfast();
-    }
-
-    public static function bikeStore(): BikeStore
-    {
-        return new BikeStore();
-    }
-
-    public static function blog(): Blog
-    {
-        return new Blog();
-    }
-
-    public static function blogPosting(): BlogPosting
-    {
-        return new BlogPosting();
-    }
-
-    public static function landform(): Landform
-    {
-        return new Landform();
-    }
-
-    public static function bodyOfWater(): BodyOfWater
-    {
-        return new BodyOfWater();
-    }
-
-    public static function book(): Book
-    {
-        return new Book();
-    }
-
-    public static function bookFormatType(): BookFormatType
-    {
-        return new BookFormatType();
-    }
-
-    public static function bookStore(): BookStore
-    {
-        return new BookStore();
-    }
-
-    public static function sportsActivityLocation(): SportsActivityLocation
-    {
-        return new SportsActivityLocation();
-    }
-
-    public static function bowlingAlley(): BowlingAlley
-    {
-        return new BowlingAlley();
-    }
-
-    public static function brewery(): Brewery
-    {
-        return new Brewery();
-    }
-
-    public static function placeOfWorship(): PlaceOfWorship
-    {
-        return new PlaceOfWorship();
-    }
-
-    public static function buddhistTemple(): BuddhistTemple
-    {
-        return new BuddhistTemple();
-    }
-
-    public static function busStation(): BusStation
-    {
-        return new BusStation();
-    }
-
-    public static function busStop(): BusStop
-    {
-        return new BusStop();
-    }
-
-    public static function event(): Event
-    {
-        return new Event();
-    }
-
-    public static function businessEvent(): BusinessEvent
-    {
-        return new BusinessEvent();
-    }
-
-    public static function cafeOrCoffeeShop(): CafeOrCoffeeShop
-    {
-        return new CafeOrCoffeeShop();
-    }
-
-    public static function campground(): Campground
-    {
-        return new Campground();
-    }
-
-    public static function canal(): Canal
-    {
-        return new Canal();
-    }
-
-    public static function casino(): Casino
-    {
-        return new Casino();
-    }
-
-    public static function catholicChurch(): CatholicChurch
-    {
-        return new CatholicChurch();
-    }
-
-    public static function cemetery(): Cemetery
-    {
-        return new Cemetery();
-    }
-
-    public static function checkoutPage(): CheckoutPage
-    {
-        return new CheckoutPage();
-    }
-
-    public static function childCare(): ChildCare
-    {
-        return new ChildCare();
-    }
-
-    public static function childrensEvent(): ChildrensEvent
-    {
-        return new ChildrensEvent();
-    }
-
-    public static function church(): Church
-    {
-        return new Church();
-    }
-
-    public static function city(): City
-    {
-        return new City();
-    }
-
-    public static function governmentBuilding(): GovernmentBuilding
-    {
-        return new GovernmentBuilding();
-    }
-
-    public static function cityHall(): CityHall
-    {
-        return new CityHall();
-    }
-
-    public static function clothingStore(): ClothingStore
-    {
-        return new ClothingStore();
-    }
-
-    public static function collectionPage(): CollectionPage
-    {
-        return new CollectionPage();
-    }
-
-    public static function educationalOrganization(): EducationalOrganization
-    {
-        return new EducationalOrganization();
-    }
-
-    public static function collegeOrUniversity(): CollegeOrUniversity
-    {
-        return new CollegeOrUniversity();
-    }
-
-    public static function comedyClub(): ComedyClub
-    {
-        return new ComedyClub();
-    }
-
-    public static function comedyEvent(): ComedyEvent
-    {
-        return new ComedyEvent();
-    }
-
-    public static function comment(): Comment
-    {
-        return new Comment();
-    }
-
-    public static function computerStore(): ComputerStore
-    {
-        return new ComputerStore();
-    }
-
-    public static function contactPage(): ContactPage
-    {
-        return new ContactPage();
-    }
-
-    public static function structuredValue(): StructuredValue
-    {
-        return new StructuredValue();
-    }
-
-    public static function contactPoint(): ContactPoint
-    {
-        return new ContactPoint();
-    }
-
-    public static function continent(): Continent
-    {
-        return new Continent();
-    }
-
-    public static function convenienceStore(): ConvenienceStore
-    {
-        return new ConvenienceStore();
-    }
-
-    public static function corporation(): Corporation
-    {
-        return new Corporation();
-    }
-
-    public static function country(): Country
-    {
-        return new Country();
-    }
-
-    public static function courthouse(): Courthouse
-    {
-        return new Courthouse();
-    }
-
-    public static function crematorium(): Crematorium
-    {
-        return new Crematorium();
-    }
-
-    public static function danceEvent(): DanceEvent
-    {
-        return new DanceEvent();
-    }
-
-    public static function performingGroup(): PerformingGroup
-    {
-        return new PerformingGroup();
-    }
-
-    public static function danceGroup(): DanceGroup
-    {
-        return new DanceGroup();
-    }
-
-    public static function daySpa(): DaySpa
-    {
-        return new DaySpa();
-    }
-
-    public static function defenceEstablishment(): DefenceEstablishment
-    {
-        return new DefenceEstablishment();
-    }
-
-    public static function departmentStore(): DepartmentStore
-    {
-        return new DepartmentStore();
-    }
-
-    public static function quantity(): Quantity
-    {
-        return new Quantity();
-    }
-
-    public static function distance(): Distance
-    {
-        return new Distance();
-    }
-
-    public static function dryCleaningOrLaundry(): DryCleaningOrLaundry
-    {
-        return new DryCleaningOrLaundry();
-    }
-
-    public static function duration(): Duration
-    {
-        return new Duration();
-    }
-
-    public static function educationEvent(): EducationEvent
-    {
-        return new EducationEvent();
-    }
-
-    public static function homeAndConstructionBusiness(): HomeAndConstructionBusiness
-    {
-        return new HomeAndConstructionBusiness();
-    }
-
-    public static function electrician(): Electrician
-    {
-        return new Electrician();
-    }
-
-    public static function electronicsStore(): ElectronicsStore
-    {
-        return new ElectronicsStore();
-    }
-
-    public static function elementarySchool(): ElementarySchool
-    {
-        return new ElementarySchool();
-    }
-
-    public static function embassy(): Embassy
-    {
-        return new Embassy();
-    }
-
-    public static function emergencyService(): EmergencyService
-    {
-        return new EmergencyService();
-    }
-
-    public static function employmentAgency(): EmploymentAgency
-    {
-        return new EmploymentAgency();
-    }
-
-    public static function energy(): Energy
-    {
-        return new Energy();
-    }
-
-    public static function eventVenue(): EventVenue
-    {
-        return new EventVenue();
-    }
-
-    public static function exerciseGym(): ExerciseGym
-    {
-        return new ExerciseGym();
-    }
-
-    public static function fastFoodRestaurant(): FastFoodRestaurant
-    {
-        return new FastFoodRestaurant();
-    }
-
-    public static function festival(): Festival
-    {
-        return new Festival();
-    }
-
-    public static function fireStation(): FireStation
-    {
-        return new FireStation();
-    }
-
-    public static function florist(): Florist
-    {
-        return new Florist();
-    }
-
-    public static function foodEvent(): FoodEvent
-    {
-        return new FoodEvent();
-    }
-
-    public static function furnitureStore(): FurnitureStore
-    {
-        return new FurnitureStore();
-    }
-
-    public static function gardenStore(): GardenStore
-    {
-        return new GardenStore();
-    }
-
-    public static function gasStation(): GasStation
-    {
-        return new GasStation();
-    }
-
-    public static function gatedResidenceCommunity(): GatedResidenceCommunity
-    {
-        return new GatedResidenceCommunity();
-    }
-
-    public static function generalContractor(): GeneralContractor
-    {
-        return new GeneralContractor();
-    }
-
-    public static function geoCoordinates(): GeoCoordinates
-    {
-        return new GeoCoordinates();
-    }
-
-    public static function geoShape(): GeoShape
-    {
-        return new GeoShape();
-    }
-
-    public static function geoCircle(): GeoCircle
-    {
-        return new GeoCircle();
-    }
-
-    public static function golfCourse(): GolfCourse
-    {
-        return new GolfCourse();
-    }
-
-    public static function governmentOffice(): GovernmentOffice
-    {
-        return new GovernmentOffice();
-    }
-
-    public static function governmentOrganization(): GovernmentOrganization
-    {
-        return new GovernmentOrganization();
-    }
-
-    public static function groceryStore(): GroceryStore
-    {
-        return new GroceryStore();
-    }
-
-    public static function hVACBusiness(): HVACBusiness
-    {
-        return new HVACBusiness();
-    }
-
-    public static function hairSalon(): HairSalon
-    {
-        return new HairSalon();
-    }
-
-    public static function hardwareStore(): HardwareStore
-    {
-        return new HardwareStore();
-    }
-
-    public static function healthClub(): HealthClub
-    {
-        return new HealthClub();
-    }
-
-    public static function highSchool(): HighSchool
-    {
-        return new HighSchool();
-    }
-
-    public static function hinduTemple(): HinduTemple
-    {
-        return new HinduTemple();
-    }
-
-    public static function hobbyShop(): HobbyShop
-    {
-        return new HobbyShop();
-    }
-
-    public static function homeGoodsStore(): HomeGoodsStore
-    {
-        return new HomeGoodsStore();
-    }
-
-    public static function hostel(): Hostel
-    {
-        return new Hostel();
-    }
-
-    public static function hotel(): Hotel
-    {
-        return new Hotel();
-    }
-
-    public static function housePainter(): HousePainter
-    {
-        return new HousePainter();
-    }
-
-    public static function iceCreamShop(): IceCreamShop
-    {
-        return new IceCreamShop();
-    }
-
-    public static function imageGallery(): ImageGallery
-    {
-        return new ImageGallery();
-    }
-
-    public static function imageObject(): ImageObject
-    {
-        return new ImageObject();
-    }
-
-    public static function insuranceAgency(): InsuranceAgency
-    {
-        return new InsuranceAgency();
-    }
-
-    public static function internetCafe(): InternetCafe
-    {
-        return new InternetCafe();
-    }
-
-    public static function itemAvailability(): ItemAvailability
-    {
-        return new ItemAvailability();
-    }
-
-    public static function itemList(): ItemList
-    {
-        return new ItemList();
-    }
-
-    public static function breadcrumbList(): BreadcrumbList
-    {
-        return new BreadcrumbList();
-    }
-
-    public static function offerCatalog(): OfferCatalog
-    {
-        return new OfferCatalog();
-    }
-
-    public static function itemPage(): ItemPage
-    {
-        return new ItemPage();
-    }
-
-    public static function jewelryStore(): JewelryStore
-    {
-        return new JewelryStore();
-    }
-
-    public static function jobPosting(): JobPosting
-    {
-        return new JobPosting();
-    }
-
-    public static function lakeBodyOfWater(): LakeBodyOfWater
-    {
-        return new LakeBodyOfWater();
-    }
-
-    public static function landmarksOrHistoricalBuildings(): LandmarksOrHistoricalBuildings
-    {
-        return new LandmarksOrHistoricalBuildings();
-    }
-
-    public static function language(): Language
-    {
-        return new Language();
-    }
-
-    public static function computerLanguage(): ComputerLanguage
-    {
-        return new ComputerLanguage();
-    }
-
-    public static function legislativeBuilding(): LegislativeBuilding
-    {
-        return new LegislativeBuilding();
-    }
-
-    public static function library(): Library
-    {
-        return new Library();
-    }
-
-    public static function liquorStore(): LiquorStore
-    {
-        return new LiquorStore();
-    }
-
-    public static function literaryEvent(): LiteraryEvent
-    {
-        return new LiteraryEvent();
-    }
-
-    public static function locksmith(): Locksmith
-    {
-        return new Locksmith();
-    }
-
-    public static function map(): Map
-    {
-        return new Map();
-    }
-
-    public static function mapCategoryType(): MapCategoryType
-    {
-        return new MapCategoryType();
-    }
-
-    public static function mass(): Mass
-    {
-        return new Mass();
-    }
-
-    public static function peopleAudience(): PeopleAudience
-    {
-        return new PeopleAudience();
-    }
-
-    public static function scholarlyArticle(): ScholarlyArticle
-    {
-        return new ScholarlyArticle();
-    }
-
-    public static function specialty(): Specialty
-    {
-        return new Specialty();
-    }
-
-    public static function mensClothingStore(): MensClothingStore
-    {
-        return new MensClothingStore();
-    }
-
-    public static function middleSchool(): MiddleSchool
-    {
-        return new MiddleSchool();
-    }
-
-    public static function softwareApplication(): SoftwareApplication
-    {
-        return new SoftwareApplication();
-    }
-
-    public static function mobileApplication(): MobileApplication
-    {
-        return new MobileApplication();
-    }
-
-    public static function mobilePhoneStore(): MobilePhoneStore
-    {
-        return new MobilePhoneStore();
-    }
-
-    public static function mosque(): Mosque
-    {
-        return new Mosque();
-    }
-
-    public static function motel(): Motel
-    {
-        return new Motel();
-    }
-
-    public static function motorcycleDealer(): MotorcycleDealer
-    {
-        return new MotorcycleDealer();
-    }
-
-    public static function motorcycleRepair(): MotorcycleRepair
-    {
-        return new MotorcycleRepair();
-    }
-
-    public static function mountain(): Mountain
-    {
-        return new Mountain();
-    }
-
-    public static function movie(): Movie
-    {
-        return new Movie();
-    }
-
-    public static function movieClip(): MovieClip
-    {
-        return new MovieClip();
-    }
-
-    public static function movieRentalStore(): MovieRentalStore
-    {
-        return new MovieRentalStore();
-    }
-
-    public static function movieTheater(): MovieTheater
-    {
-        return new MovieTheater();
-    }
-
-    public static function movingCompany(): MovingCompany
-    {
-        return new MovingCompany();
-    }
-
-    public static function museum(): Museum
-    {
-        return new Museum();
-    }
-
-    public static function musicPlaylist(): MusicPlaylist
-    {
-        return new MusicPlaylist();
-    }
-
-    public static function musicAlbum(): MusicAlbum
-    {
-        return new MusicAlbum();
-    }
-
-    public static function musicEvent(): MusicEvent
-    {
-        return new MusicEvent();
-    }
-
-    public static function musicGroup(): MusicGroup
-    {
-        return new MusicGroup();
-    }
-
-    public static function musicRecording(): MusicRecording
-    {
-        return new MusicRecording();
-    }
-
-    public static function musicStore(): MusicStore
-    {
-        return new MusicStore();
-    }
-
-    public static function musicVenue(): MusicVenue
-    {
-        return new MusicVenue();
-    }
-
-    public static function musicVideoObject(): MusicVideoObject
-    {
-        return new MusicVideoObject();
-    }
-
-    public static function nGO(): NGO
-    {
-        return new NGO();
-    }
-
-    public static function nailSalon(): NailSalon
-    {
-        return new NailSalon();
-    }
-
-    public static function newsArticle(): NewsArticle
-    {
-        return new NewsArticle();
-    }
-
-    public static function nightClub(): NightClub
-    {
-        return new NightClub();
-    }
-
-    public static function photograph(): Photograph
-    {
-        return new Photograph();
-    }
-
-    public static function notary(): Notary
-    {
-        return new Notary();
-    }
-
-    public static function oceanBodyOfWater(): OceanBodyOfWater
-    {
-        return new OceanBodyOfWater();
-    }
-
-    public static function offerItemCondition(): OfferItemCondition
-    {
-        return new OfferItemCondition();
-    }
-
-    public static function officeEquipmentStore(): OfficeEquipmentStore
-    {
-        return new OfficeEquipmentStore();
-    }
-
-    public static function outletStore(): OutletStore
-    {
-        return new OutletStore();
-    }
-
-    public static function painting(): Painting
-    {
-        return new Painting();
-    }
-
-    public static function park(): Park
-    {
-        return new Park();
-    }
-
-    public static function parkingFacility(): ParkingFacility
-    {
-        return new ParkingFacility();
-    }
-
-    public static function pawnShop(): PawnShop
-    {
-        return new PawnShop();
-    }
-
-    public static function performingArtsTheater(): PerformingArtsTheater
-    {
-        return new PerformingArtsTheater();
-    }
-
-    public static function person(): Person
-    {
-        return new Person();
-    }
-
-    public static function petStore(): PetStore
-    {
-        return new PetStore();
-    }
-
-    public static function playground(): Playground
-    {
-        return new Playground();
-    }
-
-    public static function plumber(): Plumber
-    {
-        return new Plumber();
-    }
-
-    public static function policeStation(): PoliceStation
-    {
-        return new PoliceStation();
-    }
-
-    public static function pond(): Pond
-    {
-        return new Pond();
-    }
-
-    public static function postOffice(): PostOffice
-    {
-        return new PostOffice();
-    }
-
-    public static function postalAddress(): PostalAddress
-    {
-        return new PostalAddress();
-    }
-
-    public static function preschool(): Preschool
-    {
-        return new Preschool();
-    }
-
-    public static function product(): Product
-    {
-        return new Product();
-    }
-
-    public static function profilePage(): ProfilePage
-    {
-        return new ProfilePage();
-    }
-
-    public static function publicSwimmingPool(): PublicSwimmingPool
-    {
-        return new PublicSwimmingPool();
-    }
-
-    public static function rVPark(): RVPark
-    {
-        return new RVPark();
-    }
-
-    public static function radioStation(): RadioStation
-    {
-        return new RadioStation();
-    }
-
-    public static function realEstateAgent(): RealEstateAgent
-    {
-        return new RealEstateAgent();
-    }
-
-    public static function recyclingCenter(): RecyclingCenter
-    {
-        return new RecyclingCenter();
-    }
-
-    public static function reservoir(): Reservoir
-    {
-        return new Reservoir();
-    }
-
-    public static function restaurant(): Restaurant
-    {
-        return new Restaurant();
-    }
-
-    public static function restrictedDiet(): RestrictedDiet
-    {
-        return new RestrictedDiet();
-    }
-
-    public static function review(): Review
-    {
-        return new Review();
-    }
-
-    public static function riverBodyOfWater(): RiverBodyOfWater
-    {
-        return new RiverBodyOfWater();
-    }
-
-    public static function roofingContractor(): RoofingContractor
-    {
-        return new RoofingContractor();
-    }
-
-    public static function saleEvent(): SaleEvent
-    {
-        return new SaleEvent();
-    }
-
-    public static function school(): School
-    {
-        return new School();
-    }
-
-    public static function sculpture(): Sculpture
-    {
-        return new Sculpture();
-    }
-
-    public static function screeningEvent(): ScreeningEvent
-    {
-        return new ScreeningEvent();
-    }
-
-    public static function seaBodyOfWater(): SeaBodyOfWater
-    {
-        return new SeaBodyOfWater();
-    }
-
-    public static function searchResultsPage(): SearchResultsPage
-    {
-        return new SearchResultsPage();
-    }
-
-    public static function selfStorage(): SelfStorage
-    {
-        return new SelfStorage();
-    }
-
-    public static function shoeStore(): ShoeStore
-    {
-        return new ShoeStore();
-    }
-
-    public static function shoppingCenter(): ShoppingCenter
-    {
-        return new ShoppingCenter();
-    }
-
-    public static function singleFamilyResidence(): SingleFamilyResidence
-    {
-        return new SingleFamilyResidence();
-    }
-
-    public static function webPageElement(): WebPageElement
-    {
-        return new WebPageElement();
-    }
-
-    public static function siteNavigationElement(): SiteNavigationElement
-    {
-        return new SiteNavigationElement();
-    }
-
-    public static function skiResort(): SkiResort
-    {
-        return new SkiResort();
-    }
-
-    public static function socialEvent(): SocialEvent
-    {
-        return new SocialEvent();
-    }
-
-    public static function sportingGoodsStore(): SportingGoodsStore
-    {
-        return new SportingGoodsStore();
-    }
-
-    public static function sportsClub(): SportsClub
-    {
-        return new SportsClub();
-    }
-
-    public static function sportsEvent(): SportsEvent
-    {
-        return new SportsEvent();
-    }
-
-    public static function sportsTeam(): SportsTeam
-    {
-        return new SportsTeam();
-    }
-
-    public static function stadiumOrArena(): StadiumOrArena
-    {
-        return new StadiumOrArena();
-    }
-
-    public static function state(): State
-    {
-        return new State();
-    }
-
-    public static function subwayStation(): SubwayStation
-    {
-        return new SubwayStation();
-    }
-
-    public static function synagogue(): Synagogue
-    {
-        return new Synagogue();
-    }
-
-    public static function episode(): Episode
-    {
-        return new Episode();
-    }
-
-    public static function tVEpisode(): TVEpisode
-    {
-        return new TVEpisode();
-    }
-
-    public static function season(): Season
-    {
-        return new Season();
-    }
-
-    public static function creativeWorkSeason(): CreativeWorkSeason
-    {
-        return new CreativeWorkSeason();
-    }
-
-    public static function tVSeason(): TVSeason
-    {
-        return new TVSeason();
-    }
-
-    public static function series(): Series
-    {
-        return new Series();
-    }
-
-    public static function creativeWorkSeries(): CreativeWorkSeries
-    {
-        return new CreativeWorkSeries();
-    }
-
-    public static function tVSeries(): TVSeries
-    {
-        return new TVSeries();
-    }
-
-    public static function videoGameSeries(): VideoGameSeries
-    {
-        return new VideoGameSeries();
-    }
-
-    public static function table(): Table
-    {
-        return new Table();
-    }
-
-    public static function tattooParlor(): TattooParlor
-    {
-        return new TattooParlor();
-    }
-
-    public static function taxiStand(): TaxiStand
-    {
-        return new TaxiStand();
-    }
-
-    public static function televisionStation(): TelevisionStation
-    {
-        return new TelevisionStation();
-    }
-
-    public static function tennisComplex(): TennisComplex
-    {
-        return new TennisComplex();
-    }
-
-    public static function theaterEvent(): TheaterEvent
-    {
-        return new TheaterEvent();
-    }
-
-    public static function theaterGroup(): TheaterGroup
-    {
-        return new TheaterGroup();
-    }
-
-    public static function tireShop(): TireShop
-    {
-        return new TireShop();
-    }
-
-    public static function touristAttraction(): TouristAttraction
-    {
-        return new TouristAttraction();
-    }
-
-    public static function touristInformationCenter(): TouristInformationCenter
-    {
-        return new TouristInformationCenter();
-    }
-
-    public static function toyStore(): ToyStore
-    {
-        return new ToyStore();
-    }
-
-    public static function trainStation(): TrainStation
-    {
-        return new TrainStation();
-    }
-
-    public static function travelAgency(): TravelAgency
-    {
-        return new TravelAgency();
-    }
-
-    public static function userInteraction(): UserInteraction
-    {
-        return new UserInteraction();
-    }
-
-    public static function userBlocks(): UserBlocks
-    {
-        return new UserBlocks();
-    }
-
-    public static function userCheckins(): UserCheckins
-    {
-        return new UserCheckins();
-    }
-
-    public static function userComments(): UserComments
-    {
-        return new UserComments();
-    }
-
-    public static function userDownloads(): UserDownloads
-    {
-        return new UserDownloads();
-    }
-
-    public static function userLikes(): UserLikes
-    {
-        return new UserLikes();
-    }
-
-    public static function userPageVisits(): UserPageVisits
-    {
-        return new UserPageVisits();
-    }
-
-    public static function userPlays(): UserPlays
-    {
-        return new UserPlays();
-    }
-
-    public static function userPlusOnes(): UserPlusOnes
-    {
-        return new UserPlusOnes();
-    }
-
-    public static function userTweets(): UserTweets
-    {
-        return new UserTweets();
-    }
-
-    public static function videoGallery(): VideoGallery
-    {
-        return new VideoGallery();
-    }
-
-    public static function videoObject(): VideoObject
-    {
-        return new VideoObject();
-    }
-
-    public static function visualArtsEvent(): VisualArtsEvent
-    {
-        return new VisualArtsEvent();
-    }
-
-    public static function exhibitionEvent(): ExhibitionEvent
-    {
-        return new ExhibitionEvent();
-    }
-
-    public static function volcano(): Volcano
-    {
-        return new Volcano();
-    }
-
-    public static function wPAdBlock(): WPAdBlock
-    {
-        return new WPAdBlock();
-    }
-
-    public static function wPFooter(): WPFooter
-    {
-        return new WPFooter();
-    }
-
-    public static function wPHeader(): WPHeader
-    {
-        return new WPHeader();
-    }
-
-    public static function wPSideBar(): WPSideBar
-    {
-        return new WPSideBar();
-    }
-
-    public static function waterfall(): Waterfall
-    {
-        return new Waterfall();
-    }
-
-    public static function webApplication(): WebApplication
-    {
-        return new WebApplication();
-    }
-
-    public static function wholesaleStore(): WholesaleStore
-    {
-        return new WholesaleStore();
-    }
-
-    public static function winery(): Winery
-    {
-        return new Winery();
-    }
-
-    public static function zoo(): Zoo
-    {
-        return new Zoo();
-    }
-
-    public static function brand(): Brand
-    {
-        return new Brand();
-    }
-
-    public static function businessEntityType(): BusinessEntityType
-    {
-        return new BusinessEntityType();
-    }
-
-    public static function creditCard(): CreditCard
-    {
-        return new CreditCard();
-    }
-
-    public static function businessFunction(): BusinessFunction
-    {
-        return new BusinessFunction();
-    }
-
-    public static function paymentMethod(): PaymentMethod
-    {
-        return new PaymentMethod();
-    }
-
-    public static function dayOfWeek(): DayOfWeek
-    {
-        return new DayOfWeek();
-    }
-
-    public static function priceSpecification(): PriceSpecification
-    {
-        return new PriceSpecification();
-    }
-
-    public static function deliveryChargeSpecification(): DeliveryChargeSpecification
-    {
-        return new DeliveryChargeSpecification();
-    }
-
-    public static function deliveryMethod(): DeliveryMethod
-    {
-        return new DeliveryMethod();
-    }
-
-    public static function demand(): Demand
-    {
-        return new Demand();
-    }
-
-    public static function individualProduct(): IndividualProduct
-    {
-        return new IndividualProduct();
-    }
-
-    public static function openingHoursSpecification(): OpeningHoursSpecification
-    {
-        return new OpeningHoursSpecification();
-    }
-
-    public static function ownershipInfo(): OwnershipInfo
-    {
-        return new OwnershipInfo();
-    }
-
-    public static function parcelService(): ParcelService
-    {
-        return new ParcelService();
-    }
-
-    public static function paymentChargeSpecification(): PaymentChargeSpecification
-    {
-        return new PaymentChargeSpecification();
-    }
-
-    public static function productModel(): ProductModel
-    {
-        return new ProductModel();
-    }
-
-    public static function qualitativeValue(): QualitativeValue
-    {
-        return new QualitativeValue();
-    }
-
-    public static function quantitativeValue(): QuantitativeValue
-    {
-        return new QuantitativeValue();
-    }
-
-    public static function someProducts(): SomeProducts
-    {
-        return new SomeProducts();
-    }
-
-    public static function typeAndQuantityNode(): TypeAndQuantityNode
-    {
-        return new TypeAndQuantityNode();
-    }
-
-    public static function unitPriceSpecification(): UnitPriceSpecification
-    {
-        return new UnitPriceSpecification();
-    }
-
-    public static function warrantyPromise(): WarrantyPromise
-    {
-        return new WarrantyPromise();
-    }
-
-    public static function warrantyScope(): WarrantyScope
-    {
-        return new WarrantyScope();
-    }
-
-    public static function techArticle(): TechArticle
-    {
-        return new TechArticle();
-    }
-
-    public static function aPIReference(): APIReference
-    {
-        return new APIReference();
-    }
-
-    public static function code(): Code
-    {
-        return new Code();
-    }
-
-    public static function softwareSourceCode(): SoftwareSourceCode
-    {
-        return new SoftwareSourceCode();
-    }
-
-    public static function parentAudience(): ParentAudience
-    {
-        return new ParentAudience();
-    }
-
-    public static function alignmentObject(): AlignmentObject
-    {
-        return new AlignmentObject();
-    }
-
-    public static function educationalAudience(): EducationalAudience
-    {
-        return new EducationalAudience();
-    }
-
-    public static function dataCatalog(): DataCatalog
-    {
-        return new DataCatalog();
-    }
-
-    public static function dataDownload(): DataDownload
-    {
-        return new DataDownload();
-    }
-
-    public static function dataset(): Dataset
-    {
-        return new Dataset();
-    }
-
-    public static function publicationEvent(): PublicationEvent
-    {
-        return new PublicationEvent();
-    }
-
-    public static function broadcastEvent(): BroadcastEvent
-    {
-        return new BroadcastEvent();
-    }
-
-    public static function broadcastService(): BroadcastService
-    {
-        return new BroadcastService();
-    }
-
-    public static function clip(): Clip
-    {
-        return new Clip();
-    }
-
-    public static function onDemandEvent(): OnDemandEvent
-    {
-        return new OnDemandEvent();
-    }
-
-    public static function radioClip(): RadioClip
-    {
-        return new RadioClip();
-    }
-
-    public static function radioEpisode(): RadioEpisode
-    {
-        return new RadioEpisode();
-    }
-
-    public static function radioSeason(): RadioSeason
-    {
-        return new RadioSeason();
-    }
-
-    public static function radioSeries(): RadioSeries
-    {
-        return new RadioSeries();
-    }
-
-    public static function tVClip(): TVClip
-    {
-        return new TVClip();
-    }
-
-    public static function businessAudience(): BusinessAudience
-    {
-        return new BusinessAudience();
-    }
-
-    public static function contactPointOption(): ContactPointOption
-    {
-        return new ContactPointOption();
-    }
-
-    public static function permit(): Permit
-    {
-        return new Permit();
-    }
-
-    public static function governmentPermit(): GovernmentPermit
-    {
-        return new GovernmentPermit();
-    }
-
-    public static function service(): Service
-    {
-        return new Service();
-    }
-
-    public static function governmentService(): GovernmentService
-    {
-        return new GovernmentService();
-    }
-
-    public static function serviceChannel(): ServiceChannel
-    {
-        return new ServiceChannel();
-    }
-
-    public static function eventStatusType(): EventStatusType
-    {
-        return new EventStatusType();
-    }
-
-    public static function deliveryEvent(): DeliveryEvent
-    {
-        return new DeliveryEvent();
-    }
-
-    public static function lockerDelivery(): LockerDelivery
-    {
-        return new LockerDelivery();
-    }
-
-    public static function order(): Order
-    {
-        return new Order();
-    }
-
-    public static function orderStatus(): OrderStatus
-    {
-        return new OrderStatus();
-    }
-
-    public static function parcelDelivery(): ParcelDelivery
-    {
-        return new ParcelDelivery();
-    }
-
-    public static function orderItem(): OrderItem
-    {
-        return new OrderItem();
-    }
-
-    public static function action(): Action
-    {
-        return new Action();
-    }
-
-    public static function organizeAction(): OrganizeAction
-    {
-        return new OrganizeAction();
-    }
-
-    public static function allocateAction(): AllocateAction
-    {
-        return new AllocateAction();
-    }
-
-    public static function acceptAction(): AcceptAction
-    {
-        return new AcceptAction();
-    }
-
-    public static function achieveAction(): AchieveAction
-    {
-        return new AchieveAction();
-    }
-
-    public static function updateAction(): UpdateAction
-    {
-        return new UpdateAction();
-    }
-
-    public static function addAction(): AddAction
-    {
-        return new AddAction();
-    }
-
-    public static function assessAction(): AssessAction
-    {
-        return new AssessAction();
-    }
-
-    public static function reactAction(): ReactAction
-    {
-        return new ReactAction();
-    }
-
-    public static function agreeAction(): AgreeAction
-    {
-        return new AgreeAction();
-    }
-
-    public static function insertAction(): InsertAction
-    {
-        return new InsertAction();
-    }
-
-    public static function appendAction(): AppendAction
-    {
-        return new AppendAction();
-    }
-
-    public static function applyAction(): ApplyAction
-    {
-        return new ApplyAction();
-    }
-
-    public static function moveAction(): MoveAction
-    {
-        return new MoveAction();
-    }
-
-    public static function arriveAction(): ArriveAction
-    {
-        return new ArriveAction();
-    }
-
-    public static function interactAction(): InteractAction
-    {
-        return new InteractAction();
-    }
-
-    public static function communicateAction(): CommunicateAction
-    {
-        return new CommunicateAction();
-    }
-
-    public static function askAction(): AskAction
-    {
-        return new AskAction();
-    }
-
-    public static function assignAction(): AssignAction
-    {
-        return new AssignAction();
-    }
-
-    public static function authorizeAction(): AuthorizeAction
-    {
-        return new AuthorizeAction();
-    }
-
-    public static function befriendAction(): BefriendAction
-    {
-        return new BefriendAction();
-    }
-
-    public static function bookmarkAction(): BookmarkAction
-    {
-        return new BookmarkAction();
-    }
-
-    public static function transferAction(): TransferAction
-    {
-        return new TransferAction();
-    }
-
-    public static function borrowAction(): BorrowAction
-    {
-        return new BorrowAction();
-    }
-
-    public static function tradeAction(): TradeAction
-    {
-        return new TradeAction();
-    }
-
-    public static function buyAction(): BuyAction
-    {
-        return new BuyAction();
-    }
-
-    public static function planAction(): PlanAction
-    {
-        return new PlanAction();
-    }
-
-    public static function cancelAction(): CancelAction
-    {
-        return new CancelAction();
-    }
-
-    public static function findAction(): FindAction
-    {
-        return new FindAction();
-    }
-
-    public static function checkAction(): CheckAction
-    {
-        return new CheckAction();
-    }
-
-    public static function checkInAction(): CheckInAction
-    {
-        return new CheckInAction();
-    }
-
-    public static function checkOutAction(): CheckOutAction
-    {
-        return new CheckOutAction();
-    }
-
-    public static function chooseAction(): ChooseAction
-    {
-        return new ChooseAction();
-    }
-
-    public static function commentAction(): CommentAction
-    {
-        return new CommentAction();
-    }
-
-    public static function informAction(): InformAction
-    {
-        return new InformAction();
-    }
-
-    public static function confirmAction(): ConfirmAction
-    {
-        return new ConfirmAction();
-    }
-
-    public static function consumeAction(): ConsumeAction
-    {
-        return new ConsumeAction();
-    }
-
-    public static function createAction(): CreateAction
-    {
-        return new CreateAction();
-    }
-
-    public static function cookAction(): CookAction
-    {
-        return new CookAction();
-    }
-
-    public static function deleteAction(): DeleteAction
-    {
-        return new DeleteAction();
-    }
-
-    public static function departAction(): DepartAction
-    {
-        return new DepartAction();
-    }
-
-    public static function disagreeAction(): DisagreeAction
-    {
-        return new DisagreeAction();
-    }
-
-    public static function discoverAction(): DiscoverAction
-    {
-        return new DiscoverAction();
-    }
-
-    public static function dislikeAction(): DislikeAction
-    {
-        return new DislikeAction();
-    }
-
-    public static function donateAction(): DonateAction
-    {
-        return new DonateAction();
-    }
-
-    public static function downloadAction(): DownloadAction
-    {
-        return new DownloadAction();
-    }
-
-    public static function drawAction(): DrawAction
-    {
-        return new DrawAction();
-    }
-
-    public static function drinkAction(): DrinkAction
-    {
-        return new DrinkAction();
-    }
-
-    public static function eatAction(): EatAction
-    {
-        return new EatAction();
-    }
-
-    public static function endorseAction(): EndorseAction
-    {
-        return new EndorseAction();
-    }
-
-    public static function controlAction(): ControlAction
-    {
-        return new ControlAction();
-    }
-
-    public static function activateAction(): ActivateAction
-    {
-        return new ActivateAction();
-    }
-
-    public static function deactivateAction(): DeactivateAction
-    {
-        return new DeactivateAction();
-    }
-
-    public static function resumeAction(): ResumeAction
-    {
-        return new ResumeAction();
-    }
-
-    public static function suspendAction(): SuspendAction
-    {
-        return new SuspendAction();
-    }
-
-    public static function playAction(): PlayAction
-    {
-        return new PlayAction();
-    }
-
-    public static function exerciseAction(): ExerciseAction
-    {
-        return new ExerciseAction();
-    }
-
-    public static function filmAction(): FilmAction
-    {
-        return new FilmAction();
-    }
-
-    public static function followAction(): FollowAction
-    {
-        return new FollowAction();
-    }
-
-    public static function giveAction(): GiveAction
-    {
-        return new GiveAction();
-    }
-
-    public static function ignoreAction(): IgnoreAction
-    {
-        return new IgnoreAction();
-    }
-
-    public static function installAction(): InstallAction
-    {
-        return new InstallAction();
-    }
-
-    public static function inviteAction(): InviteAction
-    {
-        return new InviteAction();
-    }
-
-    public static function joinAction(): JoinAction
-    {
-        return new JoinAction();
-    }
-
-    public static function leaveAction(): LeaveAction
-    {
-        return new LeaveAction();
-    }
-
-    public static function lendAction(): LendAction
-    {
-        return new LendAction();
-    }
-
-    public static function likeAction(): LikeAction
-    {
-        return new LikeAction();
-    }
-
-    public static function listenAction(): ListenAction
-    {
-        return new ListenAction();
-    }
-
-    public static function loseAction(): LoseAction
-    {
-        return new LoseAction();
-    }
-
-    public static function marryAction(): MarryAction
-    {
-        return new MarryAction();
-    }
-
-    public static function orderAction(): OrderAction
-    {
-        return new OrderAction();
-    }
-
-    public static function paintAction(): PaintAction
-    {
-        return new PaintAction();
-    }
-
-    public static function payAction(): PayAction
-    {
-        return new PayAction();
-    }
-
-    public static function performAction(): PerformAction
-    {
-        return new PerformAction();
-    }
-
-    public static function photographAction(): PhotographAction
-    {
-        return new PhotographAction();
-    }
-
-    public static function prependAction(): PrependAction
-    {
-        return new PrependAction();
-    }
-
-    public static function quoteAction(): QuoteAction
-    {
-        return new QuoteAction();
-    }
-
-    public static function readAction(): ReadAction
-    {
-        return new ReadAction();
-    }
-
-    public static function receiveAction(): ReceiveAction
-    {
-        return new ReceiveAction();
-    }
-
-    public static function registerAction(): RegisterAction
-    {
-        return new RegisterAction();
-    }
-
-    public static function rejectAction(): RejectAction
-    {
-        return new RejectAction();
-    }
-
-    public static function rentAction(): RentAction
-    {
-        return new RentAction();
-    }
-
-    public static function replaceAction(): ReplaceAction
-    {
-        return new ReplaceAction();
-    }
-
-    public static function replyAction(): ReplyAction
-    {
-        return new ReplyAction();
-    }
-
-    public static function reserveAction(): ReserveAction
-    {
-        return new ReserveAction();
-    }
-
-    public static function returnAction(): ReturnAction
-    {
-        return new ReturnAction();
-    }
-
-    public static function reviewAction(): ReviewAction
-    {
-        return new ReviewAction();
-    }
-
-    public static function rsvpAction(): RsvpAction
-    {
-        return new RsvpAction();
-    }
-
-    public static function rsvpResponseType(): RsvpResponseType
-    {
-        return new RsvpResponseType();
-    }
-
-    public static function scheduleAction(): ScheduleAction
-    {
-        return new ScheduleAction();
-    }
-
-    public static function searchAction(): SearchAction
-    {
-        return new SearchAction();
-    }
-
-    public static function sellAction(): SellAction
-    {
-        return new SellAction();
-    }
-
-    public static function sendAction(): SendAction
-    {
-        return new SendAction();
-    }
-
-    public static function shareAction(): ShareAction
-    {
-        return new ShareAction();
-    }
-
-    public static function subscribeAction(): SubscribeAction
-    {
-        return new SubscribeAction();
-    }
-
-    public static function takeAction(): TakeAction
-    {
-        return new TakeAction();
-    }
-
-    public static function tieAction(): TieAction
-    {
-        return new TieAction();
-    }
-
-    public static function tipAction(): TipAction
-    {
-        return new TipAction();
-    }
-
-    public static function trackAction(): TrackAction
-    {
-        return new TrackAction();
-    }
-
-    public static function travelAction(): TravelAction
-    {
-        return new TravelAction();
-    }
-
-    public static function unRegisterAction(): UnRegisterAction
-    {
-        return new UnRegisterAction();
-    }
-
-    public static function useAction(): UseAction
-    {
-        return new UseAction();
-    }
-
-    public static function viewAction(): ViewAction
-    {
-        return new ViewAction();
-    }
-
-    public static function voteAction(): VoteAction
-    {
-        return new VoteAction();
-    }
-
-    public static function wantAction(): WantAction
-    {
-        return new WantAction();
-    }
-
-    public static function watchAction(): WatchAction
-    {
-        return new WatchAction();
-    }
-
-    public static function wearAction(): WearAction
-    {
-        return new WearAction();
-    }
-
-    public static function winAction(): WinAction
-    {
-        return new WinAction();
-    }
-
-    public static function writeAction(): WriteAction
-    {
-        return new WriteAction();
-    }
-
-    public static function genderType(): GenderType
-    {
-        return new GenderType();
-    }
-
-    public static function itemListOrderType(): ItemListOrderType
-    {
-        return new ItemListOrderType();
-    }
-
-    public static function reservation(): Reservation
-    {
-        return new Reservation();
-    }
-
-    public static function busReservation(): BusReservation
-    {
-        return new BusReservation();
-    }
-
-    public static function eventReservation(): EventReservation
-    {
-        return new EventReservation();
-    }
-
-    public static function flightReservation(): FlightReservation
-    {
-        return new FlightReservation();
-    }
-
-    public static function foodEstablishmentReservation(): FoodEstablishmentReservation
-    {
-        return new FoodEstablishmentReservation();
-    }
-
-    public static function lodgingReservation(): LodgingReservation
-    {
-        return new LodgingReservation();
-    }
-
-    public static function rentalCarReservation(): RentalCarReservation
-    {
-        return new RentalCarReservation();
-    }
-
-    public static function taxiReservation(): TaxiReservation
-    {
-        return new TaxiReservation();
-    }
-
-    public static function trainReservation(): TrainReservation
-    {
-        return new TrainReservation();
-    }
-
-    public static function reservationPackage(): ReservationPackage
-    {
-        return new ReservationPackage();
-    }
-
-    public static function reservationStatusType(): ReservationStatusType
-    {
-        return new ReservationStatusType();
-    }
-
-    public static function busTrip(): BusTrip
-    {
-        return new BusTrip();
-    }
-
-    public static function trainTrip(): TrainTrip
-    {
-        return new TrainTrip();
-    }
-
-    public static function flight(): Flight
-    {
-        return new Flight();
-    }
-
-    public static function airline(): Airline
-    {
-        return new Airline();
-    }
-
-    public static function programMembership(): ProgramMembership
-    {
-        return new ProgramMembership();
-    }
-
-    public static function ticket(): Ticket
-    {
-        return new Ticket();
-    }
-
-    public static function seat(): Seat
-    {
-        return new Seat();
-    }
-
-    public static function taxi(): Taxi
-    {
-        return new Taxi();
-    }
-
-    public static function taxiService(): TaxiService
-    {
-        return new TaxiService();
-    }
-
-    public static function vehicle(): Vehicle
-    {
-        return new Vehicle();
-    }
-
-    public static function car(): Car
-    {
-        return new Car();
-    }
-
-    public static function boardingPolicyType(): BoardingPolicyType
-    {
-        return new BoardingPolicyType();
-    }
-
-    public static function qAPage(): QAPage
-    {
-        return new QAPage();
-    }
-
-    public static function question(): Question
-    {
-        return new Question();
-    }
-
-    public static function answer(): Answer
-    {
-        return new Answer();
-    }
-
-    public static function emailMessage(): EmailMessage
-    {
-        return new EmailMessage();
-    }
-
-    public static function actionStatusType(): ActionStatusType
-    {
-        return new ActionStatusType();
-    }
-
-    public static function entryPoint(): EntryPoint
-    {
-        return new EntryPoint();
-    }
-
-    public static function propertyValueSpecification(): PropertyValueSpecification
-    {
-        return new PropertyValueSpecification();
-    }
-
-    public static function role(): Role
-    {
-        return new Role();
-    }
-
-    public static function performanceRole(): PerformanceRole
-    {
-        return new PerformanceRole();
-    }
-
-    public static function organizationRole(): OrganizationRole
-    {
-        return new OrganizationRole();
-    }
-
-    public static function employeeRole(): EmployeeRole
-    {
-        return new EmployeeRole();
-    }
-
-    public static function webSite(): WebSite
-    {
-        return new WebSite();
-    }
-
-    public static function periodical(): Periodical
-    {
-        return new Periodical();
-    }
-
-    public static function publicationVolume(): PublicationVolume
-    {
-        return new PublicationVolume();
-    }
-
-    public static function publicationIssue(): PublicationIssue
-    {
-        return new PublicationIssue();
-    }
-
-    public static function listItem(): ListItem
-    {
-        return new ListItem();
-    }
-
-    public static function movieSeries(): MovieSeries
-    {
-        return new MovieSeries();
-    }
-
-    public static function bookSeries(): BookSeries
-    {
-        return new BookSeries();
-    }
-
-    public static function videoGame(): VideoGame
-    {
-        return new VideoGame();
-    }
-
-    public static function videoGameClip(): VideoGameClip
-    {
-        return new VideoGameClip();
-    }
-
-    public static function gameServer(): GameServer
-    {
-        return new GameServer();
-    }
-
-    public static function game(): Game
-    {
-        return new Game();
-    }
-
-    public static function gamePlayMode(): GamePlayMode
-    {
-        return new GamePlayMode();
-    }
-
-    public static function gameServerStatus(): GameServerStatus
-    {
-        return new GameServerStatus();
-    }
-
-    public static function musicAlbumProductionType(): MusicAlbumProductionType
-    {
-        return new MusicAlbumProductionType();
-    }
-
-    public static function musicAlbumReleaseType(): MusicAlbumReleaseType
-    {
-        return new MusicAlbumReleaseType();
-    }
-
-    public static function musicComposition(): MusicComposition
-    {
-        return new MusicComposition();
-    }
-
-    public static function musicRelease(): MusicRelease
-    {
-        return new MusicRelease();
-    }
-
-    public static function musicReleaseFormatType(): MusicReleaseFormatType
-    {
-        return new MusicReleaseFormatType();
-    }
-
-    public static function sportsOrganization(): SportsOrganization
-    {
-        return new SportsOrganization();
-    }
-
-    public static function datedMoneySpecification(): DatedMoneySpecification
-    {
-        return new DatedMoneySpecification();
-    }
-
-    public static function visualArtwork(): VisualArtwork
-    {
-        return new VisualArtwork();
-    }
-
-    public static function invoice(): Invoice
-    {
-        return new Invoice();
-    }
-
-    public static function propertyValue(): PropertyValue
-    {
-        return new PropertyValue();
-    }
-
-    public static function cableOrSatelliteService(): CableOrSatelliteService
-    {
-        return new CableOrSatelliteService();
-    }
-
-    public static function broadcastChannel(): BroadcastChannel
-    {
-        return new BroadcastChannel();
-    }
-
-    public static function televisionChannel(): TelevisionChannel
-    {
-        return new TelevisionChannel();
-    }
-
-    public static function radioChannel(): RadioChannel
-    {
-        return new RadioChannel();
-    }
-
-    public static function engineSpecification(): EngineSpecification
-    {
-        return new EngineSpecification();
-    }
-
-    public static function bridge(): Bridge
-    {
-        return new Bridge();
-    }
-
-    public static function driveWheelConfigurationValue(): DriveWheelConfigurationValue
-    {
-        return new DriveWheelConfigurationValue();
-    }
-
-    public static function steeringPositionValue(): SteeringPositionValue
-    {
-        return new SteeringPositionValue();
-    }
-
-    public static function interactionCounter(): InteractionCounter
-    {
-        return new InteractionCounter();
-    }
-
-    public static function socialMediaPosting(): SocialMediaPosting
-    {
-        return new SocialMediaPosting();
-    }
-
-    public static function discussionForumPosting(): DiscussionForumPosting
-    {
-        return new DiscussionForumPosting();
-    }
-
-    public static function liveBlogPosting(): LiveBlogPosting
-    {
-        return new LiveBlogPosting();
-    }
-
-    public static function paymentStatusType(): PaymentStatusType
-    {
-        return new PaymentStatusType();
-    }
-
-    public static function report(): Report
-    {
-        return new Report();
-    }
-
-    public static function enumeration(): Enumeration
-    {
-        return new Enumeration();
-    }
-
-    public static function nutritionInformation(): NutritionInformation
-    {
-        return new NutritionInformation();
-    }
-
-    public static function recipe(): Recipe
-    {
-        return new Recipe();
-    }
-
-    public static function dataFeed(): DataFeed
-    {
-        return new DataFeed();
-    }
-
-    public static function dataFeedItem(): DataFeedItem
-    {
-        return new DataFeedItem();
-    }
-
-    public static function compoundPriceSpecification(): CompoundPriceSpecification
-    {
-        return new CompoundPriceSpecification();
-    }
-
-    public static function monetaryAmount(): MonetaryAmount
-    {
-        return new MonetaryAmount();
-    }
-
-    public static function financialProduct(): FinancialProduct
-    {
-        return new FinancialProduct();
-    }
-
-    public static function bankAccount(): BankAccount
-    {
-        return new BankAccount();
-    }
-
-    public static function depositAccount(): DepositAccount
-    {
-        return new DepositAccount();
-    }
-
-    public static function loanOrCredit(): LoanOrCredit
-    {
-        return new LoanOrCredit();
-    }
-
-    public static function paymentCard(): PaymentCard
-    {
-        return new PaymentCard();
-    }
-
-    public static function investmentOrDeposit(): InvestmentOrDeposit
-    {
-        return new InvestmentOrDeposit();
-    }
-
-    public static function paymentService(): PaymentService
-    {
-        return new PaymentService();
-    }
-
-    public static function currencyConversionService(): CurrencyConversionService
-    {
-        return new CurrencyConversionService();
-    }
-
-    public static function conversation(): Conversation
-    {
-        return new Conversation();
-    }
-
-    public static function message(): Message
-    {
-        return new Message();
-    }
-
-    public static function digitalDocument(): DigitalDocument
-    {
-        return new DigitalDocument();
-    }
-
-    public static function presentationDigitalDocument(): PresentationDigitalDocument
-    {
-        return new PresentationDigitalDocument();
-    }
-
-    public static function spreadsheetDigitalDocument(): SpreadsheetDigitalDocument
-    {
-        return new SpreadsheetDigitalDocument();
-    }
-
-    public static function textDigitalDocument(): TextDigitalDocument
-    {
-        return new TextDigitalDocument();
-    }
-
-    public static function noteDigitalDocument(): NoteDigitalDocument
-    {
-        return new NoteDigitalDocument();
-    }
-
-    public static function digitalDocumentPermission(): DigitalDocumentPermission
-    {
-        return new DigitalDocumentPermission();
-    }
-
-    public static function digitalDocumentPermissionType(): DigitalDocumentPermissionType
-    {
-        return new DigitalDocumentPermissionType();
-    }
-
-    public static function resort(): Resort
-    {
-        return new Resort();
-    }
-
-    public static function accommodation(): Accommodation
-    {
-        return new Accommodation();
-    }
-
-    public static function room(): Room
-    {
-        return new Room();
-    }
-
-    public static function hotelRoom(): HotelRoom
-    {
-        return new HotelRoom();
-    }
-
-    public static function meetingRoom(): MeetingRoom
-    {
-        return new MeetingRoom();
-    }
-
-    public static function campingPitch(): CampingPitch
-    {
-        return new CampingPitch();
-    }
-
-    public static function suite(): Suite
-    {
-        return new Suite();
-    }
-
-    public static function house(): House
-    {
-        return new House();
-    }
-
-    public static function apartment(): Apartment
-    {
-        return new Apartment();
-    }
-
-    public static function foodService(): FoodService
-    {
-        return new FoodService();
-    }
-
-    public static function locationFeatureSpecification(): LocationFeatureSpecification
-    {
-        return new LocationFeatureSpecification();
-    }
-
-    public static function bedDetails(): BedDetails
-    {
-        return new BedDetails();
-    }
-
-    public static function course(): Course
-    {
-        return new Course();
-    }
-
-    public static function courseInstance(): CourseInstance
-    {
-        return new CourseInstance();
-    }
-
-    public static function claimReview(): ClaimReview
-    {
-        return new ClaimReview();
-    }
-
-    public static function menu(): Menu
-    {
-        return new Menu();
-    }
-
-    public static function menuItem(): MenuItem
-    {
-        return new MenuItem();
-    }
-
-    public static function menuSection(): MenuSection
-    {
-        return new MenuSection();
+    public static function __callStatic( $name, $arguments )
+    {
+        $className = sprintf( '%s\%s', __NAMESPACE__, ucfirst( $name ));
+        if( class_exists( $className )) {
+            $type = isset( $arguments[0] ) ? $arguments[0] : null;
+            return new $className( $type );
+        }
+        throw new BadMethodCallException;
     }
-
 }

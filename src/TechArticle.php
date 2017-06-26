@@ -1,42 +1,23 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A technical article - Example: How-to (task) topics, step-by-step, procedural
- * troubleshooting, specifications, etc.
+ * A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting,
+ * specifications, etc.
  *
  * @see http://schema.org/TechArticle
+ *
+ * @method static dependencies( string $dependencies )
+ * @method static proficiencyLevel( string $proficiencyLevel )
  */
 class TechArticle extends Article
 {
     /**
-     * Prerequisites needed to fulfill steps in article.
-     *
-     * @param string $dependencies
-     *
-     * @return static
-     *
-     * @see http://schema.org/dependencies
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function dependencies($dependencies)
-    {
-        return $this->setProperty('dependencies', $dependencies);
-    }
-
-    /**
-     * Proficiency needed for this content; expected values: 'Beginner',
-     * 'Expert'.
-     *
-     * @param string $proficiencyLevel
-     *
-     * @return static
-     *
-     * @see http://schema.org/proficiencyLevel
-     */
-    public function proficiencyLevel($proficiencyLevel)
-    {
-        return $this->setProperty('proficiencyLevel', $proficiencyLevel);
-    }
-
+    const PROPERTIES = [
+        'dependencies',
+        'proficiencyLevel',
+    ];
 }

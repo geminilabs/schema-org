@@ -1,29 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A service provided by a government organization, e.g. food stamps, veterans
- * benefits, etc.
+ * A service provided by a government organization, e.g. food stamps, veterans benefits, etc.
  *
  * @see http://schema.org/GovernmentService
+ *
+ * @method static serviceOperator( Organization $serviceOperator )
  */
 class GovernmentService extends Service
 {
     /**
-     * The operating organization, if different from the provider.  This enables
-     * the representation of services that are provided by an organization, but
-     * operated by another organization like a subcontractor.
-     *
-     * @param \Spatie\SchemaOrg\Organization $serviceOperator
-     *
-     * @return static
-     *
-     * @see http://schema.org/serviceOperator
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function serviceOperator($serviceOperator)
-    {
-        return $this->setProperty('serviceOperator', $serviceOperator);
-    }
-
+    const PROPERTIES = [
+        'serviceOperator',
+    ];
 }

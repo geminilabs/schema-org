@@ -1,76 +1,30 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A part of a successively published publication such as a periodical or
- * multi-volume work, often numbered. It may represent a time span, such as a
- * year.
+ * A part of a successively published publication such as a periodical or multi-volume work, often
+ * numbered. It may represent a time span, such as a year.
  * 
  *       <br/><br/>See also <a
- * href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html">blog
- * post</a>.
+ * href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html">blog post</a>.
  *
  * @see http://schema.org/PublicationVolume
+ *
+ * @method static pageEnd( int|string $pageEnd )
+ * @method static pageStart( int|string $pageStart )
+ * @method static pagination( string $pagination )
+ * @method static volumeNumber( int|string $volumeNumber )
  */
 class PublicationVolume extends CreativeWork
 {
     /**
-     * The page on which the work ends; for example "138" or "xvi".
-     *
-     * @param int|string $pageEnd
-     *
-     * @return static
-     *
-     * @see http://schema.org/pageEnd
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function pageEnd($pageEnd)
-    {
-        return $this->setProperty('pageEnd', $pageEnd);
-    }
-
-    /**
-     * The page on which the work starts; for example "135" or "xiii".
-     *
-     * @param int|string $pageStart
-     *
-     * @return static
-     *
-     * @see http://schema.org/pageStart
-     */
-    public function pageStart($pageStart)
-    {
-        return $this->setProperty('pageStart', $pageStart);
-    }
-
-    /**
-     * Any description of pages that is not separated into pageStart and
-     * pageEnd; for example, "1-6, 9, 55" or "10-12, 46-49".
-     *
-     * @param string $pagination
-     *
-     * @return static
-     *
-     * @see http://schema.org/pagination
-     */
-    public function pagination($pagination)
-    {
-        return $this->setProperty('pagination', $pagination);
-    }
-
-    /**
-     * Identifies the volume of publication or multi-part work; for example,
-     * "iii" or "2".
-     *
-     * @param int|string $volumeNumber
-     *
-     * @return static
-     *
-     * @see http://schema.org/volumeNumber
-     */
-    public function volumeNumber($volumeNumber)
-    {
-        return $this->setProperty('volumeNumber', $volumeNumber);
-    }
-
+    const PROPERTIES = [
+        'pageEnd',
+        'pageStart',
+        'pagination',
+        'volumeNumber',
+    ];
 }

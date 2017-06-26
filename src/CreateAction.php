@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of deliberately creating/producing/generating/building a result out
- * of the agent.
+ * The act of deliberately creating/producing/generating/building a result out of the agent.
  *
  * @see http://schema.org/CreateAction
  */

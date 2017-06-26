@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Classification of the album by it's type of content: soundtrack, live album,
- * studio album, etc.
+ * Classification of the album by it's type of content: soundtrack, live album, studio album, etc.
  *
  * @see http://schema.org/MusicAlbumProductionType
  */

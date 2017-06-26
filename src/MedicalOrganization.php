@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A medical organization (physical or not), such as hospital, institution or
- * clinic.
+ * A medical organization (physical or not), such as hospital, institution or clinic.
  *
  * @see http://schema.org/MedicalOrganization
  */

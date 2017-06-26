@@ -1,28 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An electronic file or document.
  *
  * @see http://schema.org/DigitalDocument
+ *
+ * @method static hasDigitalDocumentPermission( DigitalDocumentPermission $hasDigitalDocumentPermission )
  */
 class DigitalDocument extends CreativeWork
 {
     /**
-     * A permission related to the access to this document (e.g. permission to
-     * read or write an electronic document). For a public document, specify a
-     * grantee with an Audience with audienceType equal to "public".
-     *
-     * @param \Spatie\SchemaOrg\DigitalDocumentPermission $hasDigitalDocumentPermission
-     *
-     * @return static
-     *
-     * @see http://schema.org/hasDigitalDocumentPermission
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function hasDigitalDocumentPermission($hasDigitalDocumentPermission)
-    {
-        return $this->setProperty('hasDigitalDocumentPermission', $hasDigitalDocumentPermission);
-    }
-
+    const PROPERTIES = [
+        'hasDigitalDocumentPermission',
+    ];
 }

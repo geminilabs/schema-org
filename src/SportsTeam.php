@@ -1,41 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Organization: Sports team.
  *
  * @see http://schema.org/SportsTeam
+ *
+ * @method static coach( Person $coach )
+ * @method static athlete( Person $athlete )
  */
 class SportsTeam extends SportsOrganization
 {
     /**
-     * A person that acts in a coaching role for a sports team.
-     *
-     * @param \Spatie\SchemaOrg\Person $coach
-     *
-     * @return static
-     *
-     * @see http://schema.org/coach
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function coach($coach)
-    {
-        return $this->setProperty('coach', $coach);
-    }
-
-    /**
-     * A person that acts as performing member of a sports team; a player as
-     * opposed to a coach.
-     *
-     * @param \Spatie\SchemaOrg\Person $athlete
-     *
-     * @return static
-     *
-     * @see http://schema.org/athlete
-     */
-    public function athlete($athlete)
-    {
-        return $this->setProperty('athlete', $athlete);
-    }
-
+    const PROPERTIES = [
+        'coach',
+        'athlete',
+    ];
 }

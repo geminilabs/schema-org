@@ -1,29 +1,21 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Information about the engine of the vehicle. A vehicle can have multiple
- * engines represented by multiple engine specification entities.
+ * Information about the engine of the vehicle. A vehicle can have multiple engines represented by
+ * multiple engine specification entities.
  *
  * @see http://schema.org/EngineSpecification
+ *
+ * @method static fuelType( string|QualitativeValue $fuelType )
  */
 class EngineSpecification extends StructuredValue
 {
     /**
-     * The type of fuel suitable for the engine or engines of the vehicle. If
-     * the vehicle has only one engine, this property can be attached directly
-     * to the vehicle.
-     *
-     * @param string|\Spatie\SchemaOrg\QualitativeValue $fuelType
-     *
-     * @return static
-     *
-     * @see http://schema.org/fuelType
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function fuelType($fuelType)
-    {
-        return $this->setProperty('fuelType', $fuelType);
-    }
-
+    const PROPERTIES = [
+        'fuelType',
+    ];
 }

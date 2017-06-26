@@ -1,41 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A group of multiple reservations with common values for all sub-reservations.
  *
  * @see http://schema.org/ReservationPackage
+ *
+ * @method static subReservation( Reservation $subReservation )
+ * @method static boardingGroup( string $boardingGroup )
  */
 class ReservationPackage extends Reservation
 {
     /**
-     * The individual reservations included in the package. Typically a repeated
-     * property.
-     *
-     * @param \Spatie\SchemaOrg\Reservation $subReservation
-     *
-     * @return static
-     *
-     * @see http://schema.org/subReservation
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function subReservation($subReservation)
-    {
-        return $this->setProperty('subReservation', $subReservation);
-    }
-
-    /**
-     * The airline-specific indicator of boarding order / preference.
-     *
-     * @param string $boardingGroup
-     *
-     * @return static
-     *
-     * @see http://schema.org/boardingGroup
-     */
-    public function boardingGroup($boardingGroup)
-    {
-        return $this->setProperty('boardingGroup', $boardingGroup);
-    }
-
+    const PROPERTIES = [
+        'subReservation',
+        'boardingGroup',
+    ];
 }

@@ -1,10 +1,9 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A shop that will buy, or lend money against the security of, personal
- * possessions.
+ * A shop that will buy, or lend money against the security of, personal possessions.
  *
  * @see http://schema.org/PawnShop
  */

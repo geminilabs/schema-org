@@ -1,12 +1,11 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A payment method is a standardized procedure for transferring the monetary
- * amount for a purchase. Payment methods are characterized by the legal and
- * technical structures used, and by the organization or group carrying out the
- * transaction.
+ * A payment method is a standardized procedure for transferring the monetary amount for a purchase.
+ * Payment methods are characterized by the legal and technical structures used, and by the
+ * organization or group carrying out the transaction.
  * 
  * Commonly used values:
  * 

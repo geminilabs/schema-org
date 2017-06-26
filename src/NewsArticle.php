@@ -1,86 +1,28 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A news article.
  *
  * @see http://schema.org/NewsArticle
+ *
+ * @method static dateline( string $dateline )
+ * @method static printColumn( string $printColumn )
+ * @method static printEdition( string $printEdition )
+ * @method static printPage( string $printPage )
+ * @method static printSection( string $printSection )
  */
 class NewsArticle extends Article
 {
     /**
-     * The location where the NewsArticle was produced.
-     *
-     * @param string $dateline
-     *
-     * @return static
-     *
-     * @see http://schema.org/dateline
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function dateline($dateline)
-    {
-        return $this->setProperty('dateline', $dateline);
-    }
-
-    /**
-     * The number of the column in which the NewsArticle appears in the print
-     * edition.
-     *
-     * @param string $printColumn
-     *
-     * @return static
-     *
-     * @see http://schema.org/printColumn
-     */
-    public function printColumn($printColumn)
-    {
-        return $this->setProperty('printColumn', $printColumn);
-    }
-
-    /**
-     * The edition of the print product in which the NewsArticle appears.
-     *
-     * @param string $printEdition
-     *
-     * @return static
-     *
-     * @see http://schema.org/printEdition
-     */
-    public function printEdition($printEdition)
-    {
-        return $this->setProperty('printEdition', $printEdition);
-    }
-
-    /**
-     * If this NewsArticle appears in print, this field indicates the name of
-     * the page on which the article is found. Please note that this field is
-     * intended for the exact page name (e.g. A5, B18).
-     *
-     * @param string $printPage
-     *
-     * @return static
-     *
-     * @see http://schema.org/printPage
-     */
-    public function printPage($printPage)
-    {
-        return $this->setProperty('printPage', $printPage);
-    }
-
-    /**
-     * If this NewsArticle appears in print, this field indicates the print
-     * section in which the article appeared.
-     *
-     * @param string $printSection
-     *
-     * @return static
-     *
-     * @see http://schema.org/printSection
-     */
-    public function printSection($printSection)
-    {
-        return $this->setProperty('printSection', $printSection);
-    }
-
+    const PROPERTIES = [
+        'dateline',
+        'printColumn',
+        'printEdition',
+        'printPage',
+        'printSection',
+    ];
 }

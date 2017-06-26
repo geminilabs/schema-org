@@ -1,40 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A blog.
  *
  * @see http://schema.org/Blog
+ *
+ * @method static blogPost( BlogPosting $blogPost )
+ * @method static blogPosts( BlogPosting $blogPosts )
  */
 class Blog extends CreativeWork
 {
     /**
-     * A posting that is part of this blog.
-     *
-     * @param \Spatie\SchemaOrg\BlogPosting $blogPost
-     *
-     * @return static
-     *
-     * @see http://schema.org/blogPost
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function blogPost($blogPost)
-    {
-        return $this->setProperty('blogPost', $blogPost);
-    }
-
-    /**
-     * The postings that are part of this blog.
-     *
-     * @param \Spatie\SchemaOrg\BlogPosting $blogPosts
-     *
-     * @return static
-     *
-     * @see http://schema.org/blogPosts
-     */
-    public function blogPosts($blogPosts)
-    {
-        return $this->setProperty('blogPosts', $blogPosts);
-    }
-
+    const PROPERTIES = [
+        'blogPost',
+        'blogPosts',
+    ];
 }

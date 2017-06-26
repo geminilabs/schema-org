@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web applications.
  *
  * @see http://schema.org/WebApplication
+ *
+ * @method static browserRequirements( string $browserRequirements )
  */
 class WebApplication extends SoftwareApplication
 {
     /**
-     * Specifies browser requirements in human-readable text. For example,
-     * 'requires HTML5 support'.
-     *
-     * @param string $browserRequirements
-     *
-     * @return static
-     *
-     * @see http://schema.org/browserRequirements
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function browserRequirements($browserRequirements)
-    {
-        return $this->setProperty('browserRequirements', $browserRequirements);
-    }
-
+    const PROPERTIES = [
+        'browserRequirements',
+    ];
 }

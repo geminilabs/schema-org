@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of adding at a specific location in an ordered collection.
  *
  * @see http://schema.org/InsertAction
+ *
+ * @method static toLocation( Place $toLocation )
  */
 class InsertAction extends AddAction
 {
     /**
-     * A sub property of location. The final location of the object or the agent
-     * after the action.
-     *
-     * @param \Spatie\SchemaOrg\Place $toLocation
-     *
-     * @return static
-     *
-     * @see http://schema.org/toLocation
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function toLocation($toLocation)
-    {
-        return $this->setProperty('toLocation', $toLocation);
-    }
-
+    const PROPERTIES = [
+        'toLocation',
+    ];
 }

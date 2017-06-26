@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A short TV program or a segment/part of a TV program.
  *
  * @see http://schema.org/TVClip
+ *
+ * @method static partOfTVSeries( TVSeries $partOfTVSeries )
  */
 class TVClip extends Clip
 {
     /**
-     * The TV series to which this episode or season belongs.
-     *
-     * @param \Spatie\SchemaOrg\TVSeries $partOfTVSeries
-     *
-     * @return static
-     *
-     * @see http://schema.org/partOfTVSeries
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function partOfTVSeries($partOfTVSeries)
-    {
-        return $this->setProperty('partOfTVSeries', $partOfTVSeries);
-    }
-
+    const PROPERTIES = [
+        'partOfTVSeries',
+    ];
 }

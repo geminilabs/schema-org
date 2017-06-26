@@ -1,32 +1,25 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of obtaining an object under an agreement to return it at a later
- * date. Reciprocal of LendAction.
+ * The act of obtaining an object under an agreement to return it at a later date. Reciprocal of
+ * LendAction.
  * 
  * Related actions:
  * 
  * * [[LendAction]]: Reciprocal of BorrowAction.
  *
  * @see http://schema.org/BorrowAction
+ *
+ * @method static lender( Person|Organization $lender )
  */
 class BorrowAction extends TransferAction
 {
     /**
-     * A sub property of participant. The person that lends the object being
-     * borrowed.
-     *
-     * @param \Spatie\SchemaOrg\Person|\Spatie\SchemaOrg\Organization $lender
-     *
-     * @return static
-     *
-     * @see http://schema.org/lender
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function lender($lender)
-    {
-        return $this->setProperty('lender', $lender);
-    }
-
+    const PROPERTIES = [
+        'lender',
+    ];
 }

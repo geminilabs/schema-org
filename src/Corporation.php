@@ -1,30 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Organization: A business corporation.
  *
  * @see http://schema.org/Corporation
+ *
+ * @method static tickerSymbol( string $tickerSymbol )
  */
 class Corporation extends Organization
 {
     /**
-     * The exchange traded instrument associated with a Corporation object. The
-     * tickerSymbol is expressed as an exchange and an instrument name separated
-     * by a space character. For the exchange component of the tickerSymbol
-     * attribute, we reccommend using the controlled vocaulary of Market
-     * Identifier Codes (MIC) specified in ISO15022.
-     *
-     * @param string $tickerSymbol
-     *
-     * @return static
-     *
-     * @see http://schema.org/tickerSymbol
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function tickerSymbol($tickerSymbol)
-    {
-        return $this->setProperty('tickerSymbol', $tickerSymbol);
-    }
-
+    const PROPERTIES = [
+        'tickerSymbol',
+    ];
 }

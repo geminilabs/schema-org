@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of producing a visual/graphical representation of an object,
- * typically with a pen/pencil and paper as instruments.
+ * The act of producing a visual/graphical representation of an object, typically with a pen/pencil
+ * and paper as instruments.
  *
  * @see http://schema.org/DrawAction
  */

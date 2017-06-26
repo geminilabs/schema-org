@@ -1,41 +1,22 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An organization that provides flights for passengers.
  *
  * @see http://schema.org/Airline
+ *
+ * @method static boardingPolicy( BoardingPolicyType $boardingPolicy )
+ * @method static iataCode( string $iataCode )
  */
 class Airline extends Organization
 {
     /**
-     * The type of boarding policy used by the airline (e.g. zone-based or
-     * group-based).
-     *
-     * @param \Spatie\SchemaOrg\BoardingPolicyType $boardingPolicy
-     *
-     * @return static
-     *
-     * @see http://schema.org/boardingPolicy
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function boardingPolicy($boardingPolicy)
-    {
-        return $this->setProperty('boardingPolicy', $boardingPolicy);
-    }
-
-    /**
-     * IATA identifier for an airline or airport.
-     *
-     * @param string $iataCode
-     *
-     * @return static
-     *
-     * @see http://schema.org/iataCode
-     */
-    public function iataCode($iataCode)
-    {
-        return $this->setProperty('iataCode', $iataCode);
-    }
-
+    const PROPERTIES = [
+        'boardingPolicy',
+        'iataCode',
+    ];
 }

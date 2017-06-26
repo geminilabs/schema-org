@@ -1,56 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * The act of notifying an event organizer as to whether you expect to attend
- * the event.
+ * The act of notifying an event organizer as to whether you expect to attend the event.
  *
  * @see http://schema.org/RsvpAction
+ *
+ * @method static additionalNumberOfGuests( float|int $additionalNumberOfGuests )
+ * @method static rsvpResponse( RsvpResponseType $rsvpResponse )
+ * @method static comment( Comment $comment )
  */
 class RsvpAction extends InformAction
 {
     /**
-     * If responding yes, the number of guests who will attend in addition to
-     * the invitee.
-     *
-     * @param float|int $additionalNumberOfGuests
-     *
-     * @return static
-     *
-     * @see http://schema.org/additionalNumberOfGuests
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function additionalNumberOfGuests($additionalNumberOfGuests)
-    {
-        return $this->setProperty('additionalNumberOfGuests', $additionalNumberOfGuests);
-    }
-
-    /**
-     * The response (yes, no, maybe) to the RSVP.
-     *
-     * @param \Spatie\SchemaOrg\RsvpResponseType $rsvpResponse
-     *
-     * @return static
-     *
-     * @see http://schema.org/rsvpResponse
-     */
-    public function rsvpResponse($rsvpResponse)
-    {
-        return $this->setProperty('rsvpResponse', $rsvpResponse);
-    }
-
-    /**
-     * Comments, typically from users.
-     *
-     * @param \Spatie\SchemaOrg\Comment $comment
-     *
-     * @return static
-     *
-     * @see http://schema.org/comment
-     */
-    public function comment($comment)
-    {
-        return $this->setProperty('comment', $comment);
-    }
-
+    const PROPERTIES = [
+        'additionalNumberOfGuests',
+        'rsvpResponse',
+        'comment',
+    ];
 }

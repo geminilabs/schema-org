@@ -1,54 +1,24 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Event type: Sports event.
  *
  * @see http://schema.org/SportsEvent
+ *
+ * @method static homeTeam( Person|SportsTeam $homeTeam )
+ * @method static awayTeam( Person|SportsTeam $awayTeam )
+ * @method static competitor( Person|SportsTeam $competitor )
  */
 class SportsEvent extends Event
 {
     /**
-     * The home team in a sports event.
-     *
-     * @param \Spatie\SchemaOrg\Person|\Spatie\SchemaOrg\SportsTeam $homeTeam
-     *
-     * @return static
-     *
-     * @see http://schema.org/homeTeam
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function homeTeam($homeTeam)
-    {
-        return $this->setProperty('homeTeam', $homeTeam);
-    }
-
-    /**
-     * The away team in a sports event.
-     *
-     * @param \Spatie\SchemaOrg\Person|\Spatie\SchemaOrg\SportsTeam $awayTeam
-     *
-     * @return static
-     *
-     * @see http://schema.org/awayTeam
-     */
-    public function awayTeam($awayTeam)
-    {
-        return $this->setProperty('awayTeam', $awayTeam);
-    }
-
-    /**
-     * A competitor in a sports event.
-     *
-     * @param \Spatie\SchemaOrg\Person|\Spatie\SchemaOrg\SportsTeam $competitor
-     *
-     * @return static
-     *
-     * @see http://schema.org/competitor
-     */
-    public function competitor($competitor)
-    {
-        return $this->setProperty('competitor', $competitor);
-    }
-
+    const PROPERTIES = [
+        'homeTeam',
+        'awayTeam',
+        'competitor',
+    ];
 }

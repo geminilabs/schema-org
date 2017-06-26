@@ -1,26 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A movie theater.
  *
  * @see http://schema.org/MovieTheater
+ *
+ * @method static screenCount( float|int $screenCount )
  */
 class MovieTheater extends CivicStructure
 {
     /**
-     * The number of screens in the movie theater.
-     *
-     * @param float|int $screenCount
-     *
-     * @return static
-     *
-     * @see http://schema.org/screenCount
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function screenCount($screenCount)
-    {
-        return $this->setProperty('screenCount', $screenCount);
-    }
-
+    const PROPERTIES = [
+        'screenCount',
+    ];
 }

@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Financial services business.
  *
  * @see http://schema.org/FinancialService
+ *
+ * @method static feesAndCommissionsSpecification( string $feesAndCommissionsSpecification )
  */
 class FinancialService extends LocalBusiness
 {
     /**
-     * Description of fees, commissions, and other terms applied either to a
-     * class of financial product, or by a financial service organization.
-     *
-     * @param string $feesAndCommissionsSpecification
-     *
-     * @return static
-     *
-     * @see http://schema.org/feesAndCommissionsSpecification
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function feesAndCommissionsSpecification($feesAndCommissionsSpecification)
-    {
-        return $this->setProperty('feesAndCommissionsSpecification', $feesAndCommissionsSpecification);
-    }
-
+    const PROPERTIES = [
+        'feesAndCommissionsSpecification',
+    ];
 }

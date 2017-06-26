@@ -1,27 +1,21 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Represents the collection of all sports organizations, including sports
- * teams, governing bodies, and sports associations.
+ * Represents the collection of all sports organizations, including sports teams, governing bodies,
+ * and sports associations.
  *
  * @see http://schema.org/SportsOrganization
+ *
+ * @method static sport( string $sport )
  */
 class SportsOrganization extends Organization
 {
     /**
-     * A type of sport (e.g. Baseball).
-     *
-     * @param string $sport
-     *
-     * @return static
-     *
-     * @see http://schema.org/sport
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function sport($sport)
-    {
-        return $this->setProperty('sport', $sport);
-    }
-
+    const PROPERTIES = [
+        'sport',
+    ];
 }

@@ -1,28 +1,21 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A type of financial product that typically requires the client to transfer
- * funds to a financial service in return for potential beneficial financial
- * return.
+ * A type of financial product that typically requires the client to transfer funds to a financial
+ * service in return for potential beneficial financial return.
  *
  * @see http://schema.org/InvestmentOrDeposit
+ *
+ * @method static amount( MonetaryAmount|float|int $amount )
  */
 class InvestmentOrDeposit extends FinancialProduct
 {
     /**
-     * The amount of money.
-     *
-     * @param \Spatie\SchemaOrg\MonetaryAmount|float|int $amount
-     *
-     * @return static
-     *
-     * @see http://schema.org/amount
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function amount($amount)
-    {
-        return $this->setProperty('amount', $amount);
-    }
-
+    const PROPERTIES = [
+        'amount',
+    ];
 }

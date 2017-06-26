@@ -1,27 +1,20 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent pays a price to a participant.
  *
  * @see http://schema.org/PayAction
+ *
+ * @method static recipient( Audience|Organization|Person $recipient )
  */
 class PayAction extends TradeAction
 {
     /**
-     * A sub property of participant. The participant who is at the receiving
-     * end of the action.
-     *
-     * @param \Spatie\SchemaOrg\Audience|\Spatie\SchemaOrg\Organization|\Spatie\SchemaOrg\Person $recipient
-     *
-     * @return static
-     *
-     * @see http://schema.org/recipient
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function recipient($recipient)
-    {
-        return $this->setProperty('recipient', $recipient);
-    }
-
+    const PROPERTIES = [
+        'recipient',
+    ];
 }

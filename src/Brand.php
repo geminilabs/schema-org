@@ -1,56 +1,25 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A brand is a name used by an organization or business person for labeling a
- * product, product group, or similar.
+ * A brand is a name used by an organization or business person for labeling a product, product
+ * group, or similar.
  *
  * @see http://schema.org/Brand
+ *
+ * @method static aggregateRating( AggregateRating $aggregateRating )
+ * @method static logo( ImageObject|string $logo )
+ * @method static review( Review $review )
  */
 class Brand extends Intangible
 {
     /**
-     * The overall rating, based on a collection of reviews or ratings, of the
-     * item.
-     *
-     * @param \Spatie\SchemaOrg\AggregateRating $aggregateRating
-     *
-     * @return static
-     *
-     * @see http://schema.org/aggregateRating
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function aggregateRating($aggregateRating)
-    {
-        return $this->setProperty('aggregateRating', $aggregateRating);
-    }
-
-    /**
-     * An associated logo.
-     *
-     * @param \Spatie\SchemaOrg\ImageObject|string $logo
-     *
-     * @return static
-     *
-     * @see http://schema.org/logo
-     */
-    public function logo($logo)
-    {
-        return $this->setProperty('logo', $logo);
-    }
-
-    /**
-     * A review of the item.
-     *
-     * @param \Spatie\SchemaOrg\Review $review
-     *
-     * @return static
-     *
-     * @see http://schema.org/review
-     */
-    public function review($review)
-    {
-        return $this->setProperty('review', $review);
-    }
-
+    const PROPERTIES = [
+        'aggregateRating',
+        'logo',
+        'review',
+    ];
 }

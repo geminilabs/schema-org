@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * Format of this release (the type of recording media used, ie. compact disc,
- * digital media, LP, etc.).
+ * Format of this release (the type of recording media used, ie. compact disc, digital media, LP,
+ * etc.).
  *
  * @see http://schema.org/MusicReleaseFormatType
  */

@@ -1,70 +1,26 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
- * A reservation to dine at a food-related business.Note: This type is for
- * information about actual reservations, e.g. in confirmation emails or HTML
- * pages with individual confirmations of reservations.
+ * A reservation to dine at a food-related business.Note: This type is for information about actual
+ * reservations, e.g. in confirmation emails or HTML pages with individual confirmations of
+ * reservations.
  *
  * @see http://schema.org/FoodEstablishmentReservation
+ *
+ * @method static endTime( \DateTimeInterface $endTime )
+ * @method static startTime( \DateTimeInterface $startTime )
+ * @method static partySize( int|QuantitativeValue $partySize )
  */
 class FoodEstablishmentReservation extends Reservation
 {
     /**
-     * The endTime of something. For a reserved event or service (e.g.
-     * FoodEstablishmentReservation), the time that it is expected to end. For
-     * actions that span a period of time, when the action was performed. e.g.
-     * John wrote a book from January to *December*.
-     * 
-     * Note that Event uses startDate/endDate instead of startTime/endTime, even
-     * when describing dates with times. This situation may be clarified in
-     * future revisions.
-     *
-     * @param \DateTimeInterface $endTime
-     *
-     * @return static
-     *
-     * @see http://schema.org/endTime
+     * @see http://schema.org/{PROPERTY_NAME}
      */
-    public function endTime($endTime)
-    {
-        return $this->setProperty('endTime', $endTime);
-    }
-
-    /**
-     * The startTime of something. For a reserved event or service (e.g.
-     * FoodEstablishmentReservation), the time that it is expected to start. For
-     * actions that span a period of time, when the action was performed. e.g.
-     * John wrote a book from *January* to December.
-     * 
-     * Note that Event uses startDate/endDate instead of startTime/endTime, even
-     * when describing dates with times. This situation may be clarified in
-     * future revisions.
-     *
-     * @param \DateTimeInterface $startTime
-     *
-     * @return static
-     *
-     * @see http://schema.org/startTime
-     */
-    public function startTime($startTime)
-    {
-        return $this->setProperty('startTime', $startTime);
-    }
-
-    /**
-     * Number of people the reservation should accommodate.
-     *
-     * @param int|\Spatie\SchemaOrg\QuantitativeValue $partySize
-     *
-     * @return static
-     *
-     * @see http://schema.org/partySize
-     */
-    public function partySize($partySize)
-    {
-        return $this->setProperty('partySize', $partySize);
-    }
-
+    const PROPERTIES = [
+        'endTime',
+        'startTime',
+        'partySize',
+    ];
 }
