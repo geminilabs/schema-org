@@ -1,97 +1,174 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 use DateTime;
-use ReflectionClass;
 use DateTimeInterface;
-use Spatie\SchemaOrg\Exceptions\InvalidProperty;
+use GeminiLabs\SchemaOrg\Exceptions\InvalidProperty;
+use GeminiLabs\SchemaOrg\Type;
+use ReflectionClass;
 
 abstract class BaseType implements Type
 {
-    /** @var array */
-    protected $properties = [];
+    const CONTEXT = 'http://schema.org';
 
-    public function getContext(): string
+    const PROPERTIES = [];
+
+    /**
+     * @var array
+     */
+    protected $allowed;
+
+    /**
+     * @var array
+     */
+    protected $properties;
+
+    /**
+     * @var string
+     */
+    protected $type;
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __call( $method, array $arguments )
     {
-        return 'http://schema.org';
-    }
-
-    public function getType(): string
-    {
-        return (new ReflectionClass($this))->getShortName();
-    }
-
-    public function setProperty(string $property, $value)
-    {
-        $this->properties[$property] = $value;
-
-        return $this;
-    }
-
-    public function if($condition, $callback)
-    {
-        if ($condition) {
-            $callback($this);
+        if( !in_array( $method, $this->allowed )) {
+            throw new InvalidProperty;
         }
+        $argument = isset( $arguments[0] ) ? $arguments[0] : '';
+        return $this->setProperty( $method, $argument );
+    }
 
+    public function __construct( $type = null )
+    {
+        $this->type = $type;
+        $this->allowed = [];
+        $this->properties = [];
+        $this->setAllowedProperties();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function __toString()
+    {
+        return $this->toScript();
+    }
+
+    /**
+     * @param bool $condition
+     * @param callable $callback
+     * @return $this
+     */
+    public function doif( $condition, callable $callback )
+    {
+        if( $condition ) {
+            $callback( $this );
+        }
         return $this;
     }
 
-    public function getProperty(string $property, $default = null)
-    {
-        return $this->properties[$property] ?? $default;
-    }
-
-    public function getProperties(): array
+    /**
+     * @return array
+     */
+    public function getProperties()
     {
         return $this->properties;
     }
 
-    public function toArray(): array
+    /**
+     * @param string $property
+     * @param null $default
+     * @return mixed|null
+     */
+    public function getProperty( $property, $default = null )
     {
-        $properties = $this->serializeProperty($this->getProperties());
+        return isset( $this->properties[$property] )
+            ? $this->properties[$property]
+            : $default;
+    }
 
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        if( !empty( $this->type ) && is_string( $this->type )) {
+            return $this->type;
+        }
+        $type = ( new ReflectionClass( $this ))->getShortName();
+        return $type == 'Unknown'
+            ? 'Thing'
+            : $type;
+    }
+
+    /**
+     * @return void
+     */
+    public function setAllowedProperties()
+    {
+        $this->allowed = static::PROPERTIES;
+        $parent = get_parent_class( $this );
+        while( $parent ) {
+            $this->allowed = array_values( array_unique( array_merge( $parent::PROPERTIES, $this->allowed )));
+            $parent = get_parent_class( $parent );
+        }
+    }
+
+    /**
+     * @param string $property
+     * @param $value
+     * @return $this
+     */
+    public function setProperty( $property, $value )
+    {
+        // if( !empty( $value )) {
+            $this->properties[$property] = $value;
+        // }
+        return $this;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray()
+    {
         return [
-            '@context' => $this->getContext(),
+            '@context' => static::CONTEXT,
             '@type' => $this->getType(),
-        ] + $properties;
+        ] + $this->serializeProperty( $this->getProperties() );
     }
 
-    protected function serializeProperty($property)
+    /**
+     * {@inheritdoc}
+     */
+    public function toScript()
     {
-        if (is_array($property)) {
-            return array_map([$this, 'serializeProperty'], $property);
-        }
+        return sprintf( '<script type="application/ld+json">%s</script>', json_encode( $this->toArray() ));
+    }
 
-        if ($property instanceof Type) {
+    /**
+     * @param $property
+     * @return array
+     * @throws InvalidProperty
+     */
+    protected function serializeProperty( $property )
+    {
+        if( is_array( $property )) {
+            return array_map( [$this, 'serializeProperty'], $property );
+        }
+        if( $property instanceof Type ) {
             $property = $property->toArray();
-            unset($property['@context']);
+            unset( $property['@context'] );
         }
-
-        if ($property instanceof DateTimeInterface) {
-            $property = $property->format(DateTime::ISO8601);
+        if( $property instanceof DateTimeInterface ) {
+            $property = $property->format( DateTime::ISO8601 );
         }
-
-        if (is_object($property)) {
-            throw new InvalidProperty();
+        if( is_object( $property )) {
+            throw new InvalidProperty;
         }
-
         return $property;
-    }
-
-    public function toScript(): string
-    {
-        return '<script type="application/ld+json">'.json_encode($this->toArray()).'</script>';
-    }
-
-    public function __call(string $method, array $arguments)
-    {
-        return $this->setProperty($method, $arguments[0] ?? '');
-    }
-
-    public function __toString(): string
-    {
-        return $this->toScript();
     }
 }
