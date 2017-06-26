@@ -61,7 +61,7 @@ abstract class BaseType implements Type
      * @param callable $callback
      * @return $this
      */
-    public function doif( $condition, callable $callback )
+    public function doIf( $condition, callable $callback )
     {
         if( $condition ) {
             $callback( $this );
