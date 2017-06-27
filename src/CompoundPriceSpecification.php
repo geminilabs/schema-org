@@ -17,7 +17,7 @@ class CompoundPriceSpecification extends PriceSpecification
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'priceComponent',
     ];
 }

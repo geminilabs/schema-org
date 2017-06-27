@@ -22,7 +22,7 @@ class QualitativeValue extends Enumeration
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'equal',
         'greater',
         'greaterOrEqual',

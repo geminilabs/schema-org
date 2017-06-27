@@ -19,7 +19,7 @@ class UserComments extends UserInteraction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'commentText',
         'commentTime',
         'creator',

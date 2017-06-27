@@ -20,7 +20,7 @@ class BroadcastService extends Service
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'area',
         'broadcaster',
         'parentService',

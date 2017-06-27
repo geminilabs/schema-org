@@ -17,7 +17,7 @@ class ListItem extends Intangible
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'position',
         'item',
         'previousItem',

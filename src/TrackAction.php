@@ -21,7 +21,7 @@ class TrackAction extends FindAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'deliveryMethod',
     ];
 }

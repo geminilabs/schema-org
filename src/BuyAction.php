@@ -17,7 +17,7 @@ class BuyAction extends TradeAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'seller',
         'vendor',
         'warrantyPromise',

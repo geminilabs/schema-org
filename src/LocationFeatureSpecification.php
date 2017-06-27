@@ -17,7 +17,7 @@ class LocationFeatureSpecification extends PropertyValue
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'hoursAvailable',
         'validFrom',
         'validThrough',

@@ -16,7 +16,7 @@ class TVEpisode extends Episode
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'countryOfOrigin',
         'partOfTVSeries',
         'subtitleLanguage',

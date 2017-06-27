@@ -16,7 +16,7 @@ class CookAction extends CreateAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'foodEstablishment',
         'foodEvent',
         'recipe',

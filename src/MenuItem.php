@@ -16,7 +16,7 @@ class MenuItem extends CreativeWork
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'offers',
         'suitableForDiet',
         'nutrition',

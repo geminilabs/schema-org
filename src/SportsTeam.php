@@ -15,7 +15,7 @@ class SportsTeam extends SportsOrganization
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'coach',
         'athlete',
     ];

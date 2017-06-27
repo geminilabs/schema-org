@@ -40,7 +40,7 @@ class Place extends Thing
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'address',
         'aggregateRating',
         'branchCode',

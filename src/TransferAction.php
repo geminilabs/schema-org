@@ -16,7 +16,7 @@ class TransferAction extends Action
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'fromLocation',
         'toLocation',
     ];

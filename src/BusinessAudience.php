@@ -16,7 +16,7 @@ class BusinessAudience extends Audience
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'numberOfEmployees',
         'yearlyRevenue',
         'yearsInOperation',

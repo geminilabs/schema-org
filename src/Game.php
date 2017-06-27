@@ -20,7 +20,7 @@ class Game extends CreativeWork
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'numberOfPlayers',
         'quest',
         'gameItem',

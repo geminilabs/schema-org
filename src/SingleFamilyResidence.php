@@ -15,7 +15,7 @@ class SingleFamilyResidence extends House
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'numberOfRooms',
         'occupancy',
     ];

@@ -14,7 +14,7 @@ class DataFeed extends Dataset
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'dataFeedElement',
     ];
 }

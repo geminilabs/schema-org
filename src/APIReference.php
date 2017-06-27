@@ -18,7 +18,7 @@ class APIReference extends TechArticle
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'assembly',
         'executableLibraryName',
         'assemblyVersion',

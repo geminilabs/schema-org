@@ -19,7 +19,7 @@ class FlightReservation extends Reservation
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'passengerSequenceNumber',
         'securityScreening',
         'passengerPriorityStatus',

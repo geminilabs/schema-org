@@ -39,7 +39,7 @@ class Vehicle extends Product
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'numberOfDoors',
         'numberOfAirbags',
         'numberOfAxles',

@@ -18,7 +18,7 @@ class NewsArticle extends Article
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'dateline',
         'printColumn',
         'printEdition',

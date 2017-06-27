@@ -16,7 +16,7 @@ class RsvpAction extends InformAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'additionalNumberOfGuests',
         'rsvpResponse',
         'comment',

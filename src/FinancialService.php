@@ -14,7 +14,7 @@ class FinancialService extends LocalBusiness
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'feesAndCommissionsSpecification',
     ];
 }

@@ -19,7 +19,7 @@ class TaxiReservation extends Reservation
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'partySize',
         'pickupLocation',
         'pickupTime',

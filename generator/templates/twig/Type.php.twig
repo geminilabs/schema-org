@@ -16,7 +16,7 @@ class {{ type.name }} extends {{ type.parent }}
 {% if type.properties %}    /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
 {% for property in type.properties %}        '{{ property.name }}',
 {% endfor %}
     ];

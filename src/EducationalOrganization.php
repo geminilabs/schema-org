@@ -14,7 +14,7 @@ class EducationalOrganization extends Organization
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'alumni',
     ];
 }

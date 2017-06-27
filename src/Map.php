@@ -14,7 +14,7 @@ class Map extends CreativeWork
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'mapType',
     ];
 }

@@ -18,7 +18,7 @@ class AggregateOffer extends Offer
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'highPrice',
         'lowPrice',
         'offerCount',

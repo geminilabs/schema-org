@@ -21,7 +21,7 @@ class Suite extends Accommodation
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'bed',
         'numberOfRooms',
         'occupancy',

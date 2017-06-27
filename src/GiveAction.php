@@ -20,7 +20,7 @@ class GiveAction extends TransferAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'recipient',
     ];
 }

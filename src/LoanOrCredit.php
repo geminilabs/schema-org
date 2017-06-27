@@ -16,7 +16,7 @@ class LoanOrCredit extends FinancialProduct
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'amount',
         'loanTerm',
         'requiredCollateral',

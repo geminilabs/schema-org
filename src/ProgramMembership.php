@@ -19,7 +19,7 @@ class ProgramMembership extends Intangible
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'member',
         'members',
         'membershipNumber',

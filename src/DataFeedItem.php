@@ -17,7 +17,7 @@ class DataFeedItem extends Intangible
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'dateCreated',
         'dateDeleted',
         'dateModified',

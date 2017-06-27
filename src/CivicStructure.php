@@ -14,7 +14,7 @@ class CivicStructure extends Place
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'openingHours',
     ];
 }

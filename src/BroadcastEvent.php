@@ -16,7 +16,7 @@ class BroadcastEvent extends PublicationEvent
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'videoFormat',
         'broadcastOfEvent',
         'isLiveBroadcast',

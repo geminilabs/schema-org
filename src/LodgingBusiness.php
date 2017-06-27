@@ -20,7 +20,7 @@ class LodgingBusiness extends LocalBusiness
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'audience',
         'availableLanguage',
         'checkinTime',

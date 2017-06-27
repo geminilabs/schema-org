@@ -19,7 +19,7 @@ class MovieSeries extends CreativeWorkSeries
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'actor',
         'actors',
         'directors',

@@ -15,7 +15,7 @@ class WriteAction extends CreateAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'inLanguage',
         'language',
     ];

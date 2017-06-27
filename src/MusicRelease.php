@@ -18,7 +18,7 @@ class MusicRelease extends MusicPlaylist
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'catalogNumber',
         'creditedTo',
         'musicReleaseFormat',

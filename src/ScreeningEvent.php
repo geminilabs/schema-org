@@ -16,7 +16,7 @@ class ScreeningEvent extends Event
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'videoFormat',
         'subtitleLanguage',
         'workPresented',

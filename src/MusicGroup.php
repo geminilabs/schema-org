@@ -19,7 +19,7 @@ class MusicGroup extends PerformingGroup
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'album',
         'albums',
         'genre',

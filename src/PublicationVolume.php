@@ -21,7 +21,7 @@ class PublicationVolume extends CreativeWork
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'pageEnd',
         'pageStart',
         'pagination',

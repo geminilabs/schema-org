@@ -22,7 +22,7 @@ class ExerciseAction extends PlayAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'course',
         'exerciseCourse',
         'distance',

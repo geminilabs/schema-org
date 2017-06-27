@@ -17,7 +17,7 @@ class TradeAction extends Action
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'price',
         'priceSpecification',
     ];

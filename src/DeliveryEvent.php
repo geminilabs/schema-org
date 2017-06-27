@@ -17,7 +17,7 @@ class DeliveryEvent extends Event
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'accessCode',
         'availableFrom',
         'availableThrough',

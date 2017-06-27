@@ -16,7 +16,7 @@ class ProductModel extends Product
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'isVariantOf',
         'predecessorOf',
         'successorOf',

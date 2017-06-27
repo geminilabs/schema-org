@@ -30,7 +30,7 @@ class Action extends Thing
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'agent',
         'endTime',
         'instrument',

@@ -17,7 +17,7 @@ class CourseInstance extends Event
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'courseMode',
         'instructor',
     ];

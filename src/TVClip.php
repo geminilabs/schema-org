@@ -14,7 +14,7 @@ class TVClip extends Clip
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'partOfTVSeries',
     ];
 }

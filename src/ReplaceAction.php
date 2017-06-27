@@ -15,7 +15,7 @@ class ReplaceAction extends UpdateAction
     /**
      * @see http://schema.org/{PROPERTY_NAME}
      */
-    const PROPERTIES = [
+    protected static $PROPERTIES = [
         'replacee',
         'replacer',
     ];
