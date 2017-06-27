@@ -7,7 +7,7 @@ use GeminiLabs\SchemaOrg\Unknown;
 /**
  * Factory class for all Schema.org types.
  *
-{% for type in types %} * @method static {{ type.name }} {{ type.name | lcfirst }}( null|string $type )
+{% for type in types %} * @method static {{ type.name }} {{ type.name | lcfirst }}( null|string $type = null )
 {% endfor %}
  * @method static Unknown unknown( null|string $type )
  */
