@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of committing to/adopting an object.
@@ -11,7 +11,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/AcceptAction
  *
- * @mixin \Spatie\SchemaOrg\AllocateAction
+ * @mixin \GeminiLabs\SchemaOrg\AllocateAction
  */
 class AcceptAction extends BaseType
 {

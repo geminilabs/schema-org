@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A blog.
  *
  * @see http://schema.org/Blog
  *
- * @mixin \Spatie\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
  */
 class Blog extends BaseType
 {

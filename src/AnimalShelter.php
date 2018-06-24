@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Animal shelter.
  *
  * @see http://schema.org/AnimalShelter
  *
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class AnimalShelter extends BaseType
 {

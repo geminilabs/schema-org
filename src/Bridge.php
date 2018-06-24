@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A bridge.
  *
  * @see http://schema.org/Bridge
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
  */
 class Bridge extends BaseType
 {

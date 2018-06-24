@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A datasheet or vendor specification of a product (in the sense of a
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ProductModel
  *
- * @mixin \Spatie\SchemaOrg\Product
+ * @mixin \GeminiLabs\SchemaOrg\Product
  */
 class ProductModel extends BaseType
 {

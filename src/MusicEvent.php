@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Event type: Music event.
  *
  * @see http://schema.org/MusicEvent
  *
- * @mixin \Spatie\SchemaOrg\Event
+ * @mixin \GeminiLabs\SchemaOrg\Event
  */
 class MusicEvent extends BaseType
 {

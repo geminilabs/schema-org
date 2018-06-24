@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Event type: Education event.
  *
  * @see http://schema.org/EducationEvent
  *
- * @mixin \Spatie\SchemaOrg\Event
+ * @mixin \GeminiLabs\SchemaOrg\Event
  */
 class EducationEvent extends BaseType
 {

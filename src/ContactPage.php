@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Contact page.
  *
  * @see http://schema.org/ContactPage
  *
- * @mixin \Spatie\SchemaOrg\WebPage
+ * @mixin \GeminiLabs\SchemaOrg\WebPage
  */
 class ContactPage extends BaseType
 {

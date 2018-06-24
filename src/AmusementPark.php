@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An amusement park.
  *
  * @see http://schema.org/AmusementPark
  *
- * @mixin \Spatie\SchemaOrg\EntertainmentBusiness
+ * @mixin \GeminiLabs\SchemaOrg\EntertainmentBusiness
  */
 class AmusementPark extends BaseType
 {

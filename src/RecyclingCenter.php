@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A recycling center.
  *
  * @see http://schema.org/RecyclingCenter
  *
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class RecyclingCenter extends BaseType
 {

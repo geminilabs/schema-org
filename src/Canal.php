@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A canal, like the Panama Canal.
  *
  * @see http://schema.org/Canal
  *
- * @mixin \Spatie\SchemaOrg\BodyOfWater
+ * @mixin \GeminiLabs\SchemaOrg\BodyOfWater
  */
 class Canal extends BaseType
 {

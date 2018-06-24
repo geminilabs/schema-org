@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A reservation for air travel.
@@ -11,7 +11,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/FlightReservation
  *
- * @mixin \Spatie\SchemaOrg\Reservation
+ * @mixin \GeminiLabs\SchemaOrg\Reservation
  */
 class FlightReservation extends BaseType
 {

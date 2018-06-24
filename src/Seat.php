@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Used to describe a seat, such as a reserved seat in an event reservation.
  *
  * @see http://schema.org/Seat
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class Seat extends BaseType
 {

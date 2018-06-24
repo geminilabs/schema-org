@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A work of art that is primarily visual in character.
  *
  * @see http://schema.org/VisualArtwork
  *
- * @mixin \Spatie\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
  */
 class VisualArtwork extends BaseType
 {

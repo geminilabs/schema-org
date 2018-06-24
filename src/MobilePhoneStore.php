@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A store that sells mobile phones and related accessories.
  *
  * @see http://schema.org/MobilePhoneStore
  *
- * @mixin \Spatie\SchemaOrg\Store
+ * @mixin \GeminiLabs\SchemaOrg\Store
  */
 class MobilePhoneStore extends BaseType
 {

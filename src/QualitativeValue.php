@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A predefined value for a product characteristic, e.g. the power cord plug
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/QualitativeValue
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class QualitativeValue extends BaseType
 {

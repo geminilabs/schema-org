@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A contact point&#x2014;for example, a Customer Complaints department.
  *
  * @see http://schema.org/ContactPoint
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class ContactPoint extends BaseType
 {

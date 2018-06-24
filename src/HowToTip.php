@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An explanation in the instructions for how to achieve a result. It provides
@@ -10,8 +10,8 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/HowToTip
  *
- * @mixin \Spatie\SchemaOrg\ListItem
- * @mixin \Spatie\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\ListItem
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
  */
 class HowToTip extends BaseType
 {

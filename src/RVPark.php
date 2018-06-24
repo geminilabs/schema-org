@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A place offering space for "Recreational Vehicles", Caravans, mobile homes
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/RVPark
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
  */
 class RVPark extends BaseType
 {

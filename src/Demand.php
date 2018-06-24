@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A demand entity represents the public, not necessarily binding, not
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Demand
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class Demand extends BaseType
 {

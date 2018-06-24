@@ -1,4 +1,4 @@
-# A Fluent Builder For Schema.org Types And ld+json Generator
+# A Fluent Builder For Schema.org Types And ld+json Generator (Fork of spatie/schema-org)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/schema-org.svg?style=flat-square)](https://packagist.org/packages/spatie/schema-org)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -10,7 +10,7 @@
 `spatie/schema-org` provides a fluent builder for **all** Schema.org types and their properties. The code in `src` is generated from Schema.org's [RFDa standards file](https://github.com/schemaorg/schemaorg/blob/master/data/schema.rdfa), so it provides objects and methods for the entire core vocabulary. The classes and methods are also fully documented as a quick reference.
 
 ```php
-use Spatie\SchemaOrg\Schema;
+use GeminiLabs\SchemaOrg\Schema;
 
 $localBusiness = Schema::localBusiness()
     ->name('Spatie')
@@ -37,15 +37,24 @@ $localBusiness->toScript();
 
 ## Installation
 
-You can install the package via composer:
+Add the fork repository to your `composer.json`'s `repositories` section:
+```json
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/geminilabs/schema-org.git"
+    }
+  ],
+```
 
-``` bash
-composer require spatie/schema-org
+You can now install the package with composer with the [alias pattern](https://getcomposer.org/doc/articles/aliases.md) like this:
+```bash
+composer require spatie/schema-org:"dev-php56 as 2.0.0"
 ```
 
 ## Usage
 
-All types can be instantiated though the `Spatie\SchemaOrg\Schema` factory class, or with the `new` keyword.
+All types can be instantiated though the `GeminiLabs\SchemaOrg\Schema` factory class, or with the `new` keyword.
 
 ``` php
 $localBusiness = Schema::localBusiness()->name('Spatie');
@@ -99,8 +108,8 @@ There's no full API documentation for types and properties. You can refer to [th
 If you don't want to break the chain of a large schema object, you can use the `if` method to conditionally modify the schema.
 
 ```php
-use Spatie\SchemaOrg\LocalBusiness;
-use Spatie\SchemaOrg\Schema;
+use GeminiLabs\SchemaOrg\LocalBusiness;
+use GeminiLabs\SchemaOrg\Schema;
 
 $business = ['name' => 'Spatie'];
 

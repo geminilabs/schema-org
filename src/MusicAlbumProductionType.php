@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Classification of the album by it's type of content: soundtrack, live album,
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/MusicAlbumProductionType
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class MusicAlbumProductionType extends BaseType
 {

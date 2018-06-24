@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of authoring written creative content.
  *
  * @see http://schema.org/WriteAction
  *
- * @mixin \Spatie\SchemaOrg\CreateAction
+ * @mixin \GeminiLabs\SchemaOrg\CreateAction
  */
 class WriteAction extends BaseType
 {

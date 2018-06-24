@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A winery.
  *
  * @see http://schema.org/Winery
  *
- * @mixin \Spatie\SchemaOrg\FoodEstablishment
+ * @mixin \GeminiLabs\SchemaOrg\FoodEstablishment
  */
 class Winery extends BaseType
 {

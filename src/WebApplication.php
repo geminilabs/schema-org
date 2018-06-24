@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web applications.
  *
  * @see http://schema.org/WebApplication
  *
- * @mixin \Spatie\SchemaOrg\SoftwareApplication
+ * @mixin \GeminiLabs\SchemaOrg\SoftwareApplication
  */
 class WebApplication extends BaseType
 {

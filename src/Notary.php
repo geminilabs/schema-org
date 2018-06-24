@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A notary.
  *
  * @see http://schema.org/Notary
  *
- * @mixin \Spatie\SchemaOrg\LegalService
+ * @mixin \GeminiLabs\SchemaOrg\LegalService
  */
 class Notary extends BaseType
 {

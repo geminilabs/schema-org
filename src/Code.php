@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Computer programming source code. Example: Full (compile ready) solutions,
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Code
  *
- * @mixin \Spatie\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
  */
 class Code extends BaseType
 {

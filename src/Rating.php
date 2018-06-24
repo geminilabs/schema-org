@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A rating is an evaluation on a numeric scale, such as 1 to 5 stars.
  *
  * @see http://schema.org/Rating
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class Rating extends BaseType
 {

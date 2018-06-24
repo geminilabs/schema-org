@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hardware store.
  *
  * @see http://schema.org/HardwareStore
  *
- * @mixin \Spatie\SchemaOrg\Store
+ * @mixin \GeminiLabs\SchemaOrg\Store
  */
 class HardwareStore extends BaseType
 {

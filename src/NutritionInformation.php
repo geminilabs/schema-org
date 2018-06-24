@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Nutritional information about the recipe.
  *
  * @see http://schema.org/NutritionInformation
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class NutritionInformation extends BaseType
 {

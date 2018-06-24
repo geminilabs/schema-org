@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A motorcycle dealer.
  *
  * @see http://schema.org/MotorcycleDealer
  *
- * @mixin \Spatie\SchemaOrg\AutomotiveBusiness
+ * @mixin \GeminiLabs\SchemaOrg\AutomotiveBusiness
  */
 class MotorcycleDealer extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of interacting with another person or organization.
  *
  * @see http://schema.org/InteractAction
  *
- * @mixin \Spatie\SchemaOrg\Action
+ * @mixin \GeminiLabs\SchemaOrg\Action
  */
 class InteractAction extends BaseType
 {

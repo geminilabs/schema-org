@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A music venue.
  *
  * @see http://schema.org/MusicVenue
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
  */
 class MusicVenue extends BaseType
 {

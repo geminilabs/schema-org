@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hospital.
  *
  * @see http://schema.org/Hospital
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
- * @mixin \Spatie\SchemaOrg\EmergencyService
- * @mixin \Spatie\SchemaOrg\MedicalOrganization
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\EmergencyService
+ * @mixin \GeminiLabs\SchemaOrg\MedicalOrganization
  */
 class Hospital extends BaseType
 {

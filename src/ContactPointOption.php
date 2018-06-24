@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Enumerated options related to a ContactPoint.
  *
  * @see http://schema.org/ContactPointOption
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class ContactPointOption extends BaseType
 {

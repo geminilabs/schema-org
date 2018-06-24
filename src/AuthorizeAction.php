@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of granting permission to an object.
  *
  * @see http://schema.org/AuthorizeAction
  *
- * @mixin \Spatie\SchemaOrg\AllocateAction
+ * @mixin \GeminiLabs\SchemaOrg\AllocateAction
  */
 class AuthorizeAction extends BaseType
 {

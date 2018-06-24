@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A radio episode which can be part of a series or season.
  *
  * @see http://schema.org/RadioEpisode
  *
- * @mixin \Spatie\SchemaOrg\Episode
+ * @mixin \GeminiLabs\SchemaOrg\Episode
  */
 class RadioEpisode extends BaseType
 {

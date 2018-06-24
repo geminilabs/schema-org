@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Checkout page.
  *
  * @see http://schema.org/CheckoutPage
  *
- * @mixin \Spatie\SchemaOrg\WebPage
+ * @mixin \GeminiLabs\SchemaOrg\WebPage
  */
 class CheckoutPage extends BaseType
 {

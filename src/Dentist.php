@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A dentist.
  *
  * @see http://schema.org/Dentist
  *
- * @mixin \Spatie\SchemaOrg\MedicalOrganization
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\MedicalOrganization
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class Dentist extends BaseType
 {

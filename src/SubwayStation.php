@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A subway station.
  *
  * @see http://schema.org/SubwayStation
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
  */
 class SubwayStation extends BaseType
 {

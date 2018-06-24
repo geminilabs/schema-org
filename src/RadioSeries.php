@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * CreativeWorkSeries dedicated to radio broadcast and associated online
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/RadioSeries
  *
- * @mixin \Spatie\SchemaOrg\CreativeWorkSeries
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWorkSeries
  */
 class RadioSeries extends BaseType
 {

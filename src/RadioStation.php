@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A radio station.
  *
  * @see http://schema.org/RadioStation
  *
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class RadioStation extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Organization: Sports team.
  *
  * @see http://schema.org/SportsTeam
  *
- * @mixin \Spatie\SchemaOrg\SportsOrganization
+ * @mixin \GeminiLabs\SchemaOrg\SportsOrganization
  */
 class SportsTeam extends BaseType
 {

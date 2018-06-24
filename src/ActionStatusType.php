@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The status of an Action.
  *
  * @see http://schema.org/ActionStatusType
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class ActionStatusType extends BaseType
 {

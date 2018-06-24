@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Health and beauty.
  *
  * @see http://schema.org/HealthAndBeautyBusiness
  *
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class HealthAndBeautyBusiness extends BaseType
 {

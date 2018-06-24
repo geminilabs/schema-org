@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An audio file.
  *
  * @see http://schema.org/AudioObject
  *
- * @mixin \Spatie\SchemaOrg\MediaObject
+ * @mixin \GeminiLabs\SchemaOrg\MediaObject
  */
 class AudioObject extends BaseType
 {

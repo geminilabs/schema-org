@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of swallowing liquids.
  *
  * @see http://schema.org/DrinkAction
  *
- * @mixin \Spatie\SchemaOrg\ConsumeAction
+ * @mixin \GeminiLabs\SchemaOrg\ConsumeAction
  */
 class DrinkAction extends BaseType
 {

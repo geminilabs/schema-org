@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * UserInteraction and its subtypes is an old way of talking about users
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/UserComments
  *
- * @mixin \Spatie\SchemaOrg\UserInteraction
+ * @mixin \GeminiLabs\SchemaOrg\UserInteraction
  */
 class UserComments extends BaseType
 {

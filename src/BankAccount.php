@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A product or service offered by a bank whereby one may deposit, withdraw or
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/BankAccount
  *
- * @mixin \Spatie\SchemaOrg\FinancialProduct
+ * @mixin \GeminiLabs\SchemaOrg\FinancialProduct
  */
 class BankAccount extends BaseType
 {

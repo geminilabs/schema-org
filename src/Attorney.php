@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Professional service: Attorney. 
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Attorney
  *
- * @mixin \Spatie\SchemaOrg\LegalService
+ * @mixin \GeminiLabs\SchemaOrg\LegalService
  */
 class Attorney extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An entity holding detailed information about the available bed types, e.g.
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/BedDetails
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class BedDetails extends BaseType
 {

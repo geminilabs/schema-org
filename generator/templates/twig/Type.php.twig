@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * {{ type.description | doc(0) }}
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
 {% if type.parents %}
  *
 {% for parent in type.parents %}
- * @mixin \Spatie\SchemaOrg\{{ parent }}
+ * @mixin \GeminiLabs\SchemaOrg\{{ parent }}
 {% endfor %}
 {% endif %}
  */

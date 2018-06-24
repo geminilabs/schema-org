@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A video game series.
  *
  * @see http://schema.org/VideoGameSeries
  *
- * @mixin \Spatie\SchemaOrg\CreativeWorkSeries
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWorkSeries
  */
 class VideoGameSeries extends BaseType
 {

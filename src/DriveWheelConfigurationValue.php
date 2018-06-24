@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A value indicating which roadwheels will receive torque.
  *
  * @see http://schema.org/DriveWheelConfigurationValue
  *
- * @mixin \Spatie\SchemaOrg\QualitativeValue
+ * @mixin \GeminiLabs\SchemaOrg\QualitativeValue
  */
 class DriveWheelConfigurationValue extends BaseType
 {

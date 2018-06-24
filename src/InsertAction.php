@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of adding at a specific location in an ordered collection.
  *
  * @see http://schema.org/InsertAction
  *
- * @mixin \Spatie\SchemaOrg\AddAction
+ * @mixin \GeminiLabs\SchemaOrg\AddAction
  */
 class InsertAction extends BaseType
 {

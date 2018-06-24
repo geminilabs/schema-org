@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of playing/exercising/training/performing for enjoyment, leisure,
@@ -17,7 +17,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PlayAction
  *
- * @mixin \Spatie\SchemaOrg\Action
+ * @mixin \GeminiLabs\SchemaOrg\Action
  */
 class PlayAction extends BaseType
 {

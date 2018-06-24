@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The mailing address.
  *
  * @see http://schema.org/PostalAddress
  *
- * @mixin \Spatie\SchemaOrg\ContactPoint
+ * @mixin \GeminiLabs\SchemaOrg\ContactPoint
  */
 class PostalAddress extends BaseType
 {

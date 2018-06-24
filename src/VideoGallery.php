@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Video gallery page.
  *
  * @see http://schema.org/VideoGallery
  *
- * @mixin \Spatie\SchemaOrg\CollectionPage
+ * @mixin \GeminiLabs\SchemaOrg\CollectionPage
  */
 class VideoGallery extends BaseType
 {

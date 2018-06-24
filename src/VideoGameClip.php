@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A short segment/part of a video game.
  *
  * @see http://schema.org/VideoGameClip
  *
- * @mixin \Spatie\SchemaOrg\Clip
+ * @mixin \GeminiLabs\SchemaOrg\Clip
  */
 class VideoGameClip extends BaseType
 {

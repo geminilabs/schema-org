@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A video file.
  *
  * @see http://schema.org/VideoObject
  *
- * @mixin \Spatie\SchemaOrg\MediaObject
+ * @mixin \GeminiLabs\SchemaOrg\MediaObject
  */
 class VideoObject extends BaseType
 {

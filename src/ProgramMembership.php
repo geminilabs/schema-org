@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Used to describe membership in a loyalty programs (e.g. "StarAliance"),
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ProgramMembership
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class ProgramMembership extends BaseType
 {

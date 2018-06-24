@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent approves/certifies/likes/supports/sanction an object.
  *
  * @see http://schema.org/EndorseAction
  *
- * @mixin \Spatie\SchemaOrg\ReactAction
+ * @mixin \GeminiLabs\SchemaOrg\ReactAction
  */
 class EndorseAction extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A Series in schema.org is a group of related items, typically but not
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Series
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class Series extends BaseType
 {

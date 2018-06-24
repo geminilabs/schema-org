@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A video game is an electronic game that involves human interaction with a
@@ -8,8 +8,8 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/VideoGame
  *
- * @mixin \Spatie\SchemaOrg\SoftwareApplication
- * @mixin \Spatie\SchemaOrg\Game
+ * @mixin \GeminiLabs\SchemaOrg\SoftwareApplication
+ * @mixin \GeminiLabs\SchemaOrg\Game
  */
 class VideoGame extends BaseType
 {

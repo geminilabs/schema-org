@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of providing goods, services, or money without compensation, often
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/DonateAction
  *
- * @mixin \Spatie\SchemaOrg\TradeAction
+ * @mixin \GeminiLabs\SchemaOrg\TradeAction
  */
 class DonateAction extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of physically/electronically taking delivery of an object thathas
@@ -15,7 +15,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ReceiveAction
  *
- * @mixin \Spatie\SchemaOrg\TransferAction
+ * @mixin \GeminiLabs\SchemaOrg\TransferAction
  */
 class ReceiveAction extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of deliberately creating/producing/generating/building a result out
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/CreateAction
  *
- * @mixin \Spatie\SchemaOrg\Action
+ * @mixin \GeminiLabs\SchemaOrg\Action
  */
 class CreateAction extends BaseType
 {

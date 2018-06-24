@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An over the air or online broadcast event.
  *
  * @see http://schema.org/BroadcastEvent
  *
- * @mixin \Spatie\SchemaOrg\PublicationEvent
+ * @mixin \GeminiLabs\SchemaOrg\PublicationEvent
  */
 class BroadcastEvent extends BaseType
 {

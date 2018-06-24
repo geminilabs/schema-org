@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A home goods store.
  *
  * @see http://schema.org/HomeGoodsStore
  *
- * @mixin \Spatie\SchemaOrg\Store
+ * @mixin \GeminiLabs\SchemaOrg\Store
  */
 class HomeGoodsStore extends BaseType
 {

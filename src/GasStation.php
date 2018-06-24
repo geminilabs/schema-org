@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A gas station.
  *
  * @see http://schema.org/GasStation
  *
- * @mixin \Spatie\SchemaOrg\AutomotiveBusiness
+ * @mixin \GeminiLabs\SchemaOrg\AutomotiveBusiness
  */
 class GasStation extends BaseType
 {

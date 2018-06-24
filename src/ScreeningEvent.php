@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A screening of a movie or other video.
  *
  * @see http://schema.org/ScreeningEvent
  *
- * @mixin \Spatie\SchemaOrg\Event
+ * @mixin \GeminiLabs\SchemaOrg\Event
  */
 class ScreeningEvent extends BaseType
 {

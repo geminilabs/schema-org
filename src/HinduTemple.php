@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A Hindu temple.
  *
  * @see http://schema.org/HinduTemple
  *
- * @mixin \Spatie\SchemaOrg\PlaceOfWorship
+ * @mixin \GeminiLabs\SchemaOrg\PlaceOfWorship
  */
 class HinduTemple extends BaseType
 {

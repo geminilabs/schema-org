@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An instance of a [[Course]] which is distinct from other instances because it
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/CourseInstance
  *
- * @mixin \Spatie\SchemaOrg\Event
+ * @mixin \GeminiLabs\SchemaOrg\Event
  */
 class CourseInstance extends BaseType
 {

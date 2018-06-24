@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A courthouse.
  *
  * @see http://schema.org/Courthouse
  *
- * @mixin \Spatie\SchemaOrg\GovernmentBuilding
+ * @mixin \GeminiLabs\SchemaOrg\GovernmentBuilding
  */
 class Courthouse extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An embassy.
  *
  * @see http://schema.org/Embassy
  *
- * @mixin \Spatie\SchemaOrg\GovernmentBuilding
+ * @mixin \GeminiLabs\SchemaOrg\GovernmentBuilding
  */
 class Embassy extends BaseType
 {

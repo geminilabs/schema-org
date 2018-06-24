@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An adult entertainment establishment.
  *
  * @see http://schema.org/AdultEntertainment
  *
- * @mixin \Spatie\SchemaOrg\EntertainmentBusiness
+ * @mixin \GeminiLabs\SchemaOrg\EntertainmentBusiness
  */
 class AdultEntertainment extends BaseType
 {

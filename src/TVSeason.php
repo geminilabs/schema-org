@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Season dedicated to TV broadcast and associated online delivery.
  *
  * @see http://schema.org/TVSeason
  *
- * @mixin \Spatie\SchemaOrg\CreativeWork
- * @mixin \Spatie\SchemaOrg\CreativeWorkSeason
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWorkSeason
  */
 class TVSeason extends BaseType
 {

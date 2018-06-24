@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A volcano, like Fuji san.
  *
  * @see http://schema.org/Volcano
  *
- * @mixin \Spatie\SchemaOrg\Landform
+ * @mixin \GeminiLabs\SchemaOrg\Landform
  */
 class Volcano extends BaseType
 {

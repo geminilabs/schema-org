@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A fact-checking review of claims made (or reported) in some creative work
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ClaimReview
  *
- * @mixin \Spatie\SchemaOrg\Review
+ * @mixin \GeminiLabs\SchemaOrg\Review
  */
 class ClaimReview extends BaseType
 {

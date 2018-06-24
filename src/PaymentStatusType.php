@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A specific payment status. For example, PaymentDue, PaymentComplete, etc.
  *
  * @see http://schema.org/PaymentStatusType
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class PaymentStatusType extends BaseType
 {

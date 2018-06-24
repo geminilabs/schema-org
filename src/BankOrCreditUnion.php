@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Bank or credit union.
  *
  * @see http://schema.org/BankOrCreditUnion
  *
- * @mixin \Spatie\SchemaOrg\FinancialService
+ * @mixin \GeminiLabs\SchemaOrg\FinancialService
  */
 class BankOrCreditUnion extends BaseType
 {

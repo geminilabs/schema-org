@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of asking someone to attend an event. Reciprocal of RsvpAction.
  *
  * @see http://schema.org/InviteAction
  *
- * @mixin \Spatie\SchemaOrg\CommunicateAction
+ * @mixin \GeminiLabs\SchemaOrg\CommunicateAction
  */
 class InviteAction extends BaseType
 {

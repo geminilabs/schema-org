@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Mass
  *
- * @mixin \Spatie\SchemaOrg\Quantity
+ * @mixin \GeminiLabs\SchemaOrg\Quantity
  */
 class Mass extends BaseType
 {

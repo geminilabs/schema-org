@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A synagogue.
  *
  * @see http://schema.org/Synagogue
  *
- * @mixin \Spatie\SchemaOrg\PlaceOfWorship
+ * @mixin \GeminiLabs\SchemaOrg\PlaceOfWorship
  */
 class Synagogue extends BaseType
 {

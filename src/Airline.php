@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An organization that provides flights for passengers.
  *
  * @see http://schema.org/Airline
  *
- * @mixin \Spatie\SchemaOrg\Organization
+ * @mixin \GeminiLabs\SchemaOrg\Organization
  */
 class Airline extends BaseType
 {

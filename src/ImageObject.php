@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An image file.
  *
  * @see http://schema.org/ImageObject
  *
- * @mixin \Spatie\SchemaOrg\MediaObject
+ * @mixin \GeminiLabs\SchemaOrg\MediaObject
  */
 class ImageObject extends BaseType
 {

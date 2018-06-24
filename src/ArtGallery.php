@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An art gallery.
  *
  * @see http://schema.org/ArtGallery
  *
- * @mixin \Spatie\SchemaOrg\EntertainmentBusiness
+ * @mixin \GeminiLabs\SchemaOrg\EntertainmentBusiness
  */
 class ArtGallery extends BaseType
 {

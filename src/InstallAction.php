@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of installing an application.
  *
  * @see http://schema.org/InstallAction
  *
- * @mixin \Spatie\SchemaOrg\ConsumeAction
+ * @mixin \GeminiLabs\SchemaOrg\ConsumeAction
  */
 class InstallAction extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The day of the week, e.g. used to specify to which day the opening hours of
@@ -13,7 +13,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/DayOfWeek
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class DayOfWeek extends BaseType
 {

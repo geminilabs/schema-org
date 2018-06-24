@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A high school.
  *
  * @see http://schema.org/HighSchool
  *
- * @mixin \Spatie\SchemaOrg\EducationalOrganization
+ * @mixin \GeminiLabs\SchemaOrg\EducationalOrganization
  */
 class HighSchool extends BaseType
 {

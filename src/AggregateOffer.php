@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * When a single product is associated with multiple offers (for example, the
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/AggregateOffer
  *
- * @mixin \Spatie\SchemaOrg\Offer
+ * @mixin \GeminiLabs\SchemaOrg\Offer
  */
 class AggregateOffer extends BaseType
 {

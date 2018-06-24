@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Profile page.
  *
  * @see http://schema.org/ProfilePage
  *
- * @mixin \Spatie\SchemaOrg\WebPage
+ * @mixin \GeminiLabs\SchemaOrg\WebPage
  */
 class ProfilePage extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of intentionally disregarding the object. An agent ignores an object.
  *
  * @see http://schema.org/IgnoreAction
  *
- * @mixin \Spatie\SchemaOrg\AssessAction
+ * @mixin \GeminiLabs\SchemaOrg\AssessAction
  */
 class IgnoreAction extends BaseType
 {

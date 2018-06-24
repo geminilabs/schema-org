@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A public structure, such as a town hall or concert hall.
  *
  * @see http://schema.org/CivicStructure
  *
- * @mixin \Spatie\SchemaOrg\Place
+ * @mixin \GeminiLabs\SchemaOrg\Place
  */
 class CivicStructure extends BaseType
 {

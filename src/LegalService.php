@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A LegalService is a business that provides legally-oriented services, advice
@@ -11,7 +11,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/LegalService
  *
- * @mixin \Spatie\SchemaOrg\LocalBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LocalBusiness
  */
 class LegalService extends BaseType
 {

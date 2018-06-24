@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A software application designed specifically to work well on a mobile device
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/MobileApplication
  *
- * @mixin \Spatie\SchemaOrg\SoftwareApplication
+ * @mixin \GeminiLabs\SchemaOrg\SoftwareApplication
  */
 class MobileApplication extends BaseType
 {

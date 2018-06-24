@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A delivery service through which content is provided via broadcast over the
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/BroadcastService
  *
- * @mixin \Spatie\SchemaOrg\Service
+ * @mixin \GeminiLabs\SchemaOrg\Service
  */
 class BroadcastService extends BaseType
 {

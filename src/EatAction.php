@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of swallowing solid objects.
  *
  * @see http://schema.org/EatAction
  *
- * @mixin \Spatie\SchemaOrg\ConsumeAction
+ * @mixin \GeminiLabs\SchemaOrg\ConsumeAction
  */
 class EatAction extends BaseType
 {

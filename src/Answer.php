@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An answer offered to a question; perhaps correct, perhaps opinionated or
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Answer
  *
- * @mixin \Spatie\SchemaOrg\Comment
+ * @mixin \GeminiLabs\SchemaOrg\Comment
  */
 class Answer extends BaseType
 {

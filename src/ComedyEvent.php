@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Event type: Comedy event.
  *
  * @see http://schema.org/ComedyEvent
  *
- * @mixin \Spatie\SchemaOrg\Event
+ * @mixin \GeminiLabs\SchemaOrg\Event
  */
 class ComedyEvent extends BaseType
 {

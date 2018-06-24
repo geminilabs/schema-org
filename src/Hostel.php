@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hostel - cheap accommodation, often in shared dormitories.
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Hostel
  *
- * @mixin \Spatie\SchemaOrg\LodgingBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LodgingBusiness
  */
 class Hostel extends BaseType
 {

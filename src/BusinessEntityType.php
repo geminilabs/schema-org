@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A business entity type is a conceptual entity representing the legal form,
@@ -16,7 +16,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/BusinessEntityType
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class BusinessEntityType extends BaseType
 {

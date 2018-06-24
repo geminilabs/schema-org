@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A scholarly article.
  *
  * @see http://schema.org/ScholarlyArticle
  *
- * @mixin \Spatie\SchemaOrg\Article
+ * @mixin \GeminiLabs\SchemaOrg\Article
  */
 class ScholarlyArticle extends BaseType
 {

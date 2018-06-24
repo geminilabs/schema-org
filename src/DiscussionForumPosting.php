@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A posting to a discussion forum.
  *
  * @see http://schema.org/DiscussionForumPosting
  *
- * @mixin \Spatie\SchemaOrg\SocialMediaPosting
+ * @mixin \GeminiLabs\SchemaOrg\SocialMediaPosting
  */
 class DiscussionForumPosting extends BaseType
 {

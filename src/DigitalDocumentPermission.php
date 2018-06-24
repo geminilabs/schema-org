@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A permission for a particular person or group to access a particular file.
  *
  * @see http://schema.org/DigitalDocumentPermission
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class DigitalDocumentPermission extends BaseType
 {

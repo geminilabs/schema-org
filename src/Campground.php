@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A camping site, campsite, or campground is a place used for overnight stay in
@@ -18,8 +18,8 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Campground
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
- * @mixin \Spatie\SchemaOrg\LodgingBusiness
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\LodgingBusiness
  */
 class Campground extends BaseType
 {

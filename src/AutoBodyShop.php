@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Auto body shop.
  *
  * @see http://schema.org/AutoBodyShop
  *
- * @mixin \Spatie\SchemaOrg\AutomotiveBusiness
+ * @mixin \GeminiLabs\SchemaOrg\AutomotiveBusiness
  */
 class AutoBodyShop extends BaseType
 {

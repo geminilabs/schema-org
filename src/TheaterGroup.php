@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A theater group or company, for example, the Royal Shakespeare Company or
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/TheaterGroup
  *
- * @mixin \Spatie\SchemaOrg\PerformingGroup
+ * @mixin \GeminiLabs\SchemaOrg\PerformingGroup
  */
 class TheaterGroup extends BaseType
 {

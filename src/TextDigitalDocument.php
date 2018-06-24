@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A file composed primarily of text.
  *
  * @see http://schema.org/TextDigitalDocument
  *
- * @mixin \Spatie\SchemaOrg\DigitalDocument
+ * @mixin \GeminiLabs\SchemaOrg\DigitalDocument
  */
 class TextDigitalDocument extends BaseType
 {

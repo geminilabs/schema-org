@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Search results page.
  *
  * @see http://schema.org/SearchResultsPage
  *
- * @mixin \Spatie\SchemaOrg\WebPage
+ * @mixin \GeminiLabs\SchemaOrg\WebPage
  */
 class SearchResultsPage extends BaseType
 {

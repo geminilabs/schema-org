@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A governmental organization or agency.
  *
  * @see http://schema.org/GovernmentOrganization
  *
- * @mixin \Spatie\SchemaOrg\Organization
+ * @mixin \GeminiLabs\SchemaOrg\Organization
  */
 class GovernmentOrganization extends BaseType
 {

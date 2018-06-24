@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A golf course.
  *
  * @see http://schema.org/GolfCourse
  *
- * @mixin \Spatie\SchemaOrg\SportsActivityLocation
+ * @mixin \GeminiLabs\SchemaOrg\SportsActivityLocation
  */
 class GolfCourse extends BaseType
 {

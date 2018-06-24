@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A point value or interval for product characteristics and other purposes.
  *
  * @see http://schema.org/QuantitativeValue
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class QuantitativeValue extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A PerformanceRole is a Role that some entity places with regard to a
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PerformanceRole
  *
- * @mixin \Spatie\SchemaOrg\Role
+ * @mixin \GeminiLabs\SchemaOrg\Role
  */
 class PerformanceRole extends BaseType
 {

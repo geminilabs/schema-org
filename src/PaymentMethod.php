@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A payment method is a standardized procedure for transferring the monetary
@@ -22,7 +22,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PaymentMethod
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class PaymentMethod extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of gaining ownership of an object from an origin. Reciprocal of
@@ -14,7 +14,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/TakeAction
  *
- * @mixin \Spatie\SchemaOrg\TransferAction
+ * @mixin \GeminiLabs\SchemaOrg\TransferAction
  */
 class TakeAction extends BaseType
 {

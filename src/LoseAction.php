@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of being defeated in a competitive activity.
  *
  * @see http://schema.org/LoseAction
  *
- * @mixin \Spatie\SchemaOrg\AchieveAction
+ * @mixin \GeminiLabs\SchemaOrg\AchieveAction
  */
 class LoseAction extends BaseType
 {

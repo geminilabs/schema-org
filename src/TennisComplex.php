@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A tennis complex.
  *
  * @see http://schema.org/TennisComplex
  *
- * @mixin \Spatie\SchemaOrg\SportsActivityLocation
+ * @mixin \GeminiLabs\SchemaOrg\SportsActivityLocation
  */
 class TennisComplex extends BaseType
 {

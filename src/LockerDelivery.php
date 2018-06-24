@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A DeliveryMethod in which an item is made available via locker.
  *
  * @see http://schema.org/LockerDelivery
  *
- * @mixin \Spatie\SchemaOrg\DeliveryMethod
+ * @mixin \GeminiLabs\SchemaOrg\DeliveryMethod
  */
 class LockerDelivery extends BaseType
 {

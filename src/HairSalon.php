@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hair salon.
  *
  * @see http://schema.org/HairSalon
  *
- * @mixin \Spatie\SchemaOrg\HealthAndBeautyBusiness
+ * @mixin \GeminiLabs\SchemaOrg\HealthAndBeautyBusiness
  */
 class HairSalon extends BaseType
 {

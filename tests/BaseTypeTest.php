@@ -3,7 +3,7 @@
 namespace Spatie\Skeleton\Test;
 
 use DateTime;
-use Spatie\SchemaOrg\BaseType;
+use GeminiLabs\SchemaOrg\BaseType;
 use PHPUnit\Framework\TestCase;
 
 class BaseTypeTest extends TestCase

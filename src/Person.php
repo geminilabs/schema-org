@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A person (alive, dead, undead, or fictional).
  *
  * @see http://schema.org/Person
  *
- * @mixin \Spatie\SchemaOrg\Thing
+ * @mixin \GeminiLabs\SchemaOrg\Thing
  */
 class Person extends BaseType
 {

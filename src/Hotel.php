@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hotel is an establishment that provides lodging paid on a short-term basis
@@ -12,7 +12,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Hotel
  *
- * @mixin \Spatie\SchemaOrg\LodgingBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LodgingBusiness
  */
 class Hotel extends BaseType
 {

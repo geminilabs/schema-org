@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An EducationalAudience.
  *
  * @see http://schema.org/EducationalAudience
  *
- * @mixin \Spatie\SchemaOrg\Audience
+ * @mixin \GeminiLabs\SchemaOrg\Audience
  */
 class EducationalAudience extends BaseType
 {

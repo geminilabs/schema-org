@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A moving company.
  *
  * @see http://schema.org/MovingCompany
  *
- * @mixin \Spatie\SchemaOrg\HomeAndConstructionBusiness
+ * @mixin \GeminiLabs\SchemaOrg\HomeAndConstructionBusiness
  */
 class MovingCompany extends BaseType
 {

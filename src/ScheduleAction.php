@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Scheduling future actions, events, or tasks.
@@ -13,7 +13,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ScheduleAction
  *
- * @mixin \Spatie\SchemaOrg\PlanAction
+ * @mixin \GeminiLabs\SchemaOrg\PlanAction
  */
 class ScheduleAction extends BaseType
 {

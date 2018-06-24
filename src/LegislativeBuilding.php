@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A legislative building&#x2014;for example, the state capitol.
  *
  * @see http://schema.org/LegislativeBuilding
  *
- * @mixin \Spatie\SchemaOrg\GovernmentBuilding
+ * @mixin \GeminiLabs\SchemaOrg\GovernmentBuilding
  */
 class LegislativeBuilding extends BaseType
 {

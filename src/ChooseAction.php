@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of expressing a preference from a set of options or a large or
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ChooseAction
  *
- * @mixin \Spatie\SchemaOrg\AssessAction
+ * @mixin \GeminiLabs\SchemaOrg\AssessAction
  */
 class ChooseAction extends BaseType
 {

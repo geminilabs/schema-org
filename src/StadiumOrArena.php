@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A stadium.
  *
  * @see http://schema.org/StadiumOrArena
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
- * @mixin \Spatie\SchemaOrg\SportsActivityLocation
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\SportsActivityLocation
  */
 class StadiumOrArena extends BaseType
 {

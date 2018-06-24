@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 use DateTime;
 use ReflectionClass;
 use DateTimeInterface;
-use Spatie\SchemaOrg\Exceptions\InvalidProperty;
+use GeminiLabs\SchemaOrg\Exceptions\InvalidProperty;
 
 abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
 {

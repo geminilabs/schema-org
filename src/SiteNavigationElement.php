@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A navigation element of the page.
  *
  * @see http://schema.org/SiteNavigationElement
  *
- * @mixin \Spatie\SchemaOrg\WebPageElement
+ * @mixin \GeminiLabs\SchemaOrg\WebPageElement
  */
 class SiteNavigationElement extends BaseType
 {

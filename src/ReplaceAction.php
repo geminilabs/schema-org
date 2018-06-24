@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of editing a recipient by replacing an old object with a new object.
  *
  * @see http://schema.org/ReplaceAction
  *
- * @mixin \Spatie\SchemaOrg\UpdateAction
+ * @mixin \GeminiLabs\SchemaOrg\UpdateAction
  */
 class ReplaceAction extends BaseType
 {

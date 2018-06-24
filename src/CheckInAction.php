@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of an agent communicating (service provider, social media, etc) their
@@ -19,7 +19,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/CheckInAction
  *
- * @mixin \Spatie\SchemaOrg\CommunicateAction
+ * @mixin \GeminiLabs\SchemaOrg\CommunicateAction
  */
 class CheckInAction extends BaseType
 {

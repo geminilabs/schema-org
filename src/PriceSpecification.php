@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A structured value representing a price or price range. Typically, only the
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PriceSpecification
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class PriceSpecification extends BaseType
 {

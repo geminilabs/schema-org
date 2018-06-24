@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A day spa.
  *
  * @see http://schema.org/DaySpa
  *
- * @mixin \Spatie\SchemaOrg\HealthAndBeautyBusiness
+ * @mixin \GeminiLabs\SchemaOrg\HealthAndBeautyBusiness
  */
 class DaySpa extends BaseType
 {

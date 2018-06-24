@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A pond.
  *
  * @see http://schema.org/Pond
  *
- * @mixin \Spatie\SchemaOrg\BodyOfWater
+ * @mixin \GeminiLabs\SchemaOrg\BodyOfWater
  */
 class Pond extends BaseType
 {

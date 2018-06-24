@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The kind of release which this album is: single, EP or album.
  *
  * @see http://schema.org/MusicAlbumReleaseType
  *
- * @mixin \Spatie\SchemaOrg\Enumeration
+ * @mixin \GeminiLabs\SchemaOrg\Enumeration
  */
 class MusicAlbumReleaseType extends BaseType
 {

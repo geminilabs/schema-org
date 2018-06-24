@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An item used as either a tool or supply when performing the instructions for
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/HowToItem
  *
- * @mixin \Spatie\SchemaOrg\ListItem
+ * @mixin \GeminiLabs\SchemaOrg\ListItem
  */
 class HowToItem extends BaseType
 {

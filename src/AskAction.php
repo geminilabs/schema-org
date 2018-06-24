@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of posing a question / favor to someone.
@@ -11,7 +11,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/AskAction
  *
- * @mixin \Spatie\SchemaOrg\CommunicateAction
+ * @mixin \GeminiLabs\SchemaOrg\CommunicateAction
  */
 class AskAction extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent pays a price to a participant.
  *
  * @see http://schema.org/PayAction
  *
- * @mixin \Spatie\SchemaOrg\TradeAction
+ * @mixin \GeminiLabs\SchemaOrg\TradeAction
  */
 class PayAction extends BaseType
 {

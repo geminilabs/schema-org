@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of reaching a draw in a competitive activity.
  *
  * @see http://schema.org/TieAction
  *
- * @mixin \Spatie\SchemaOrg\AchieveAction
+ * @mixin \GeminiLabs\SchemaOrg\AchieveAction
  */
 class TieAction extends BaseType
 {

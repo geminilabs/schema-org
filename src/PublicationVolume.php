@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A part of a successively published publication such as a periodical or
@@ -13,7 +13,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PublicationVolume
  *
- * @mixin \Spatie\SchemaOrg\CreativeWork
+ * @mixin \GeminiLabs\SchemaOrg\CreativeWork
  */
 class PublicationVolume extends BaseType
 {

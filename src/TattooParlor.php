@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A tattoo parlor.
  *
  * @see http://schema.org/TattooParlor
  *
- * @mixin \Spatie\SchemaOrg\HealthAndBeautyBusiness
+ * @mixin \GeminiLabs\SchemaOrg\HealthAndBeautyBusiness
  */
 class TattooParlor extends BaseType
 {

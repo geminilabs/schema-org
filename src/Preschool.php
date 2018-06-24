@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A preschool.
  *
  * @see http://schema.org/Preschool
  *
- * @mixin \Spatie\SchemaOrg\EducationalOrganization
+ * @mixin \GeminiLabs\SchemaOrg\EducationalOrganization
  */
 class Preschool extends BaseType
 {

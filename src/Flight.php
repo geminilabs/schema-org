@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An airline flight.
  *
  * @see http://schema.org/Flight
  *
- * @mixin \Spatie\SchemaOrg\Trip
+ * @mixin \GeminiLabs\SchemaOrg\Trip
  */
 class Flight extends BaseType
 {

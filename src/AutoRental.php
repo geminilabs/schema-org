@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A car rental business.
  *
  * @see http://schema.org/AutoRental
  *
- * @mixin \Spatie\SchemaOrg\AutomotiveBusiness
+ * @mixin \GeminiLabs\SchemaOrg\AutomotiveBusiness
  */
 class AutoRental extends BaseType
 {

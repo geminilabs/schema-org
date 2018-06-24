@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A restaurant.
  *
  * @see http://schema.org/Restaurant
  *
- * @mixin \Spatie\SchemaOrg\FoodEstablishment
+ * @mixin \GeminiLabs\SchemaOrg\FoodEstablishment
  */
 class Restaurant extends BaseType
 {

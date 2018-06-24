@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of obtaining an object under an agreement to return it at a later
@@ -12,7 +12,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/BorrowAction
  *
- * @mixin \Spatie\SchemaOrg\TransferAction
+ * @mixin \GeminiLabs\SchemaOrg\TransferAction
  */
 class BorrowAction extends BaseType
 {

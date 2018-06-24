@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A trip on a commercial bus line.
  *
  * @see http://schema.org/BusTrip
  *
- * @mixin \Spatie\SchemaOrg\Trip
+ * @mixin \GeminiLabs\SchemaOrg\Trip
  */
 class BusTrip extends BaseType
 {

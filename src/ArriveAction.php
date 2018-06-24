@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of arriving at a place. An agent arrives at a destination from a
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/ArriveAction
  *
- * @mixin \Spatie\SchemaOrg\MoveAction
+ * @mixin \GeminiLabs\SchemaOrg\MoveAction
  */
 class ArriveAction extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A comedy club.
  *
  * @see http://schema.org/ComedyClub
  *
- * @mixin \Spatie\SchemaOrg\EntertainmentBusiness
+ * @mixin \GeminiLabs\SchemaOrg\EntertainmentBusiness
  */
 class ComedyClub extends BaseType
 {

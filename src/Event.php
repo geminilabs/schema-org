@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An event happening at a certain time and location, such as a concert,
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Event
  *
- * @mixin \Spatie\SchemaOrg\Thing
+ * @mixin \GeminiLabs\SchemaOrg\Thing
  */
 class Event extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A property-value pair, e.g. representing a feature of a product or place. Use
@@ -14,7 +14,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PropertyValue
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class PropertyValue extends BaseType
 {

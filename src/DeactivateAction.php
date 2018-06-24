@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of stopping or deactivating a device or application (e.g. stopping a
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/DeactivateAction
  *
- * @mixin \Spatie\SchemaOrg\ControlAction
+ * @mixin \GeminiLabs\SchemaOrg\ControlAction
  */
 class DeactivateAction extends BaseType
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A unique instance of a BroadcastService on a CableOrSatelliteService lineup.
  *
  * @see http://schema.org/BroadcastChannel
  *
- * @mixin \Spatie\SchemaOrg\Intangible
+ * @mixin \GeminiLabs\SchemaOrg\Intangible
  */
 class BroadcastChannel extends BaseType
 {

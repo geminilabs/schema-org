@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A city hall.
  *
  * @see http://schema.org/CityHall
  *
- * @mixin \Spatie\SchemaOrg\GovernmentBuilding
+ * @mixin \GeminiLabs\SchemaOrg\GovernmentBuilding
  */
 class CityHall extends BaseType
 {

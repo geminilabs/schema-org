@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Any offered product or service. For example: a pair of shoes; a concert
@@ -9,7 +9,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Product
  *
- * @mixin \Spatie\SchemaOrg\Thing
+ * @mixin \GeminiLabs\SchemaOrg\Thing
  */
 class Product extends BaseType
 {

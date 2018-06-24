@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of giving money voluntarily to a beneficiary in recognition of
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/TipAction
  *
- * @mixin \Spatie\SchemaOrg\TradeAction
+ * @mixin \GeminiLabs\SchemaOrg\TradeAction
  */
 class TipAction extends BaseType
 {

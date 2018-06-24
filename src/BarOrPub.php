@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A bar or pub.
  *
  * @see http://schema.org/BarOrPub
  *
- * @mixin \Spatie\SchemaOrg\FoodEstablishment
+ * @mixin \GeminiLabs\SchemaOrg\FoodEstablishment
  */
 class BarOrPub extends BaseType
 {

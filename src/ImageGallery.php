@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Web page type: Image gallery page.
  *
  * @see http://schema.org/ImageGallery
  *
- * @mixin \Spatie\SchemaOrg\CollectionPage
+ * @mixin \GeminiLabs\SchemaOrg\CollectionPage
  */
 class ImageGallery extends BaseType
 {

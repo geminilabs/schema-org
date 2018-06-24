@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent quotes/estimates/appraises an object/product/service with a price at
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/QuoteAction
  *
- * @mixin \Spatie\SchemaOrg\TradeAction
+ * @mixin \GeminiLabs\SchemaOrg\TradeAction
  */
 class QuoteAction extends BaseType
 {

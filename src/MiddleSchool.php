@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A middle school (typically for children aged around 11-14, although this
@@ -8,7 +8,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/MiddleSchool
  *
- * @mixin \Spatie\SchemaOrg\EducationalOrganization
+ * @mixin \GeminiLabs\SchemaOrg\EducationalOrganization
  */
 class MiddleSchool extends BaseType
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * An agent tracks an object for updates.
@@ -14,7 +14,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/TrackAction
  *
- * @mixin \Spatie\SchemaOrg\FindAction
+ * @mixin \GeminiLabs\SchemaOrg\FindAction
  */
 class TrackAction extends BaseType
 {

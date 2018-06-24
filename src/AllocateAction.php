@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of organizing tasks/objects/events by associating resources to it.
  *
  * @see http://schema.org/AllocateAction
  *
- * @mixin \Spatie\SchemaOrg\OrganizeAction
+ * @mixin \GeminiLabs\SchemaOrg\OrganizeAction
  */
 class AllocateAction extends BaseType
 {

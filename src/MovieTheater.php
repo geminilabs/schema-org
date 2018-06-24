@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A movie theater.
  *
  * @see http://schema.org/MovieTheater
  *
- * @mixin \Spatie\SchemaOrg\CivicStructure
- * @mixin \Spatie\SchemaOrg\EntertainmentBusiness
+ * @mixin \GeminiLabs\SchemaOrg\CivicStructure
+ * @mixin \GeminiLabs\SchemaOrg\EntertainmentBusiness
  */
 class MovieTheater extends BaseType
 {

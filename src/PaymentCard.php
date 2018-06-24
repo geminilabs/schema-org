@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A payment method using a credit, debit, store or other card to associate the
@@ -8,8 +8,8 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/PaymentCard
  *
- * @mixin \Spatie\SchemaOrg\FinancialProduct
- * @mixin \Spatie\SchemaOrg\PaymentMethod
+ * @mixin \GeminiLabs\SchemaOrg\FinancialProduct
+ * @mixin \GeminiLabs\SchemaOrg\PaymentMethod
  */
 class PaymentCard extends BaseType
 {

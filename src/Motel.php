@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A motel.
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/Motel
  *
- * @mixin \Spatie\SchemaOrg\LodgingBusiness
+ * @mixin \GeminiLabs\SchemaOrg\LodgingBusiness
  */
 class Motel extends BaseType
 {

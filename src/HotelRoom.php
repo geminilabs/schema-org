@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A hotel room is a single room in a hotel.
@@ -10,7 +10,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/HotelRoom
  *
- * @mixin \Spatie\SchemaOrg\Room
+ * @mixin \GeminiLabs\SchemaOrg\Room
  */
 class HotelRoom extends BaseType
 {

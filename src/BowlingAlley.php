@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A bowling alley.
  *
  * @see http://schema.org/BowlingAlley
  *
- * @mixin \Spatie\SchemaOrg\SportsActivityLocation
+ * @mixin \GeminiLabs\SchemaOrg\SportsActivityLocation
  */
 class BowlingAlley extends BaseType
 {

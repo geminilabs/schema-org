@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * The act of achieving victory in a competitive activity.
  *
  * @see http://schema.org/WinAction
  *
- * @mixin \Spatie\SchemaOrg\AchieveAction
+ * @mixin \GeminiLabs\SchemaOrg\AchieveAction
  */
 class WinAction extends BaseType
 {

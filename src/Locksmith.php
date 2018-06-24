@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A locksmith.
  *
  * @see http://schema.org/Locksmith
  *
- * @mixin \Spatie\SchemaOrg\HomeAndConstructionBusiness
+ * @mixin \GeminiLabs\SchemaOrg\HomeAndConstructionBusiness
  */
 class Locksmith extends BaseType
 {

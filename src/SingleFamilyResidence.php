@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * Residence type: Single-family home.
  *
  * @see http://schema.org/SingleFamilyResidence
  *
- * @mixin \Spatie\SchemaOrg\House
+ * @mixin \GeminiLabs\SchemaOrg\House
  */
 class SingleFamilyResidence extends BaseType
 {

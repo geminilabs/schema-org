@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\SchemaOrg;
+namespace GeminiLabs\SchemaOrg;
 
 /**
  * A structured value providing information about the opening hours of a place
@@ -15,7 +15,7 @@ namespace Spatie\SchemaOrg;
  *
  * @see http://schema.org/OpeningHoursSpecification
  *
- * @mixin \Spatie\SchemaOrg\StructuredValue
+ * @mixin \GeminiLabs\SchemaOrg\StructuredValue
  */
 class OpeningHoursSpecification extends BaseType
 {
