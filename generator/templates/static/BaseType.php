@@ -12,12 +12,18 @@ abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
     /** @var array */
     protected $properties = [];
 
-    public function getContext(): string
+    /**
+     * @return string
+     */
+    public function getContext()
     {
         return 'http://schema.org';
     }
 
-    public function getType(): string
+    /**
+     * @return string
+     */
+    public function getType()
     {
         return (new ReflectionClass($this))->getShortName();
     }
@@ -52,7 +58,10 @@ abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
         return $this->properties[$property] ?? $default;
     }
 
-    public function getProperties(): array
+    /**
+     * @return array
+     */
+    public function getProperties()
     {
         return $this->properties;
     }
@@ -77,7 +86,10 @@ abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
         unset($this->properties[$offset]);
     }
 
-    public function toArray(): array
+    /**
+     * @return array
+     */
+    public function toArray()
     {
         $properties = $this->serializeProperty($this->getProperties());
 
@@ -109,7 +121,10 @@ abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
         return $property;
     }
 
-    public function toScript(): string
+    /**
+     * @return string
+     */
+    public function toScript()
     {
         return '<script type="application/ld+json">'.json_encode($this->toArray(), JSON_UNESCAPED_UNICODE).'</script>';
     }
@@ -124,7 +139,10 @@ abstract class BaseType implements Type, \ArrayAccess, \JsonSerializable
         return $this->setProperty($method, $arguments[0] ?? '');
     }
 
-    public function __toString(): string
+    /**
+     * @return string
+     */
+    public function __toString()
     {
         return $this->toScript();
     }

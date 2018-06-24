@@ -7,7 +7,10 @@ namespace Spatie\SchemaOrg;
  */
 class Schema
 {
-{% for type in types %}    public static function {{ type.name | lcfirst }}(): {{ type.name }}
+{% for type in types %}    /**
+     * @return {{ type.name }}
+     */
+    public static function {{ type.name | lcfirst }}()
     {
         return new {{ type.name }}();
     }

@@ -7,2992 +7,4786 @@ namespace Spatie\SchemaOrg;
  */
 class Schema
 {
-    public static function aPIReference(): APIReference
+    /**
+     * @return APIReference
+     */
+    public static function aPIReference()
     {
         return new APIReference();
     }
 
-    public static function aboutPage(): AboutPage
+    /**
+     * @return AboutPage
+     */
+    public static function aboutPage()
     {
         return new AboutPage();
     }
 
-    public static function acceptAction(): AcceptAction
+    /**
+     * @return AcceptAction
+     */
+    public static function acceptAction()
     {
         return new AcceptAction();
     }
 
-    public static function accommodation(): Accommodation
+    /**
+     * @return Accommodation
+     */
+    public static function accommodation()
     {
         return new Accommodation();
     }
 
-    public static function accountingService(): AccountingService
+    /**
+     * @return AccountingService
+     */
+    public static function accountingService()
     {
         return new AccountingService();
     }
 
-    public static function achieveAction(): AchieveAction
+    /**
+     * @return AchieveAction
+     */
+    public static function achieveAction()
     {
         return new AchieveAction();
     }
 
-    public static function action(): Action
+    /**
+     * @return Action
+     */
+    public static function action()
     {
         return new Action();
     }
 
-    public static function actionStatusType(): ActionStatusType
+    /**
+     * @return ActionStatusType
+     */
+    public static function actionStatusType()
     {
         return new ActionStatusType();
     }
 
-    public static function activateAction(): ActivateAction
+    /**
+     * @return ActivateAction
+     */
+    public static function activateAction()
     {
         return new ActivateAction();
     }
 
-    public static function addAction(): AddAction
+    /**
+     * @return AddAction
+     */
+    public static function addAction()
     {
         return new AddAction();
     }
 
-    public static function administrativeArea(): AdministrativeArea
+    /**
+     * @return AdministrativeArea
+     */
+    public static function administrativeArea()
     {
         return new AdministrativeArea();
     }
 
-    public static function adultEntertainment(): AdultEntertainment
+    /**
+     * @return AdultEntertainment
+     */
+    public static function adultEntertainment()
     {
         return new AdultEntertainment();
     }
 
-    public static function aggregateOffer(): AggregateOffer
+    /**
+     * @return AggregateOffer
+     */
+    public static function aggregateOffer()
     {
         return new AggregateOffer();
     }
 
-    public static function aggregateRating(): AggregateRating
+    /**
+     * @return AggregateRating
+     */
+    public static function aggregateRating()
     {
         return new AggregateRating();
     }
 
-    public static function agreeAction(): AgreeAction
+    /**
+     * @return AgreeAction
+     */
+    public static function agreeAction()
     {
         return new AgreeAction();
     }
 
-    public static function airline(): Airline
+    /**
+     * @return Airline
+     */
+    public static function airline()
     {
         return new Airline();
     }
 
-    public static function airport(): Airport
+    /**
+     * @return Airport
+     */
+    public static function airport()
     {
         return new Airport();
     }
 
-    public static function alignmentObject(): AlignmentObject
+    /**
+     * @return AlignmentObject
+     */
+    public static function alignmentObject()
     {
         return new AlignmentObject();
     }
 
-    public static function allocateAction(): AllocateAction
+    /**
+     * @return AllocateAction
+     */
+    public static function allocateAction()
     {
         return new AllocateAction();
     }
 
-    public static function amusementPark(): AmusementPark
+    /**
+     * @return AmusementPark
+     */
+    public static function amusementPark()
     {
         return new AmusementPark();
     }
 
-    public static function animalShelter(): AnimalShelter
+    /**
+     * @return AnimalShelter
+     */
+    public static function animalShelter()
     {
         return new AnimalShelter();
     }
 
-    public static function answer(): Answer
+    /**
+     * @return Answer
+     */
+    public static function answer()
     {
         return new Answer();
     }
 
-    public static function apartment(): Apartment
+    /**
+     * @return Apartment
+     */
+    public static function apartment()
     {
         return new Apartment();
     }
 
-    public static function apartmentComplex(): ApartmentComplex
+    /**
+     * @return ApartmentComplex
+     */
+    public static function apartmentComplex()
     {
         return new ApartmentComplex();
     }
 
-    public static function appendAction(): AppendAction
+    /**
+     * @return AppendAction
+     */
+    public static function appendAction()
     {
         return new AppendAction();
     }
 
-    public static function applyAction(): ApplyAction
+    /**
+     * @return ApplyAction
+     */
+    public static function applyAction()
     {
         return new ApplyAction();
     }
 
-    public static function aquarium(): Aquarium
+    /**
+     * @return Aquarium
+     */
+    public static function aquarium()
     {
         return new Aquarium();
     }
 
-    public static function arriveAction(): ArriveAction
+    /**
+     * @return ArriveAction
+     */
+    public static function arriveAction()
     {
         return new ArriveAction();
     }
 
-    public static function artGallery(): ArtGallery
+    /**
+     * @return ArtGallery
+     */
+    public static function artGallery()
     {
         return new ArtGallery();
     }
 
-    public static function article(): Article
+    /**
+     * @return Article
+     */
+    public static function article()
     {
         return new Article();
     }
 
-    public static function askAction(): AskAction
+    /**
+     * @return AskAction
+     */
+    public static function askAction()
     {
         return new AskAction();
     }
 
-    public static function assessAction(): AssessAction
+    /**
+     * @return AssessAction
+     */
+    public static function assessAction()
     {
         return new AssessAction();
     }
 
-    public static function assignAction(): AssignAction
+    /**
+     * @return AssignAction
+     */
+    public static function assignAction()
     {
         return new AssignAction();
     }
 
-    public static function attorney(): Attorney
+    /**
+     * @return Attorney
+     */
+    public static function attorney()
     {
         return new Attorney();
     }
 
-    public static function audience(): Audience
+    /**
+     * @return Audience
+     */
+    public static function audience()
     {
         return new Audience();
     }
 
-    public static function audioObject(): AudioObject
+    /**
+     * @return AudioObject
+     */
+    public static function audioObject()
     {
         return new AudioObject();
     }
 
-    public static function authorizeAction(): AuthorizeAction
+    /**
+     * @return AuthorizeAction
+     */
+    public static function authorizeAction()
     {
         return new AuthorizeAction();
     }
 
-    public static function autoBodyShop(): AutoBodyShop
+    /**
+     * @return AutoBodyShop
+     */
+    public static function autoBodyShop()
     {
         return new AutoBodyShop();
     }
 
-    public static function autoDealer(): AutoDealer
+    /**
+     * @return AutoDealer
+     */
+    public static function autoDealer()
     {
         return new AutoDealer();
     }
 
-    public static function autoPartsStore(): AutoPartsStore
+    /**
+     * @return AutoPartsStore
+     */
+    public static function autoPartsStore()
     {
         return new AutoPartsStore();
     }
 
-    public static function autoRental(): AutoRental
+    /**
+     * @return AutoRental
+     */
+    public static function autoRental()
     {
         return new AutoRental();
     }
 
-    public static function autoRepair(): AutoRepair
+    /**
+     * @return AutoRepair
+     */
+    public static function autoRepair()
     {
         return new AutoRepair();
     }
 
-    public static function autoWash(): AutoWash
+    /**
+     * @return AutoWash
+     */
+    public static function autoWash()
     {
         return new AutoWash();
     }
 
-    public static function automatedTeller(): AutomatedTeller
+    /**
+     * @return AutomatedTeller
+     */
+    public static function automatedTeller()
     {
         return new AutomatedTeller();
     }
 
-    public static function automotiveBusiness(): AutomotiveBusiness
+    /**
+     * @return AutomotiveBusiness
+     */
+    public static function automotiveBusiness()
     {
         return new AutomotiveBusiness();
     }
 
-    public static function bakery(): Bakery
+    /**
+     * @return Bakery
+     */
+    public static function bakery()
     {
         return new Bakery();
     }
 
-    public static function bankAccount(): BankAccount
+    /**
+     * @return BankAccount
+     */
+    public static function bankAccount()
     {
         return new BankAccount();
     }
 
-    public static function bankOrCreditUnion(): BankOrCreditUnion
+    /**
+     * @return BankOrCreditUnion
+     */
+    public static function bankOrCreditUnion()
     {
         return new BankOrCreditUnion();
     }
 
-    public static function barOrPub(): BarOrPub
+    /**
+     * @return BarOrPub
+     */
+    public static function barOrPub()
     {
         return new BarOrPub();
     }
 
-    public static function barcode(): Barcode
+    /**
+     * @return Barcode
+     */
+    public static function barcode()
     {
         return new Barcode();
     }
 
-    public static function beach(): Beach
+    /**
+     * @return Beach
+     */
+    public static function beach()
     {
         return new Beach();
     }
 
-    public static function beautySalon(): BeautySalon
+    /**
+     * @return BeautySalon
+     */
+    public static function beautySalon()
     {
         return new BeautySalon();
     }
 
-    public static function bedAndBreakfast(): BedAndBreakfast
+    /**
+     * @return BedAndBreakfast
+     */
+    public static function bedAndBreakfast()
     {
         return new BedAndBreakfast();
     }
 
-    public static function bedDetails(): BedDetails
+    /**
+     * @return BedDetails
+     */
+    public static function bedDetails()
     {
         return new BedDetails();
     }
 
-    public static function befriendAction(): BefriendAction
+    /**
+     * @return BefriendAction
+     */
+    public static function befriendAction()
     {
         return new BefriendAction();
     }
 
-    public static function bikeStore(): BikeStore
+    /**
+     * @return BikeStore
+     */
+    public static function bikeStore()
     {
         return new BikeStore();
     }
 
-    public static function blog(): Blog
+    /**
+     * @return Blog
+     */
+    public static function blog()
     {
         return new Blog();
     }
 
-    public static function blogPosting(): BlogPosting
+    /**
+     * @return BlogPosting
+     */
+    public static function blogPosting()
     {
         return new BlogPosting();
     }
 
-    public static function boardingPolicyType(): BoardingPolicyType
+    /**
+     * @return BoardingPolicyType
+     */
+    public static function boardingPolicyType()
     {
         return new BoardingPolicyType();
     }
 
-    public static function bodyOfWater(): BodyOfWater
+    /**
+     * @return BodyOfWater
+     */
+    public static function bodyOfWater()
     {
         return new BodyOfWater();
     }
 
-    public static function book(): Book
+    /**
+     * @return Book
+     */
+    public static function book()
     {
         return new Book();
     }
 
-    public static function bookFormatType(): BookFormatType
+    /**
+     * @return BookFormatType
+     */
+    public static function bookFormatType()
     {
         return new BookFormatType();
     }
 
-    public static function bookSeries(): BookSeries
+    /**
+     * @return BookSeries
+     */
+    public static function bookSeries()
     {
         return new BookSeries();
     }
 
-    public static function bookStore(): BookStore
+    /**
+     * @return BookStore
+     */
+    public static function bookStore()
     {
         return new BookStore();
     }
 
-    public static function bookmarkAction(): BookmarkAction
+    /**
+     * @return BookmarkAction
+     */
+    public static function bookmarkAction()
     {
         return new BookmarkAction();
     }
 
-    public static function borrowAction(): BorrowAction
+    /**
+     * @return BorrowAction
+     */
+    public static function borrowAction()
     {
         return new BorrowAction();
     }
 
-    public static function bowlingAlley(): BowlingAlley
+    /**
+     * @return BowlingAlley
+     */
+    public static function bowlingAlley()
     {
         return new BowlingAlley();
     }
 
-    public static function brand(): Brand
+    /**
+     * @return Brand
+     */
+    public static function brand()
     {
         return new Brand();
     }
 
-    public static function breadcrumbList(): BreadcrumbList
+    /**
+     * @return BreadcrumbList
+     */
+    public static function breadcrumbList()
     {
         return new BreadcrumbList();
     }
 
-    public static function brewery(): Brewery
+    /**
+     * @return Brewery
+     */
+    public static function brewery()
     {
         return new Brewery();
     }
 
-    public static function bridge(): Bridge
+    /**
+     * @return Bridge
+     */
+    public static function bridge()
     {
         return new Bridge();
     }
 
-    public static function broadcastChannel(): BroadcastChannel
+    /**
+     * @return BroadcastChannel
+     */
+    public static function broadcastChannel()
     {
         return new BroadcastChannel();
     }
 
-    public static function broadcastEvent(): BroadcastEvent
+    /**
+     * @return BroadcastEvent
+     */
+    public static function broadcastEvent()
     {
         return new BroadcastEvent();
     }
 
-    public static function broadcastService(): BroadcastService
+    /**
+     * @return BroadcastService
+     */
+    public static function broadcastService()
     {
         return new BroadcastService();
     }
 
-    public static function buddhistTemple(): BuddhistTemple
+    /**
+     * @return BuddhistTemple
+     */
+    public static function buddhistTemple()
     {
         return new BuddhistTemple();
     }
 
-    public static function busReservation(): BusReservation
+    /**
+     * @return BusReservation
+     */
+    public static function busReservation()
     {
         return new BusReservation();
     }
 
-    public static function busStation(): BusStation
+    /**
+     * @return BusStation
+     */
+    public static function busStation()
     {
         return new BusStation();
     }
 
-    public static function busStop(): BusStop
+    /**
+     * @return BusStop
+     */
+    public static function busStop()
     {
         return new BusStop();
     }
 
-    public static function busTrip(): BusTrip
+    /**
+     * @return BusTrip
+     */
+    public static function busTrip()
     {
         return new BusTrip();
     }
 
-    public static function businessAudience(): BusinessAudience
+    /**
+     * @return BusinessAudience
+     */
+    public static function businessAudience()
     {
         return new BusinessAudience();
     }
 
-    public static function businessEntityType(): BusinessEntityType
+    /**
+     * @return BusinessEntityType
+     */
+    public static function businessEntityType()
     {
         return new BusinessEntityType();
     }
 
-    public static function businessEvent(): BusinessEvent
+    /**
+     * @return BusinessEvent
+     */
+    public static function businessEvent()
     {
         return new BusinessEvent();
     }
 
-    public static function businessFunction(): BusinessFunction
+    /**
+     * @return BusinessFunction
+     */
+    public static function businessFunction()
     {
         return new BusinessFunction();
     }
 
-    public static function buyAction(): BuyAction
+    /**
+     * @return BuyAction
+     */
+    public static function buyAction()
     {
         return new BuyAction();
     }
 
-    public static function cableOrSatelliteService(): CableOrSatelliteService
+    /**
+     * @return CableOrSatelliteService
+     */
+    public static function cableOrSatelliteService()
     {
         return new CableOrSatelliteService();
     }
 
-    public static function cafeOrCoffeeShop(): CafeOrCoffeeShop
+    /**
+     * @return CafeOrCoffeeShop
+     */
+    public static function cafeOrCoffeeShop()
     {
         return new CafeOrCoffeeShop();
     }
 
-    public static function campground(): Campground
+    /**
+     * @return Campground
+     */
+    public static function campground()
     {
         return new Campground();
     }
 
-    public static function campingPitch(): CampingPitch
+    /**
+     * @return CampingPitch
+     */
+    public static function campingPitch()
     {
         return new CampingPitch();
     }
 
-    public static function canal(): Canal
+    /**
+     * @return Canal
+     */
+    public static function canal()
     {
         return new Canal();
     }
 
-    public static function cancelAction(): CancelAction
+    /**
+     * @return CancelAction
+     */
+    public static function cancelAction()
     {
         return new CancelAction();
     }
 
-    public static function car(): Car
+    /**
+     * @return Car
+     */
+    public static function car()
     {
         return new Car();
     }
 
-    public static function casino(): Casino
+    /**
+     * @return Casino
+     */
+    public static function casino()
     {
         return new Casino();
     }
 
-    public static function catholicChurch(): CatholicChurch
+    /**
+     * @return CatholicChurch
+     */
+    public static function catholicChurch()
     {
         return new CatholicChurch();
     }
 
-    public static function cemetery(): Cemetery
+    /**
+     * @return Cemetery
+     */
+    public static function cemetery()
     {
         return new Cemetery();
     }
 
-    public static function checkAction(): CheckAction
+    /**
+     * @return CheckAction
+     */
+    public static function checkAction()
     {
         return new CheckAction();
     }
 
-    public static function checkInAction(): CheckInAction
+    /**
+     * @return CheckInAction
+     */
+    public static function checkInAction()
     {
         return new CheckInAction();
     }
 
-    public static function checkOutAction(): CheckOutAction
+    /**
+     * @return CheckOutAction
+     */
+    public static function checkOutAction()
     {
         return new CheckOutAction();
     }
 
-    public static function checkoutPage(): CheckoutPage
+    /**
+     * @return CheckoutPage
+     */
+    public static function checkoutPage()
     {
         return new CheckoutPage();
     }
 
-    public static function childCare(): ChildCare
+    /**
+     * @return ChildCare
+     */
+    public static function childCare()
     {
         return new ChildCare();
     }
 
-    public static function childrensEvent(): ChildrensEvent
+    /**
+     * @return ChildrensEvent
+     */
+    public static function childrensEvent()
     {
         return new ChildrensEvent();
     }
 
-    public static function chooseAction(): ChooseAction
+    /**
+     * @return ChooseAction
+     */
+    public static function chooseAction()
     {
         return new ChooseAction();
     }
 
-    public static function church(): Church
+    /**
+     * @return Church
+     */
+    public static function church()
     {
         return new Church();
     }
 
-    public static function city(): City
+    /**
+     * @return City
+     */
+    public static function city()
     {
         return new City();
     }
 
-    public static function cityHall(): CityHall
+    /**
+     * @return CityHall
+     */
+    public static function cityHall()
     {
         return new CityHall();
     }
 
-    public static function civicStructure(): CivicStructure
+    /**
+     * @return CivicStructure
+     */
+    public static function civicStructure()
     {
         return new CivicStructure();
     }
 
-    public static function claimReview(): ClaimReview
+    /**
+     * @return ClaimReview
+     */
+    public static function claimReview()
     {
         return new ClaimReview();
     }
 
-    public static function clip(): Clip
+    /**
+     * @return Clip
+     */
+    public static function clip()
     {
         return new Clip();
     }
 
-    public static function clothingStore(): ClothingStore
+    /**
+     * @return ClothingStore
+     */
+    public static function clothingStore()
     {
         return new ClothingStore();
     }
 
-    public static function code(): Code
+    /**
+     * @return Code
+     */
+    public static function code()
     {
         return new Code();
     }
 
-    public static function collectionPage(): CollectionPage
+    /**
+     * @return CollectionPage
+     */
+    public static function collectionPage()
     {
         return new CollectionPage();
     }
 
-    public static function collegeOrUniversity(): CollegeOrUniversity
+    /**
+     * @return CollegeOrUniversity
+     */
+    public static function collegeOrUniversity()
     {
         return new CollegeOrUniversity();
     }
 
-    public static function comedyClub(): ComedyClub
+    /**
+     * @return ComedyClub
+     */
+    public static function comedyClub()
     {
         return new ComedyClub();
     }
 
-    public static function comedyEvent(): ComedyEvent
+    /**
+     * @return ComedyEvent
+     */
+    public static function comedyEvent()
     {
         return new ComedyEvent();
     }
 
-    public static function comment(): Comment
+    /**
+     * @return Comment
+     */
+    public static function comment()
     {
         return new Comment();
     }
 
-    public static function commentAction(): CommentAction
+    /**
+     * @return CommentAction
+     */
+    public static function commentAction()
     {
         return new CommentAction();
     }
 
-    public static function communicateAction(): CommunicateAction
+    /**
+     * @return CommunicateAction
+     */
+    public static function communicateAction()
     {
         return new CommunicateAction();
     }
 
-    public static function compoundPriceSpecification(): CompoundPriceSpecification
+    /**
+     * @return CompoundPriceSpecification
+     */
+    public static function compoundPriceSpecification()
     {
         return new CompoundPriceSpecification();
     }
 
-    public static function computerLanguage(): ComputerLanguage
+    /**
+     * @return ComputerLanguage
+     */
+    public static function computerLanguage()
     {
         return new ComputerLanguage();
     }
 
-    public static function computerStore(): ComputerStore
+    /**
+     * @return ComputerStore
+     */
+    public static function computerStore()
     {
         return new ComputerStore();
     }
 
-    public static function confirmAction(): ConfirmAction
+    /**
+     * @return ConfirmAction
+     */
+    public static function confirmAction()
     {
         return new ConfirmAction();
     }
 
-    public static function consumeAction(): ConsumeAction
+    /**
+     * @return ConsumeAction
+     */
+    public static function consumeAction()
     {
         return new ConsumeAction();
     }
 
-    public static function contactPage(): ContactPage
+    /**
+     * @return ContactPage
+     */
+    public static function contactPage()
     {
         return new ContactPage();
     }
 
-    public static function contactPoint(): ContactPoint
+    /**
+     * @return ContactPoint
+     */
+    public static function contactPoint()
     {
         return new ContactPoint();
     }
 
-    public static function contactPointOption(): ContactPointOption
+    /**
+     * @return ContactPointOption
+     */
+    public static function contactPointOption()
     {
         return new ContactPointOption();
     }
 
-    public static function continent(): Continent
+    /**
+     * @return Continent
+     */
+    public static function continent()
     {
         return new Continent();
     }
 
-    public static function controlAction(): ControlAction
+    /**
+     * @return ControlAction
+     */
+    public static function controlAction()
     {
         return new ControlAction();
     }
 
-    public static function convenienceStore(): ConvenienceStore
+    /**
+     * @return ConvenienceStore
+     */
+    public static function convenienceStore()
     {
         return new ConvenienceStore();
     }
 
-    public static function conversation(): Conversation
+    /**
+     * @return Conversation
+     */
+    public static function conversation()
     {
         return new Conversation();
     }
 
-    public static function cookAction(): CookAction
+    /**
+     * @return CookAction
+     */
+    public static function cookAction()
     {
         return new CookAction();
     }
 
-    public static function corporation(): Corporation
+    /**
+     * @return Corporation
+     */
+    public static function corporation()
     {
         return new Corporation();
     }
 
-    public static function country(): Country
+    /**
+     * @return Country
+     */
+    public static function country()
     {
         return new Country();
     }
 
-    public static function course(): Course
+    /**
+     * @return Course
+     */
+    public static function course()
     {
         return new Course();
     }
 
-    public static function courseInstance(): CourseInstance
+    /**
+     * @return CourseInstance
+     */
+    public static function courseInstance()
     {
         return new CourseInstance();
     }
 
-    public static function courthouse(): Courthouse
+    /**
+     * @return Courthouse
+     */
+    public static function courthouse()
     {
         return new Courthouse();
     }
 
-    public static function createAction(): CreateAction
+    /**
+     * @return CreateAction
+     */
+    public static function createAction()
     {
         return new CreateAction();
     }
 
-    public static function creativeWork(): CreativeWork
+    /**
+     * @return CreativeWork
+     */
+    public static function creativeWork()
     {
         return new CreativeWork();
     }
 
-    public static function creativeWorkSeason(): CreativeWorkSeason
+    /**
+     * @return CreativeWorkSeason
+     */
+    public static function creativeWorkSeason()
     {
         return new CreativeWorkSeason();
     }
 
-    public static function creativeWorkSeries(): CreativeWorkSeries
+    /**
+     * @return CreativeWorkSeries
+     */
+    public static function creativeWorkSeries()
     {
         return new CreativeWorkSeries();
     }
 
-    public static function creditCard(): CreditCard
+    /**
+     * @return CreditCard
+     */
+    public static function creditCard()
     {
         return new CreditCard();
     }
 
-    public static function crematorium(): Crematorium
+    /**
+     * @return Crematorium
+     */
+    public static function crematorium()
     {
         return new Crematorium();
     }
 
-    public static function currencyConversionService(): CurrencyConversionService
+    /**
+     * @return CurrencyConversionService
+     */
+    public static function currencyConversionService()
     {
         return new CurrencyConversionService();
     }
 
-    public static function danceEvent(): DanceEvent
+    /**
+     * @return DanceEvent
+     */
+    public static function danceEvent()
     {
         return new DanceEvent();
     }
 
-    public static function danceGroup(): DanceGroup
+    /**
+     * @return DanceGroup
+     */
+    public static function danceGroup()
     {
         return new DanceGroup();
     }
 
-    public static function dataCatalog(): DataCatalog
+    /**
+     * @return DataCatalog
+     */
+    public static function dataCatalog()
     {
         return new DataCatalog();
     }
 
-    public static function dataDownload(): DataDownload
+    /**
+     * @return DataDownload
+     */
+    public static function dataDownload()
     {
         return new DataDownload();
     }
 
-    public static function dataFeed(): DataFeed
+    /**
+     * @return DataFeed
+     */
+    public static function dataFeed()
     {
         return new DataFeed();
     }
 
-    public static function dataFeedItem(): DataFeedItem
+    /**
+     * @return DataFeedItem
+     */
+    public static function dataFeedItem()
     {
         return new DataFeedItem();
     }
 
-    public static function dataset(): Dataset
+    /**
+     * @return Dataset
+     */
+    public static function dataset()
     {
         return new Dataset();
     }
 
-    public static function datedMoneySpecification(): DatedMoneySpecification
+    /**
+     * @return DatedMoneySpecification
+     */
+    public static function datedMoneySpecification()
     {
         return new DatedMoneySpecification();
     }
 
-    public static function dayOfWeek(): DayOfWeek
+    /**
+     * @return DayOfWeek
+     */
+    public static function dayOfWeek()
     {
         return new DayOfWeek();
     }
 
-    public static function daySpa(): DaySpa
+    /**
+     * @return DaySpa
+     */
+    public static function daySpa()
     {
         return new DaySpa();
     }
 
-    public static function deactivateAction(): DeactivateAction
+    /**
+     * @return DeactivateAction
+     */
+    public static function deactivateAction()
     {
         return new DeactivateAction();
     }
 
-    public static function defenceEstablishment(): DefenceEstablishment
+    /**
+     * @return DefenceEstablishment
+     */
+    public static function defenceEstablishment()
     {
         return new DefenceEstablishment();
     }
 
-    public static function deleteAction(): DeleteAction
+    /**
+     * @return DeleteAction
+     */
+    public static function deleteAction()
     {
         return new DeleteAction();
     }
 
-    public static function deliveryChargeSpecification(): DeliveryChargeSpecification
+    /**
+     * @return DeliveryChargeSpecification
+     */
+    public static function deliveryChargeSpecification()
     {
         return new DeliveryChargeSpecification();
     }
 
-    public static function deliveryEvent(): DeliveryEvent
+    /**
+     * @return DeliveryEvent
+     */
+    public static function deliveryEvent()
     {
         return new DeliveryEvent();
     }
 
-    public static function deliveryMethod(): DeliveryMethod
+    /**
+     * @return DeliveryMethod
+     */
+    public static function deliveryMethod()
     {
         return new DeliveryMethod();
     }
 
-    public static function demand(): Demand
+    /**
+     * @return Demand
+     */
+    public static function demand()
     {
         return new Demand();
     }
 
-    public static function dentist(): Dentist
+    /**
+     * @return Dentist
+     */
+    public static function dentist()
     {
         return new Dentist();
     }
 
-    public static function departAction(): DepartAction
+    /**
+     * @return DepartAction
+     */
+    public static function departAction()
     {
         return new DepartAction();
     }
 
-    public static function departmentStore(): DepartmentStore
+    /**
+     * @return DepartmentStore
+     */
+    public static function departmentStore()
     {
         return new DepartmentStore();
     }
 
-    public static function depositAccount(): DepositAccount
+    /**
+     * @return DepositAccount
+     */
+    public static function depositAccount()
     {
         return new DepositAccount();
     }
 
-    public static function digitalDocument(): DigitalDocument
+    /**
+     * @return DigitalDocument
+     */
+    public static function digitalDocument()
     {
         return new DigitalDocument();
     }
 
-    public static function digitalDocumentPermission(): DigitalDocumentPermission
+    /**
+     * @return DigitalDocumentPermission
+     */
+    public static function digitalDocumentPermission()
     {
         return new DigitalDocumentPermission();
     }
 
-    public static function digitalDocumentPermissionType(): DigitalDocumentPermissionType
+    /**
+     * @return DigitalDocumentPermissionType
+     */
+    public static function digitalDocumentPermissionType()
     {
         return new DigitalDocumentPermissionType();
     }
 
-    public static function disagreeAction(): DisagreeAction
+    /**
+     * @return DisagreeAction
+     */
+    public static function disagreeAction()
     {
         return new DisagreeAction();
     }
 
-    public static function discoverAction(): DiscoverAction
+    /**
+     * @return DiscoverAction
+     */
+    public static function discoverAction()
     {
         return new DiscoverAction();
     }
 
-    public static function discussionForumPosting(): DiscussionForumPosting
+    /**
+     * @return DiscussionForumPosting
+     */
+    public static function discussionForumPosting()
     {
         return new DiscussionForumPosting();
     }
 
-    public static function dislikeAction(): DislikeAction
+    /**
+     * @return DislikeAction
+     */
+    public static function dislikeAction()
     {
         return new DislikeAction();
     }
 
-    public static function distance(): Distance
+    /**
+     * @return Distance
+     */
+    public static function distance()
     {
         return new Distance();
     }
 
-    public static function donateAction(): DonateAction
+    /**
+     * @return DonateAction
+     */
+    public static function donateAction()
     {
         return new DonateAction();
     }
 
-    public static function downloadAction(): DownloadAction
+    /**
+     * @return DownloadAction
+     */
+    public static function downloadAction()
     {
         return new DownloadAction();
     }
 
-    public static function drawAction(): DrawAction
+    /**
+     * @return DrawAction
+     */
+    public static function drawAction()
     {
         return new DrawAction();
     }
 
-    public static function drinkAction(): DrinkAction
+    /**
+     * @return DrinkAction
+     */
+    public static function drinkAction()
     {
         return new DrinkAction();
     }
 
-    public static function driveWheelConfigurationValue(): DriveWheelConfigurationValue
+    /**
+     * @return DriveWheelConfigurationValue
+     */
+    public static function driveWheelConfigurationValue()
     {
         return new DriveWheelConfigurationValue();
     }
 
-    public static function dryCleaningOrLaundry(): DryCleaningOrLaundry
+    /**
+     * @return DryCleaningOrLaundry
+     */
+    public static function dryCleaningOrLaundry()
     {
         return new DryCleaningOrLaundry();
     }
 
-    public static function duration(): Duration
+    /**
+     * @return Duration
+     */
+    public static function duration()
     {
         return new Duration();
     }
 
-    public static function eatAction(): EatAction
+    /**
+     * @return EatAction
+     */
+    public static function eatAction()
     {
         return new EatAction();
     }
 
-    public static function educationEvent(): EducationEvent
+    /**
+     * @return EducationEvent
+     */
+    public static function educationEvent()
     {
         return new EducationEvent();
     }
 
-    public static function educationalAudience(): EducationalAudience
+    /**
+     * @return EducationalAudience
+     */
+    public static function educationalAudience()
     {
         return new EducationalAudience();
     }
 
-    public static function educationalOrganization(): EducationalOrganization
+    /**
+     * @return EducationalOrganization
+     */
+    public static function educationalOrganization()
     {
         return new EducationalOrganization();
     }
 
-    public static function electrician(): Electrician
+    /**
+     * @return Electrician
+     */
+    public static function electrician()
     {
         return new Electrician();
     }
 
-    public static function electronicsStore(): ElectronicsStore
+    /**
+     * @return ElectronicsStore
+     */
+    public static function electronicsStore()
     {
         return new ElectronicsStore();
     }
 
-    public static function elementarySchool(): ElementarySchool
+    /**
+     * @return ElementarySchool
+     */
+    public static function elementarySchool()
     {
         return new ElementarySchool();
     }
 
-    public static function emailMessage(): EmailMessage
+    /**
+     * @return EmailMessage
+     */
+    public static function emailMessage()
     {
         return new EmailMessage();
     }
 
-    public static function embassy(): Embassy
+    /**
+     * @return Embassy
+     */
+    public static function embassy()
     {
         return new Embassy();
     }
 
-    public static function emergencyService(): EmergencyService
+    /**
+     * @return EmergencyService
+     */
+    public static function emergencyService()
     {
         return new EmergencyService();
     }
 
-    public static function employeeRole(): EmployeeRole
+    /**
+     * @return EmployeeRole
+     */
+    public static function employeeRole()
     {
         return new EmployeeRole();
     }
 
-    public static function employmentAgency(): EmploymentAgency
+    /**
+     * @return EmploymentAgency
+     */
+    public static function employmentAgency()
     {
         return new EmploymentAgency();
     }
 
-    public static function endorseAction(): EndorseAction
+    /**
+     * @return EndorseAction
+     */
+    public static function endorseAction()
     {
         return new EndorseAction();
     }
 
-    public static function energy(): Energy
+    /**
+     * @return Energy
+     */
+    public static function energy()
     {
         return new Energy();
     }
 
-    public static function engineSpecification(): EngineSpecification
+    /**
+     * @return EngineSpecification
+     */
+    public static function engineSpecification()
     {
         return new EngineSpecification();
     }
 
-    public static function entertainmentBusiness(): EntertainmentBusiness
+    /**
+     * @return EntertainmentBusiness
+     */
+    public static function entertainmentBusiness()
     {
         return new EntertainmentBusiness();
     }
 
-    public static function entryPoint(): EntryPoint
+    /**
+     * @return EntryPoint
+     */
+    public static function entryPoint()
     {
         return new EntryPoint();
     }
 
-    public static function enumeration(): Enumeration
+    /**
+     * @return Enumeration
+     */
+    public static function enumeration()
     {
         return new Enumeration();
     }
 
-    public static function episode(): Episode
+    /**
+     * @return Episode
+     */
+    public static function episode()
     {
         return new Episode();
     }
 
-    public static function event(): Event
+    /**
+     * @return Event
+     */
+    public static function event()
     {
         return new Event();
     }
 
-    public static function eventReservation(): EventReservation
+    /**
+     * @return EventReservation
+     */
+    public static function eventReservation()
     {
         return new EventReservation();
     }
 
-    public static function eventStatusType(): EventStatusType
+    /**
+     * @return EventStatusType
+     */
+    public static function eventStatusType()
     {
         return new EventStatusType();
     }
 
-    public static function eventVenue(): EventVenue
+    /**
+     * @return EventVenue
+     */
+    public static function eventVenue()
     {
         return new EventVenue();
     }
 
-    public static function exerciseAction(): ExerciseAction
+    /**
+     * @return ExerciseAction
+     */
+    public static function exerciseAction()
     {
         return new ExerciseAction();
     }
 
-    public static function exerciseGym(): ExerciseGym
+    /**
+     * @return ExerciseGym
+     */
+    public static function exerciseGym()
     {
         return new ExerciseGym();
     }
 
-    public static function exhibitionEvent(): ExhibitionEvent
+    /**
+     * @return ExhibitionEvent
+     */
+    public static function exhibitionEvent()
     {
         return new ExhibitionEvent();
     }
 
-    public static function fastFoodRestaurant(): FastFoodRestaurant
+    /**
+     * @return FastFoodRestaurant
+     */
+    public static function fastFoodRestaurant()
     {
         return new FastFoodRestaurant();
     }
 
-    public static function festival(): Festival
+    /**
+     * @return Festival
+     */
+    public static function festival()
     {
         return new Festival();
     }
 
-    public static function filmAction(): FilmAction
+    /**
+     * @return FilmAction
+     */
+    public static function filmAction()
     {
         return new FilmAction();
     }
 
-    public static function financialProduct(): FinancialProduct
+    /**
+     * @return FinancialProduct
+     */
+    public static function financialProduct()
     {
         return new FinancialProduct();
     }
 
-    public static function financialService(): FinancialService
+    /**
+     * @return FinancialService
+     */
+    public static function financialService()
     {
         return new FinancialService();
     }
 
-    public static function findAction(): FindAction
+    /**
+     * @return FindAction
+     */
+    public static function findAction()
     {
         return new FindAction();
     }
 
-    public static function fireStation(): FireStation
+    /**
+     * @return FireStation
+     */
+    public static function fireStation()
     {
         return new FireStation();
     }
 
-    public static function flight(): Flight
+    /**
+     * @return Flight
+     */
+    public static function flight()
     {
         return new Flight();
     }
 
-    public static function flightReservation(): FlightReservation
+    /**
+     * @return FlightReservation
+     */
+    public static function flightReservation()
     {
         return new FlightReservation();
     }
 
-    public static function florist(): Florist
+    /**
+     * @return Florist
+     */
+    public static function florist()
     {
         return new Florist();
     }
 
-    public static function followAction(): FollowAction
+    /**
+     * @return FollowAction
+     */
+    public static function followAction()
     {
         return new FollowAction();
     }
 
-    public static function foodEstablishment(): FoodEstablishment
+    /**
+     * @return FoodEstablishment
+     */
+    public static function foodEstablishment()
     {
         return new FoodEstablishment();
     }
 
-    public static function foodEstablishmentReservation(): FoodEstablishmentReservation
+    /**
+     * @return FoodEstablishmentReservation
+     */
+    public static function foodEstablishmentReservation()
     {
         return new FoodEstablishmentReservation();
     }
 
-    public static function foodEvent(): FoodEvent
+    /**
+     * @return FoodEvent
+     */
+    public static function foodEvent()
     {
         return new FoodEvent();
     }
 
-    public static function foodService(): FoodService
+    /**
+     * @return FoodService
+     */
+    public static function foodService()
     {
         return new FoodService();
     }
 
-    public static function furnitureStore(): FurnitureStore
+    /**
+     * @return FurnitureStore
+     */
+    public static function furnitureStore()
     {
         return new FurnitureStore();
     }
 
-    public static function game(): Game
+    /**
+     * @return Game
+     */
+    public static function game()
     {
         return new Game();
     }
 
-    public static function gamePlayMode(): GamePlayMode
+    /**
+     * @return GamePlayMode
+     */
+    public static function gamePlayMode()
     {
         return new GamePlayMode();
     }
 
-    public static function gameServer(): GameServer
+    /**
+     * @return GameServer
+     */
+    public static function gameServer()
     {
         return new GameServer();
     }
 
-    public static function gameServerStatus(): GameServerStatus
+    /**
+     * @return GameServerStatus
+     */
+    public static function gameServerStatus()
     {
         return new GameServerStatus();
     }
 
-    public static function gardenStore(): GardenStore
+    /**
+     * @return GardenStore
+     */
+    public static function gardenStore()
     {
         return new GardenStore();
     }
 
-    public static function gasStation(): GasStation
+    /**
+     * @return GasStation
+     */
+    public static function gasStation()
     {
         return new GasStation();
     }
 
-    public static function gatedResidenceCommunity(): GatedResidenceCommunity
+    /**
+     * @return GatedResidenceCommunity
+     */
+    public static function gatedResidenceCommunity()
     {
         return new GatedResidenceCommunity();
     }
 
-    public static function genderType(): GenderType
+    /**
+     * @return GenderType
+     */
+    public static function genderType()
     {
         return new GenderType();
     }
 
-    public static function generalContractor(): GeneralContractor
+    /**
+     * @return GeneralContractor
+     */
+    public static function generalContractor()
     {
         return new GeneralContractor();
     }
 
-    public static function geoCircle(): GeoCircle
+    /**
+     * @return GeoCircle
+     */
+    public static function geoCircle()
     {
         return new GeoCircle();
     }
 
-    public static function geoCoordinates(): GeoCoordinates
+    /**
+     * @return GeoCoordinates
+     */
+    public static function geoCoordinates()
     {
         return new GeoCoordinates();
     }
 
-    public static function geoShape(): GeoShape
+    /**
+     * @return GeoShape
+     */
+    public static function geoShape()
     {
         return new GeoShape();
     }
 
-    public static function giveAction(): GiveAction
+    /**
+     * @return GiveAction
+     */
+    public static function giveAction()
     {
         return new GiveAction();
     }
 
-    public static function golfCourse(): GolfCourse
+    /**
+     * @return GolfCourse
+     */
+    public static function golfCourse()
     {
         return new GolfCourse();
     }
 
-    public static function governmentBuilding(): GovernmentBuilding
+    /**
+     * @return GovernmentBuilding
+     */
+    public static function governmentBuilding()
     {
         return new GovernmentBuilding();
     }
 
-    public static function governmentOffice(): GovernmentOffice
+    /**
+     * @return GovernmentOffice
+     */
+    public static function governmentOffice()
     {
         return new GovernmentOffice();
     }
 
-    public static function governmentOrganization(): GovernmentOrganization
+    /**
+     * @return GovernmentOrganization
+     */
+    public static function governmentOrganization()
     {
         return new GovernmentOrganization();
     }
 
-    public static function governmentPermit(): GovernmentPermit
+    /**
+     * @return GovernmentPermit
+     */
+    public static function governmentPermit()
     {
         return new GovernmentPermit();
     }
 
-    public static function governmentService(): GovernmentService
+    /**
+     * @return GovernmentService
+     */
+    public static function governmentService()
     {
         return new GovernmentService();
     }
 
-    public static function groceryStore(): GroceryStore
+    /**
+     * @return GroceryStore
+     */
+    public static function groceryStore()
     {
         return new GroceryStore();
     }
 
-    public static function hVACBusiness(): HVACBusiness
+    /**
+     * @return HVACBusiness
+     */
+    public static function hVACBusiness()
     {
         return new HVACBusiness();
     }
 
-    public static function hairSalon(): HairSalon
+    /**
+     * @return HairSalon
+     */
+    public static function hairSalon()
     {
         return new HairSalon();
     }
 
-    public static function hardwareStore(): HardwareStore
+    /**
+     * @return HardwareStore
+     */
+    public static function hardwareStore()
     {
         return new HardwareStore();
     }
 
-    public static function healthAndBeautyBusiness(): HealthAndBeautyBusiness
+    /**
+     * @return HealthAndBeautyBusiness
+     */
+    public static function healthAndBeautyBusiness()
     {
         return new HealthAndBeautyBusiness();
     }
 
-    public static function healthClub(): HealthClub
+    /**
+     * @return HealthClub
+     */
+    public static function healthClub()
     {
         return new HealthClub();
     }
 
-    public static function highSchool(): HighSchool
+    /**
+     * @return HighSchool
+     */
+    public static function highSchool()
     {
         return new HighSchool();
     }
 
-    public static function hinduTemple(): HinduTemple
+    /**
+     * @return HinduTemple
+     */
+    public static function hinduTemple()
     {
         return new HinduTemple();
     }
 
-    public static function hobbyShop(): HobbyShop
+    /**
+     * @return HobbyShop
+     */
+    public static function hobbyShop()
     {
         return new HobbyShop();
     }
 
-    public static function homeAndConstructionBusiness(): HomeAndConstructionBusiness
+    /**
+     * @return HomeAndConstructionBusiness
+     */
+    public static function homeAndConstructionBusiness()
     {
         return new HomeAndConstructionBusiness();
     }
 
-    public static function homeGoodsStore(): HomeGoodsStore
+    /**
+     * @return HomeGoodsStore
+     */
+    public static function homeGoodsStore()
     {
         return new HomeGoodsStore();
     }
 
-    public static function hospital(): Hospital
+    /**
+     * @return Hospital
+     */
+    public static function hospital()
     {
         return new Hospital();
     }
 
-    public static function hostel(): Hostel
+    /**
+     * @return Hostel
+     */
+    public static function hostel()
     {
         return new Hostel();
     }
 
-    public static function hotel(): Hotel
+    /**
+     * @return Hotel
+     */
+    public static function hotel()
     {
         return new Hotel();
     }
 
-    public static function hotelRoom(): HotelRoom
+    /**
+     * @return HotelRoom
+     */
+    public static function hotelRoom()
     {
         return new HotelRoom();
     }
 
-    public static function house(): House
+    /**
+     * @return House
+     */
+    public static function house()
     {
         return new House();
     }
 
-    public static function housePainter(): HousePainter
+    /**
+     * @return HousePainter
+     */
+    public static function housePainter()
     {
         return new HousePainter();
     }
 
-    public static function howTo(): HowTo
+    /**
+     * @return HowTo
+     */
+    public static function howTo()
     {
         return new HowTo();
     }
 
-    public static function howToDirection(): HowToDirection
+    /**
+     * @return HowToDirection
+     */
+    public static function howToDirection()
     {
         return new HowToDirection();
     }
 
-    public static function howToItem(): HowToItem
+    /**
+     * @return HowToItem
+     */
+    public static function howToItem()
     {
         return new HowToItem();
     }
 
-    public static function howToSection(): HowToSection
+    /**
+     * @return HowToSection
+     */
+    public static function howToSection()
     {
         return new HowToSection();
     }
 
-    public static function howToStep(): HowToStep
+    /**
+     * @return HowToStep
+     */
+    public static function howToStep()
     {
         return new HowToStep();
     }
 
-    public static function howToSupply(): HowToSupply
+    /**
+     * @return HowToSupply
+     */
+    public static function howToSupply()
     {
         return new HowToSupply();
     }
 
-    public static function howToTip(): HowToTip
+    /**
+     * @return HowToTip
+     */
+    public static function howToTip()
     {
         return new HowToTip();
     }
 
-    public static function howToTool(): HowToTool
+    /**
+     * @return HowToTool
+     */
+    public static function howToTool()
     {
         return new HowToTool();
     }
 
-    public static function iceCreamShop(): IceCreamShop
+    /**
+     * @return IceCreamShop
+     */
+    public static function iceCreamShop()
     {
         return new IceCreamShop();
     }
 
-    public static function ignoreAction(): IgnoreAction
+    /**
+     * @return IgnoreAction
+     */
+    public static function ignoreAction()
     {
         return new IgnoreAction();
     }
 
-    public static function imageGallery(): ImageGallery
+    /**
+     * @return ImageGallery
+     */
+    public static function imageGallery()
     {
         return new ImageGallery();
     }
 
-    public static function imageObject(): ImageObject
+    /**
+     * @return ImageObject
+     */
+    public static function imageObject()
     {
         return new ImageObject();
     }
 
-    public static function individualProduct(): IndividualProduct
+    /**
+     * @return IndividualProduct
+     */
+    public static function individualProduct()
     {
         return new IndividualProduct();
     }
 
-    public static function informAction(): InformAction
+    /**
+     * @return InformAction
+     */
+    public static function informAction()
     {
         return new InformAction();
     }
 
-    public static function insertAction(): InsertAction
+    /**
+     * @return InsertAction
+     */
+    public static function insertAction()
     {
         return new InsertAction();
     }
 
-    public static function installAction(): InstallAction
+    /**
+     * @return InstallAction
+     */
+    public static function installAction()
     {
         return new InstallAction();
     }
 
-    public static function insuranceAgency(): InsuranceAgency
+    /**
+     * @return InsuranceAgency
+     */
+    public static function insuranceAgency()
     {
         return new InsuranceAgency();
     }
 
-    public static function intangible(): Intangible
+    /**
+     * @return Intangible
+     */
+    public static function intangible()
     {
         return new Intangible();
     }
 
-    public static function interactAction(): InteractAction
+    /**
+     * @return InteractAction
+     */
+    public static function interactAction()
     {
         return new InteractAction();
     }
 
-    public static function interactionCounter(): InteractionCounter
+    /**
+     * @return InteractionCounter
+     */
+    public static function interactionCounter()
     {
         return new InteractionCounter();
     }
 
-    public static function internetCafe(): InternetCafe
+    /**
+     * @return InternetCafe
+     */
+    public static function internetCafe()
     {
         return new InternetCafe();
     }
 
-    public static function investmentOrDeposit(): InvestmentOrDeposit
+    /**
+     * @return InvestmentOrDeposit
+     */
+    public static function investmentOrDeposit()
     {
         return new InvestmentOrDeposit();
     }
 
-    public static function inviteAction(): InviteAction
+    /**
+     * @return InviteAction
+     */
+    public static function inviteAction()
     {
         return new InviteAction();
     }
 
-    public static function invoice(): Invoice
+    /**
+     * @return Invoice
+     */
+    public static function invoice()
     {
         return new Invoice();
     }
 
-    public static function itemAvailability(): ItemAvailability
+    /**
+     * @return ItemAvailability
+     */
+    public static function itemAvailability()
     {
         return new ItemAvailability();
     }
 
-    public static function itemList(): ItemList
+    /**
+     * @return ItemList
+     */
+    public static function itemList()
     {
         return new ItemList();
     }
 
-    public static function itemListOrderType(): ItemListOrderType
+    /**
+     * @return ItemListOrderType
+     */
+    public static function itemListOrderType()
     {
         return new ItemListOrderType();
     }
 
-    public static function itemPage(): ItemPage
+    /**
+     * @return ItemPage
+     */
+    public static function itemPage()
     {
         return new ItemPage();
     }
 
-    public static function jewelryStore(): JewelryStore
+    /**
+     * @return JewelryStore
+     */
+    public static function jewelryStore()
     {
         return new JewelryStore();
     }
 
-    public static function jobPosting(): JobPosting
+    /**
+     * @return JobPosting
+     */
+    public static function jobPosting()
     {
         return new JobPosting();
     }
 
-    public static function joinAction(): JoinAction
+    /**
+     * @return JoinAction
+     */
+    public static function joinAction()
     {
         return new JoinAction();
     }
 
-    public static function lakeBodyOfWater(): LakeBodyOfWater
+    /**
+     * @return LakeBodyOfWater
+     */
+    public static function lakeBodyOfWater()
     {
         return new LakeBodyOfWater();
     }
 
-    public static function landform(): Landform
+    /**
+     * @return Landform
+     */
+    public static function landform()
     {
         return new Landform();
     }
 
-    public static function landmarksOrHistoricalBuildings(): LandmarksOrHistoricalBuildings
+    /**
+     * @return LandmarksOrHistoricalBuildings
+     */
+    public static function landmarksOrHistoricalBuildings()
     {
         return new LandmarksOrHistoricalBuildings();
     }
 
-    public static function language(): Language
+    /**
+     * @return Language
+     */
+    public static function language()
     {
         return new Language();
     }
 
-    public static function leaveAction(): LeaveAction
+    /**
+     * @return LeaveAction
+     */
+    public static function leaveAction()
     {
         return new LeaveAction();
     }
 
-    public static function legalService(): LegalService
+    /**
+     * @return LegalService
+     */
+    public static function legalService()
     {
         return new LegalService();
     }
 
-    public static function legislativeBuilding(): LegislativeBuilding
+    /**
+     * @return LegislativeBuilding
+     */
+    public static function legislativeBuilding()
     {
         return new LegislativeBuilding();
     }
 
-    public static function lendAction(): LendAction
+    /**
+     * @return LendAction
+     */
+    public static function lendAction()
     {
         return new LendAction();
     }
 
-    public static function library(): Library
+    /**
+     * @return Library
+     */
+    public static function library()
     {
         return new Library();
     }
 
-    public static function likeAction(): LikeAction
+    /**
+     * @return LikeAction
+     */
+    public static function likeAction()
     {
         return new LikeAction();
     }
 
-    public static function liquorStore(): LiquorStore
+    /**
+     * @return LiquorStore
+     */
+    public static function liquorStore()
     {
         return new LiquorStore();
     }
 
-    public static function listItem(): ListItem
+    /**
+     * @return ListItem
+     */
+    public static function listItem()
     {
         return new ListItem();
     }
 
-    public static function listenAction(): ListenAction
+    /**
+     * @return ListenAction
+     */
+    public static function listenAction()
     {
         return new ListenAction();
     }
 
-    public static function literaryEvent(): LiteraryEvent
+    /**
+     * @return LiteraryEvent
+     */
+    public static function literaryEvent()
     {
         return new LiteraryEvent();
     }
 
-    public static function liveBlogPosting(): LiveBlogPosting
+    /**
+     * @return LiveBlogPosting
+     */
+    public static function liveBlogPosting()
     {
         return new LiveBlogPosting();
     }
 
-    public static function loanOrCredit(): LoanOrCredit
+    /**
+     * @return LoanOrCredit
+     */
+    public static function loanOrCredit()
     {
         return new LoanOrCredit();
     }
 
-    public static function localBusiness(): LocalBusiness
+    /**
+     * @return LocalBusiness
+     */
+    public static function localBusiness()
     {
         return new LocalBusiness();
     }
 
-    public static function locationFeatureSpecification(): LocationFeatureSpecification
+    /**
+     * @return LocationFeatureSpecification
+     */
+    public static function locationFeatureSpecification()
     {
         return new LocationFeatureSpecification();
     }
 
-    public static function lockerDelivery(): LockerDelivery
+    /**
+     * @return LockerDelivery
+     */
+    public static function lockerDelivery()
     {
         return new LockerDelivery();
     }
 
-    public static function locksmith(): Locksmith
+    /**
+     * @return Locksmith
+     */
+    public static function locksmith()
     {
         return new Locksmith();
     }
 
-    public static function lodgingBusiness(): LodgingBusiness
+    /**
+     * @return LodgingBusiness
+     */
+    public static function lodgingBusiness()
     {
         return new LodgingBusiness();
     }
 
-    public static function lodgingReservation(): LodgingReservation
+    /**
+     * @return LodgingReservation
+     */
+    public static function lodgingReservation()
     {
         return new LodgingReservation();
     }
 
-    public static function loseAction(): LoseAction
+    /**
+     * @return LoseAction
+     */
+    public static function loseAction()
     {
         return new LoseAction();
     }
 
-    public static function map(): Map
+    /**
+     * @return Map
+     */
+    public static function map()
     {
         return new Map();
     }
 
-    public static function mapCategoryType(): MapCategoryType
+    /**
+     * @return MapCategoryType
+     */
+    public static function mapCategoryType()
     {
         return new MapCategoryType();
     }
 
-    public static function marryAction(): MarryAction
+    /**
+     * @return MarryAction
+     */
+    public static function marryAction()
     {
         return new MarryAction();
     }
 
-    public static function mass(): Mass
+    /**
+     * @return Mass
+     */
+    public static function mass()
     {
         return new Mass();
     }
 
-    public static function mediaObject(): MediaObject
+    /**
+     * @return MediaObject
+     */
+    public static function mediaObject()
     {
         return new MediaObject();
     }
 
-    public static function medicalOrganization(): MedicalOrganization
+    /**
+     * @return MedicalOrganization
+     */
+    public static function medicalOrganization()
     {
         return new MedicalOrganization();
     }
 
-    public static function meetingRoom(): MeetingRoom
+    /**
+     * @return MeetingRoom
+     */
+    public static function meetingRoom()
     {
         return new MeetingRoom();
     }
 
-    public static function mensClothingStore(): MensClothingStore
+    /**
+     * @return MensClothingStore
+     */
+    public static function mensClothingStore()
     {
         return new MensClothingStore();
     }
 
-    public static function menu(): Menu
+    /**
+     * @return Menu
+     */
+    public static function menu()
     {
         return new Menu();
     }
 
-    public static function menuItem(): MenuItem
+    /**
+     * @return MenuItem
+     */
+    public static function menuItem()
     {
         return new MenuItem();
     }
 
-    public static function menuSection(): MenuSection
+    /**
+     * @return MenuSection
+     */
+    public static function menuSection()
     {
         return new MenuSection();
     }
 
-    public static function message(): Message
+    /**
+     * @return Message
+     */
+    public static function message()
     {
         return new Message();
     }
 
-    public static function middleSchool(): MiddleSchool
+    /**
+     * @return MiddleSchool
+     */
+    public static function middleSchool()
     {
         return new MiddleSchool();
     }
 
-    public static function mobileApplication(): MobileApplication
+    /**
+     * @return MobileApplication
+     */
+    public static function mobileApplication()
     {
         return new MobileApplication();
     }
 
-    public static function mobilePhoneStore(): MobilePhoneStore
+    /**
+     * @return MobilePhoneStore
+     */
+    public static function mobilePhoneStore()
     {
         return new MobilePhoneStore();
     }
 
-    public static function monetaryAmount(): MonetaryAmount
+    /**
+     * @return MonetaryAmount
+     */
+    public static function monetaryAmount()
     {
         return new MonetaryAmount();
     }
 
-    public static function mosque(): Mosque
+    /**
+     * @return Mosque
+     */
+    public static function mosque()
     {
         return new Mosque();
     }
 
-    public static function motel(): Motel
+    /**
+     * @return Motel
+     */
+    public static function motel()
     {
         return new Motel();
     }
 
-    public static function motorcycleDealer(): MotorcycleDealer
+    /**
+     * @return MotorcycleDealer
+     */
+    public static function motorcycleDealer()
     {
         return new MotorcycleDealer();
     }
 
-    public static function motorcycleRepair(): MotorcycleRepair
+    /**
+     * @return MotorcycleRepair
+     */
+    public static function motorcycleRepair()
     {
         return new MotorcycleRepair();
     }
 
-    public static function mountain(): Mountain
+    /**
+     * @return Mountain
+     */
+    public static function mountain()
     {
         return new Mountain();
     }
 
-    public static function moveAction(): MoveAction
+    /**
+     * @return MoveAction
+     */
+    public static function moveAction()
     {
         return new MoveAction();
     }
 
-    public static function movie(): Movie
+    /**
+     * @return Movie
+     */
+    public static function movie()
     {
         return new Movie();
     }
 
-    public static function movieClip(): MovieClip
+    /**
+     * @return MovieClip
+     */
+    public static function movieClip()
     {
         return new MovieClip();
     }
 
-    public static function movieRentalStore(): MovieRentalStore
+    /**
+     * @return MovieRentalStore
+     */
+    public static function movieRentalStore()
     {
         return new MovieRentalStore();
     }
 
-    public static function movieSeries(): MovieSeries
+    /**
+     * @return MovieSeries
+     */
+    public static function movieSeries()
     {
         return new MovieSeries();
     }
 
-    public static function movieTheater(): MovieTheater
+    /**
+     * @return MovieTheater
+     */
+    public static function movieTheater()
     {
         return new MovieTheater();
     }
 
-    public static function movingCompany(): MovingCompany
+    /**
+     * @return MovingCompany
+     */
+    public static function movingCompany()
     {
         return new MovingCompany();
     }
 
-    public static function museum(): Museum
+    /**
+     * @return Museum
+     */
+    public static function museum()
     {
         return new Museum();
     }
 
-    public static function musicAlbum(): MusicAlbum
+    /**
+     * @return MusicAlbum
+     */
+    public static function musicAlbum()
     {
         return new MusicAlbum();
     }
 
-    public static function musicAlbumProductionType(): MusicAlbumProductionType
+    /**
+     * @return MusicAlbumProductionType
+     */
+    public static function musicAlbumProductionType()
     {
         return new MusicAlbumProductionType();
     }
 
-    public static function musicAlbumReleaseType(): MusicAlbumReleaseType
+    /**
+     * @return MusicAlbumReleaseType
+     */
+    public static function musicAlbumReleaseType()
     {
         return new MusicAlbumReleaseType();
     }
 
-    public static function musicComposition(): MusicComposition
+    /**
+     * @return MusicComposition
+     */
+    public static function musicComposition()
     {
         return new MusicComposition();
     }
 
-    public static function musicEvent(): MusicEvent
+    /**
+     * @return MusicEvent
+     */
+    public static function musicEvent()
     {
         return new MusicEvent();
     }
 
-    public static function musicGroup(): MusicGroup
+    /**
+     * @return MusicGroup
+     */
+    public static function musicGroup()
     {
         return new MusicGroup();
     }
 
-    public static function musicPlaylist(): MusicPlaylist
+    /**
+     * @return MusicPlaylist
+     */
+    public static function musicPlaylist()
     {
         return new MusicPlaylist();
     }
 
-    public static function musicRecording(): MusicRecording
+    /**
+     * @return MusicRecording
+     */
+    public static function musicRecording()
     {
         return new MusicRecording();
     }
 
-    public static function musicRelease(): MusicRelease
+    /**
+     * @return MusicRelease
+     */
+    public static function musicRelease()
     {
         return new MusicRelease();
     }
 
-    public static function musicReleaseFormatType(): MusicReleaseFormatType
+    /**
+     * @return MusicReleaseFormatType
+     */
+    public static function musicReleaseFormatType()
     {
         return new MusicReleaseFormatType();
     }
 
-    public static function musicStore(): MusicStore
+    /**
+     * @return MusicStore
+     */
+    public static function musicStore()
     {
         return new MusicStore();
     }
 
-    public static function musicVenue(): MusicVenue
+    /**
+     * @return MusicVenue
+     */
+    public static function musicVenue()
     {
         return new MusicVenue();
     }
 
-    public static function musicVideoObject(): MusicVideoObject
+    /**
+     * @return MusicVideoObject
+     */
+    public static function musicVideoObject()
     {
         return new MusicVideoObject();
     }
 
-    public static function nGO(): NGO
+    /**
+     * @return NGO
+     */
+    public static function nGO()
     {
         return new NGO();
     }
 
-    public static function nailSalon(): NailSalon
+    /**
+     * @return NailSalon
+     */
+    public static function nailSalon()
     {
         return new NailSalon();
     }
 
-    public static function newsArticle(): NewsArticle
+    /**
+     * @return NewsArticle
+     */
+    public static function newsArticle()
     {
         return new NewsArticle();
     }
 
-    public static function nightClub(): NightClub
+    /**
+     * @return NightClub
+     */
+    public static function nightClub()
     {
         return new NightClub();
     }
 
-    public static function notary(): Notary
+    /**
+     * @return Notary
+     */
+    public static function notary()
     {
         return new Notary();
     }
 
-    public static function noteDigitalDocument(): NoteDigitalDocument
+    /**
+     * @return NoteDigitalDocument
+     */
+    public static function noteDigitalDocument()
     {
         return new NoteDigitalDocument();
     }
 
-    public static function nutritionInformation(): NutritionInformation
+    /**
+     * @return NutritionInformation
+     */
+    public static function nutritionInformation()
     {
         return new NutritionInformation();
     }
 
-    public static function oceanBodyOfWater(): OceanBodyOfWater
+    /**
+     * @return OceanBodyOfWater
+     */
+    public static function oceanBodyOfWater()
     {
         return new OceanBodyOfWater();
     }
 
-    public static function offer(): Offer
+    /**
+     * @return Offer
+     */
+    public static function offer()
     {
         return new Offer();
     }
 
-    public static function offerCatalog(): OfferCatalog
+    /**
+     * @return OfferCatalog
+     */
+    public static function offerCatalog()
     {
         return new OfferCatalog();
     }
 
-    public static function offerItemCondition(): OfferItemCondition
+    /**
+     * @return OfferItemCondition
+     */
+    public static function offerItemCondition()
     {
         return new OfferItemCondition();
     }
 
-    public static function officeEquipmentStore(): OfficeEquipmentStore
+    /**
+     * @return OfficeEquipmentStore
+     */
+    public static function officeEquipmentStore()
     {
         return new OfficeEquipmentStore();
     }
 
-    public static function onDemandEvent(): OnDemandEvent
+    /**
+     * @return OnDemandEvent
+     */
+    public static function onDemandEvent()
     {
         return new OnDemandEvent();
     }
 
-    public static function openingHoursSpecification(): OpeningHoursSpecification
+    /**
+     * @return OpeningHoursSpecification
+     */
+    public static function openingHoursSpecification()
     {
         return new OpeningHoursSpecification();
     }
 
-    public static function order(): Order
+    /**
+     * @return Order
+     */
+    public static function order()
     {
         return new Order();
     }
 
-    public static function orderAction(): OrderAction
+    /**
+     * @return OrderAction
+     */
+    public static function orderAction()
     {
         return new OrderAction();
     }
 
-    public static function orderItem(): OrderItem
+    /**
+     * @return OrderItem
+     */
+    public static function orderItem()
     {
         return new OrderItem();
     }
 
-    public static function orderStatus(): OrderStatus
+    /**
+     * @return OrderStatus
+     */
+    public static function orderStatus()
     {
         return new OrderStatus();
     }
 
-    public static function organization(): Organization
+    /**
+     * @return Organization
+     */
+    public static function organization()
     {
         return new Organization();
     }
 
-    public static function organizationRole(): OrganizationRole
+    /**
+     * @return OrganizationRole
+     */
+    public static function organizationRole()
     {
         return new OrganizationRole();
     }
 
-    public static function organizeAction(): OrganizeAction
+    /**
+     * @return OrganizeAction
+     */
+    public static function organizeAction()
     {
         return new OrganizeAction();
     }
 
-    public static function outletStore(): OutletStore
+    /**
+     * @return OutletStore
+     */
+    public static function outletStore()
     {
         return new OutletStore();
     }
 
-    public static function ownershipInfo(): OwnershipInfo
+    /**
+     * @return OwnershipInfo
+     */
+    public static function ownershipInfo()
     {
         return new OwnershipInfo();
     }
 
-    public static function paintAction(): PaintAction
+    /**
+     * @return PaintAction
+     */
+    public static function paintAction()
     {
         return new PaintAction();
     }
 
-    public static function painting(): Painting
+    /**
+     * @return Painting
+     */
+    public static function painting()
     {
         return new Painting();
     }
 
-    public static function parcelDelivery(): ParcelDelivery
+    /**
+     * @return ParcelDelivery
+     */
+    public static function parcelDelivery()
     {
         return new ParcelDelivery();
     }
 
-    public static function parcelService(): ParcelService
+    /**
+     * @return ParcelService
+     */
+    public static function parcelService()
     {
         return new ParcelService();
     }
 
-    public static function parentAudience(): ParentAudience
+    /**
+     * @return ParentAudience
+     */
+    public static function parentAudience()
     {
         return new ParentAudience();
     }
 
-    public static function park(): Park
+    /**
+     * @return Park
+     */
+    public static function park()
     {
         return new Park();
     }
 
-    public static function parkingFacility(): ParkingFacility
+    /**
+     * @return ParkingFacility
+     */
+    public static function parkingFacility()
     {
         return new ParkingFacility();
     }
 
-    public static function pawnShop(): PawnShop
+    /**
+     * @return PawnShop
+     */
+    public static function pawnShop()
     {
         return new PawnShop();
     }
 
-    public static function payAction(): PayAction
+    /**
+     * @return PayAction
+     */
+    public static function payAction()
     {
         return new PayAction();
     }
 
-    public static function paymentCard(): PaymentCard
+    /**
+     * @return PaymentCard
+     */
+    public static function paymentCard()
     {
         return new PaymentCard();
     }
 
-    public static function paymentChargeSpecification(): PaymentChargeSpecification
+    /**
+     * @return PaymentChargeSpecification
+     */
+    public static function paymentChargeSpecification()
     {
         return new PaymentChargeSpecification();
     }
 
-    public static function paymentMethod(): PaymentMethod
+    /**
+     * @return PaymentMethod
+     */
+    public static function paymentMethod()
     {
         return new PaymentMethod();
     }
 
-    public static function paymentService(): PaymentService
+    /**
+     * @return PaymentService
+     */
+    public static function paymentService()
     {
         return new PaymentService();
     }
 
-    public static function paymentStatusType(): PaymentStatusType
+    /**
+     * @return PaymentStatusType
+     */
+    public static function paymentStatusType()
     {
         return new PaymentStatusType();
     }
 
-    public static function peopleAudience(): PeopleAudience
+    /**
+     * @return PeopleAudience
+     */
+    public static function peopleAudience()
     {
         return new PeopleAudience();
     }
 
-    public static function performAction(): PerformAction
+    /**
+     * @return PerformAction
+     */
+    public static function performAction()
     {
         return new PerformAction();
     }
 
-    public static function performanceRole(): PerformanceRole
+    /**
+     * @return PerformanceRole
+     */
+    public static function performanceRole()
     {
         return new PerformanceRole();
     }
 
-    public static function performingArtsTheater(): PerformingArtsTheater
+    /**
+     * @return PerformingArtsTheater
+     */
+    public static function performingArtsTheater()
     {
         return new PerformingArtsTheater();
     }
 
-    public static function performingGroup(): PerformingGroup
+    /**
+     * @return PerformingGroup
+     */
+    public static function performingGroup()
     {
         return new PerformingGroup();
     }
 
-    public static function periodical(): Periodical
+    /**
+     * @return Periodical
+     */
+    public static function periodical()
     {
         return new Periodical();
     }
 
-    public static function permit(): Permit
+    /**
+     * @return Permit
+     */
+    public static function permit()
     {
         return new Permit();
     }
 
-    public static function person(): Person
+    /**
+     * @return Person
+     */
+    public static function person()
     {
         return new Person();
     }
 
-    public static function petStore(): PetStore
+    /**
+     * @return PetStore
+     */
+    public static function petStore()
     {
         return new PetStore();
     }
 
-    public static function pharmacy(): Pharmacy
+    /**
+     * @return Pharmacy
+     */
+    public static function pharmacy()
     {
         return new Pharmacy();
     }
 
-    public static function photograph(): Photograph
+    /**
+     * @return Photograph
+     */
+    public static function photograph()
     {
         return new Photograph();
     }
 
-    public static function photographAction(): PhotographAction
+    /**
+     * @return PhotographAction
+     */
+    public static function photographAction()
     {
         return new PhotographAction();
     }
 
-    public static function physician(): Physician
+    /**
+     * @return Physician
+     */
+    public static function physician()
     {
         return new Physician();
     }
 
-    public static function place(): Place
+    /**
+     * @return Place
+     */
+    public static function place()
     {
         return new Place();
     }
 
-    public static function placeOfWorship(): PlaceOfWorship
+    /**
+     * @return PlaceOfWorship
+     */
+    public static function placeOfWorship()
     {
         return new PlaceOfWorship();
     }
 
-    public static function planAction(): PlanAction
+    /**
+     * @return PlanAction
+     */
+    public static function planAction()
     {
         return new PlanAction();
     }
 
-    public static function playAction(): PlayAction
+    /**
+     * @return PlayAction
+     */
+    public static function playAction()
     {
         return new PlayAction();
     }
 
-    public static function playground(): Playground
+    /**
+     * @return Playground
+     */
+    public static function playground()
     {
         return new Playground();
     }
 
-    public static function plumber(): Plumber
+    /**
+     * @return Plumber
+     */
+    public static function plumber()
     {
         return new Plumber();
     }
 
-    public static function policeStation(): PoliceStation
+    /**
+     * @return PoliceStation
+     */
+    public static function policeStation()
     {
         return new PoliceStation();
     }
 
-    public static function pond(): Pond
+    /**
+     * @return Pond
+     */
+    public static function pond()
     {
         return new Pond();
     }
 
-    public static function postOffice(): PostOffice
+    /**
+     * @return PostOffice
+     */
+    public static function postOffice()
     {
         return new PostOffice();
     }
 
-    public static function postalAddress(): PostalAddress
+    /**
+     * @return PostalAddress
+     */
+    public static function postalAddress()
     {
         return new PostalAddress();
     }
 
-    public static function prependAction(): PrependAction
+    /**
+     * @return PrependAction
+     */
+    public static function prependAction()
     {
         return new PrependAction();
     }
 
-    public static function preschool(): Preschool
+    /**
+     * @return Preschool
+     */
+    public static function preschool()
     {
         return new Preschool();
     }
 
-    public static function presentationDigitalDocument(): PresentationDigitalDocument
+    /**
+     * @return PresentationDigitalDocument
+     */
+    public static function presentationDigitalDocument()
     {
         return new PresentationDigitalDocument();
     }
 
-    public static function priceSpecification(): PriceSpecification
+    /**
+     * @return PriceSpecification
+     */
+    public static function priceSpecification()
     {
         return new PriceSpecification();
     }
 
-    public static function product(): Product
+    /**
+     * @return Product
+     */
+    public static function product()
     {
         return new Product();
     }
 
-    public static function productModel(): ProductModel
+    /**
+     * @return ProductModel
+     */
+    public static function productModel()
     {
         return new ProductModel();
     }
 
-    public static function professionalService(): ProfessionalService
+    /**
+     * @return ProfessionalService
+     */
+    public static function professionalService()
     {
         return new ProfessionalService();
     }
 
-    public static function profilePage(): ProfilePage
+    /**
+     * @return ProfilePage
+     */
+    public static function profilePage()
     {
         return new ProfilePage();
     }
 
-    public static function programMembership(): ProgramMembership
+    /**
+     * @return ProgramMembership
+     */
+    public static function programMembership()
     {
         return new ProgramMembership();
     }
 
-    public static function propertyValue(): PropertyValue
+    /**
+     * @return PropertyValue
+     */
+    public static function propertyValue()
     {
         return new PropertyValue();
     }
 
-    public static function propertyValueSpecification(): PropertyValueSpecification
+    /**
+     * @return PropertyValueSpecification
+     */
+    public static function propertyValueSpecification()
     {
         return new PropertyValueSpecification();
     }
 
-    public static function publicSwimmingPool(): PublicSwimmingPool
+    /**
+     * @return PublicSwimmingPool
+     */
+    public static function publicSwimmingPool()
     {
         return new PublicSwimmingPool();
     }
 
-    public static function publicationEvent(): PublicationEvent
+    /**
+     * @return PublicationEvent
+     */
+    public static function publicationEvent()
     {
         return new PublicationEvent();
     }
 
-    public static function publicationIssue(): PublicationIssue
+    /**
+     * @return PublicationIssue
+     */
+    public static function publicationIssue()
     {
         return new PublicationIssue();
     }
 
-    public static function publicationVolume(): PublicationVolume
+    /**
+     * @return PublicationVolume
+     */
+    public static function publicationVolume()
     {
         return new PublicationVolume();
     }
 
-    public static function qAPage(): QAPage
+    /**
+     * @return QAPage
+     */
+    public static function qAPage()
     {
         return new QAPage();
     }
 
-    public static function qualitativeValue(): QualitativeValue
+    /**
+     * @return QualitativeValue
+     */
+    public static function qualitativeValue()
     {
         return new QualitativeValue();
     }
 
-    public static function quantitativeValue(): QuantitativeValue
+    /**
+     * @return QuantitativeValue
+     */
+    public static function quantitativeValue()
     {
         return new QuantitativeValue();
     }
 
-    public static function quantity(): Quantity
+    /**
+     * @return Quantity
+     */
+    public static function quantity()
     {
         return new Quantity();
     }
 
-    public static function question(): Question
+    /**
+     * @return Question
+     */
+    public static function question()
     {
         return new Question();
     }
 
-    public static function quoteAction(): QuoteAction
+    /**
+     * @return QuoteAction
+     */
+    public static function quoteAction()
     {
         return new QuoteAction();
     }
 
-    public static function rVPark(): RVPark
+    /**
+     * @return RVPark
+     */
+    public static function rVPark()
     {
         return new RVPark();
     }
 
-    public static function radioChannel(): RadioChannel
+    /**
+     * @return RadioChannel
+     */
+    public static function radioChannel()
     {
         return new RadioChannel();
     }
 
-    public static function radioClip(): RadioClip
+    /**
+     * @return RadioClip
+     */
+    public static function radioClip()
     {
         return new RadioClip();
     }
 
-    public static function radioEpisode(): RadioEpisode
+    /**
+     * @return RadioEpisode
+     */
+    public static function radioEpisode()
     {
         return new RadioEpisode();
     }
 
-    public static function radioSeason(): RadioSeason
+    /**
+     * @return RadioSeason
+     */
+    public static function radioSeason()
     {
         return new RadioSeason();
     }
 
-    public static function radioSeries(): RadioSeries
+    /**
+     * @return RadioSeries
+     */
+    public static function radioSeries()
     {
         return new RadioSeries();
     }
 
-    public static function radioStation(): RadioStation
+    /**
+     * @return RadioStation
+     */
+    public static function radioStation()
     {
         return new RadioStation();
     }
 
-    public static function rating(): Rating
+    /**
+     * @return Rating
+     */
+    public static function rating()
     {
         return new Rating();
     }
 
-    public static function reactAction(): ReactAction
+    /**
+     * @return ReactAction
+     */
+    public static function reactAction()
     {
         return new ReactAction();
     }
 
-    public static function readAction(): ReadAction
+    /**
+     * @return ReadAction
+     */
+    public static function readAction()
     {
         return new ReadAction();
     }
 
-    public static function realEstateAgent(): RealEstateAgent
+    /**
+     * @return RealEstateAgent
+     */
+    public static function realEstateAgent()
     {
         return new RealEstateAgent();
     }
 
-    public static function receiveAction(): ReceiveAction
+    /**
+     * @return ReceiveAction
+     */
+    public static function receiveAction()
     {
         return new ReceiveAction();
     }
 
-    public static function recipe(): Recipe
+    /**
+     * @return Recipe
+     */
+    public static function recipe()
     {
         return new Recipe();
     }
 
-    public static function recyclingCenter(): RecyclingCenter
+    /**
+     * @return RecyclingCenter
+     */
+    public static function recyclingCenter()
     {
         return new RecyclingCenter();
     }
 
-    public static function registerAction(): RegisterAction
+    /**
+     * @return RegisterAction
+     */
+    public static function registerAction()
     {
         return new RegisterAction();
     }
 
-    public static function rejectAction(): RejectAction
+    /**
+     * @return RejectAction
+     */
+    public static function rejectAction()
     {
         return new RejectAction();
     }
 
-    public static function rentAction(): RentAction
+    /**
+     * @return RentAction
+     */
+    public static function rentAction()
     {
         return new RentAction();
     }
 
-    public static function rentalCarReservation(): RentalCarReservation
+    /**
+     * @return RentalCarReservation
+     */
+    public static function rentalCarReservation()
     {
         return new RentalCarReservation();
     }
 
-    public static function replaceAction(): ReplaceAction
+    /**
+     * @return ReplaceAction
+     */
+    public static function replaceAction()
     {
         return new ReplaceAction();
     }
 
-    public static function replyAction(): ReplyAction
+    /**
+     * @return ReplyAction
+     */
+    public static function replyAction()
     {
         return new ReplyAction();
     }
 
-    public static function report(): Report
+    /**
+     * @return Report
+     */
+    public static function report()
     {
         return new Report();
     }
 
-    public static function reservation(): Reservation
+    /**
+     * @return Reservation
+     */
+    public static function reservation()
     {
         return new Reservation();
     }
 
-    public static function reservationPackage(): ReservationPackage
+    /**
+     * @return ReservationPackage
+     */
+    public static function reservationPackage()
     {
         return new ReservationPackage();
     }
 
-    public static function reservationStatusType(): ReservationStatusType
+    /**
+     * @return ReservationStatusType
+     */
+    public static function reservationStatusType()
     {
         return new ReservationStatusType();
     }
 
-    public static function reserveAction(): ReserveAction
+    /**
+     * @return ReserveAction
+     */
+    public static function reserveAction()
     {
         return new ReserveAction();
     }
 
-    public static function reservoir(): Reservoir
+    /**
+     * @return Reservoir
+     */
+    public static function reservoir()
     {
         return new Reservoir();
     }
 
-    public static function residence(): Residence
+    /**
+     * @return Residence
+     */
+    public static function residence()
     {
         return new Residence();
     }
 
-    public static function resort(): Resort
+    /**
+     * @return Resort
+     */
+    public static function resort()
     {
         return new Resort();
     }
 
-    public static function restaurant(): Restaurant
+    /**
+     * @return Restaurant
+     */
+    public static function restaurant()
     {
         return new Restaurant();
     }
 
-    public static function restrictedDiet(): RestrictedDiet
+    /**
+     * @return RestrictedDiet
+     */
+    public static function restrictedDiet()
     {
         return new RestrictedDiet();
     }
 
-    public static function resumeAction(): ResumeAction
+    /**
+     * @return ResumeAction
+     */
+    public static function resumeAction()
     {
         return new ResumeAction();
     }
 
-    public static function returnAction(): ReturnAction
+    /**
+     * @return ReturnAction
+     */
+    public static function returnAction()
     {
         return new ReturnAction();
     }
 
-    public static function review(): Review
+    /**
+     * @return Review
+     */
+    public static function review()
     {
         return new Review();
     }
 
-    public static function reviewAction(): ReviewAction
+    /**
+     * @return ReviewAction
+     */
+    public static function reviewAction()
     {
         return new ReviewAction();
     }
 
-    public static function riverBodyOfWater(): RiverBodyOfWater
+    /**
+     * @return RiverBodyOfWater
+     */
+    public static function riverBodyOfWater()
     {
         return new RiverBodyOfWater();
     }
 
-    public static function role(): Role
+    /**
+     * @return Role
+     */
+    public static function role()
     {
         return new Role();
     }
 
-    public static function roofingContractor(): RoofingContractor
+    /**
+     * @return RoofingContractor
+     */
+    public static function roofingContractor()
     {
         return new RoofingContractor();
     }
 
-    public static function room(): Room
+    /**
+     * @return Room
+     */
+    public static function room()
     {
         return new Room();
     }
 
-    public static function rsvpAction(): RsvpAction
+    /**
+     * @return RsvpAction
+     */
+    public static function rsvpAction()
     {
         return new RsvpAction();
     }
 
-    public static function rsvpResponseType(): RsvpResponseType
+    /**
+     * @return RsvpResponseType
+     */
+    public static function rsvpResponseType()
     {
         return new RsvpResponseType();
     }
 
-    public static function saleEvent(): SaleEvent
+    /**
+     * @return SaleEvent
+     */
+    public static function saleEvent()
     {
         return new SaleEvent();
     }
 
-    public static function scheduleAction(): ScheduleAction
+    /**
+     * @return ScheduleAction
+     */
+    public static function scheduleAction()
     {
         return new ScheduleAction();
     }
 
-    public static function scholarlyArticle(): ScholarlyArticle
+    /**
+     * @return ScholarlyArticle
+     */
+    public static function scholarlyArticle()
     {
         return new ScholarlyArticle();
     }
 
-    public static function school(): School
+    /**
+     * @return School
+     */
+    public static function school()
     {
         return new School();
     }
 
-    public static function screeningEvent(): ScreeningEvent
+    /**
+     * @return ScreeningEvent
+     */
+    public static function screeningEvent()
     {
         return new ScreeningEvent();
     }
 
-    public static function sculpture(): Sculpture
+    /**
+     * @return Sculpture
+     */
+    public static function sculpture()
     {
         return new Sculpture();
     }
 
-    public static function seaBodyOfWater(): SeaBodyOfWater
+    /**
+     * @return SeaBodyOfWater
+     */
+    public static function seaBodyOfWater()
     {
         return new SeaBodyOfWater();
     }
 
-    public static function searchAction(): SearchAction
+    /**
+     * @return SearchAction
+     */
+    public static function searchAction()
     {
         return new SearchAction();
     }
 
-    public static function searchResultsPage(): SearchResultsPage
+    /**
+     * @return SearchResultsPage
+     */
+    public static function searchResultsPage()
     {
         return new SearchResultsPage();
     }
 
-    public static function season(): Season
+    /**
+     * @return Season
+     */
+    public static function season()
     {
         return new Season();
     }
 
-    public static function seat(): Seat
+    /**
+     * @return Seat
+     */
+    public static function seat()
     {
         return new Seat();
     }
 
-    public static function selfStorage(): SelfStorage
+    /**
+     * @return SelfStorage
+     */
+    public static function selfStorage()
     {
         return new SelfStorage();
     }
 
-    public static function sellAction(): SellAction
+    /**
+     * @return SellAction
+     */
+    public static function sellAction()
     {
         return new SellAction();
     }
 
-    public static function sendAction(): SendAction
+    /**
+     * @return SendAction
+     */
+    public static function sendAction()
     {
         return new SendAction();
     }
 
-    public static function series(): Series
+    /**
+     * @return Series
+     */
+    public static function series()
     {
         return new Series();
     }
 
-    public static function service(): Service
+    /**
+     * @return Service
+     */
+    public static function service()
     {
         return new Service();
     }
 
-    public static function serviceChannel(): ServiceChannel
+    /**
+     * @return ServiceChannel
+     */
+    public static function serviceChannel()
     {
         return new ServiceChannel();
     }
 
-    public static function shareAction(): ShareAction
+    /**
+     * @return ShareAction
+     */
+    public static function shareAction()
     {
         return new ShareAction();
     }
 
-    public static function shoeStore(): ShoeStore
+    /**
+     * @return ShoeStore
+     */
+    public static function shoeStore()
     {
         return new ShoeStore();
     }
 
-    public static function shoppingCenter(): ShoppingCenter
+    /**
+     * @return ShoppingCenter
+     */
+    public static function shoppingCenter()
     {
         return new ShoppingCenter();
     }
 
-    public static function singleFamilyResidence(): SingleFamilyResidence
+    /**
+     * @return SingleFamilyResidence
+     */
+    public static function singleFamilyResidence()
     {
         return new SingleFamilyResidence();
     }
 
-    public static function siteNavigationElement(): SiteNavigationElement
+    /**
+     * @return SiteNavigationElement
+     */
+    public static function siteNavigationElement()
     {
         return new SiteNavigationElement();
     }
 
-    public static function skiResort(): SkiResort
+    /**
+     * @return SkiResort
+     */
+    public static function skiResort()
     {
         return new SkiResort();
     }
 
-    public static function socialEvent(): SocialEvent
+    /**
+     * @return SocialEvent
+     */
+    public static function socialEvent()
     {
         return new SocialEvent();
     }
 
-    public static function socialMediaPosting(): SocialMediaPosting
+    /**
+     * @return SocialMediaPosting
+     */
+    public static function socialMediaPosting()
     {
         return new SocialMediaPosting();
     }
 
-    public static function softwareApplication(): SoftwareApplication
+    /**
+     * @return SoftwareApplication
+     */
+    public static function softwareApplication()
     {
         return new SoftwareApplication();
     }
 
-    public static function softwareSourceCode(): SoftwareSourceCode
+    /**
+     * @return SoftwareSourceCode
+     */
+    public static function softwareSourceCode()
     {
         return new SoftwareSourceCode();
     }
 
-    public static function someProducts(): SomeProducts
+    /**
+     * @return SomeProducts
+     */
+    public static function someProducts()
     {
         return new SomeProducts();
     }
 
-    public static function specialty(): Specialty
+    /**
+     * @return Specialty
+     */
+    public static function specialty()
     {
         return new Specialty();
     }
 
-    public static function sportingGoodsStore(): SportingGoodsStore
+    /**
+     * @return SportingGoodsStore
+     */
+    public static function sportingGoodsStore()
     {
         return new SportingGoodsStore();
     }
 
-    public static function sportsActivityLocation(): SportsActivityLocation
+    /**
+     * @return SportsActivityLocation
+     */
+    public static function sportsActivityLocation()
     {
         return new SportsActivityLocation();
     }
 
-    public static function sportsClub(): SportsClub
+    /**
+     * @return SportsClub
+     */
+    public static function sportsClub()
     {
         return new SportsClub();
     }
 
-    public static function sportsEvent(): SportsEvent
+    /**
+     * @return SportsEvent
+     */
+    public static function sportsEvent()
     {
         return new SportsEvent();
     }
 
-    public static function sportsOrganization(): SportsOrganization
+    /**
+     * @return SportsOrganization
+     */
+    public static function sportsOrganization()
     {
         return new SportsOrganization();
     }
 
-    public static function sportsTeam(): SportsTeam
+    /**
+     * @return SportsTeam
+     */
+    public static function sportsTeam()
     {
         return new SportsTeam();
     }
 
-    public static function spreadsheetDigitalDocument(): SpreadsheetDigitalDocument
+    /**
+     * @return SpreadsheetDigitalDocument
+     */
+    public static function spreadsheetDigitalDocument()
     {
         return new SpreadsheetDigitalDocument();
     }
 
-    public static function stadiumOrArena(): StadiumOrArena
+    /**
+     * @return StadiumOrArena
+     */
+    public static function stadiumOrArena()
     {
         return new StadiumOrArena();
     }
 
-    public static function state(): State
+    /**
+     * @return State
+     */
+    public static function state()
     {
         return new State();
     }
 
-    public static function steeringPositionValue(): SteeringPositionValue
+    /**
+     * @return SteeringPositionValue
+     */
+    public static function steeringPositionValue()
     {
         return new SteeringPositionValue();
     }
 
-    public static function store(): Store
+    /**
+     * @return Store
+     */
+    public static function store()
     {
         return new Store();
     }
 
-    public static function structuredValue(): StructuredValue
+    /**
+     * @return StructuredValue
+     */
+    public static function structuredValue()
     {
         return new StructuredValue();
     }
 
-    public static function subscribeAction(): SubscribeAction
+    /**
+     * @return SubscribeAction
+     */
+    public static function subscribeAction()
     {
         return new SubscribeAction();
     }
 
-    public static function subwayStation(): SubwayStation
+    /**
+     * @return SubwayStation
+     */
+    public static function subwayStation()
     {
         return new SubwayStation();
     }
 
-    public static function suite(): Suite
+    /**
+     * @return Suite
+     */
+    public static function suite()
     {
         return new Suite();
     }
 
-    public static function suspendAction(): SuspendAction
+    /**
+     * @return SuspendAction
+     */
+    public static function suspendAction()
     {
         return new SuspendAction();
     }
 
-    public static function synagogue(): Synagogue
+    /**
+     * @return Synagogue
+     */
+    public static function synagogue()
     {
         return new Synagogue();
     }
 
-    public static function tVClip(): TVClip
+    /**
+     * @return TVClip
+     */
+    public static function tVClip()
     {
         return new TVClip();
     }
 
-    public static function tVEpisode(): TVEpisode
+    /**
+     * @return TVEpisode
+     */
+    public static function tVEpisode()
     {
         return new TVEpisode();
     }
 
-    public static function tVSeason(): TVSeason
+    /**
+     * @return TVSeason
+     */
+    public static function tVSeason()
     {
         return new TVSeason();
     }
 
-    public static function tVSeries(): TVSeries
+    /**
+     * @return TVSeries
+     */
+    public static function tVSeries()
     {
         return new TVSeries();
     }
 
-    public static function table(): Table
+    /**
+     * @return Table
+     */
+    public static function table()
     {
         return new Table();
     }
 
-    public static function takeAction(): TakeAction
+    /**
+     * @return TakeAction
+     */
+    public static function takeAction()
     {
         return new TakeAction();
     }
 
-    public static function tattooParlor(): TattooParlor
+    /**
+     * @return TattooParlor
+     */
+    public static function tattooParlor()
     {
         return new TattooParlor();
     }
 
-    public static function taxi(): Taxi
+    /**
+     * @return Taxi
+     */
+    public static function taxi()
     {
         return new Taxi();
     }
 
-    public static function taxiReservation(): TaxiReservation
+    /**
+     * @return TaxiReservation
+     */
+    public static function taxiReservation()
     {
         return new TaxiReservation();
     }
 
-    public static function taxiService(): TaxiService
+    /**
+     * @return TaxiService
+     */
+    public static function taxiService()
     {
         return new TaxiService();
     }
 
-    public static function taxiStand(): TaxiStand
+    /**
+     * @return TaxiStand
+     */
+    public static function taxiStand()
     {
         return new TaxiStand();
     }
 
-    public static function techArticle(): TechArticle
+    /**
+     * @return TechArticle
+     */
+    public static function techArticle()
     {
         return new TechArticle();
     }
 
-    public static function televisionChannel(): TelevisionChannel
+    /**
+     * @return TelevisionChannel
+     */
+    public static function televisionChannel()
     {
         return new TelevisionChannel();
     }
 
-    public static function televisionStation(): TelevisionStation
+    /**
+     * @return TelevisionStation
+     */
+    public static function televisionStation()
     {
         return new TelevisionStation();
     }
 
-    public static function tennisComplex(): TennisComplex
+    /**
+     * @return TennisComplex
+     */
+    public static function tennisComplex()
     {
         return new TennisComplex();
     }
 
-    public static function textDigitalDocument(): TextDigitalDocument
+    /**
+     * @return TextDigitalDocument
+     */
+    public static function textDigitalDocument()
     {
         return new TextDigitalDocument();
     }
 
-    public static function theaterEvent(): TheaterEvent
+    /**
+     * @return TheaterEvent
+     */
+    public static function theaterEvent()
     {
         return new TheaterEvent();
     }
 
-    public static function theaterGroup(): TheaterGroup
+    /**
+     * @return TheaterGroup
+     */
+    public static function theaterGroup()
     {
         return new TheaterGroup();
     }
 
-    public static function thing(): Thing
+    /**
+     * @return Thing
+     */
+    public static function thing()
     {
         return new Thing();
     }
 
-    public static function ticket(): Ticket
+    /**
+     * @return Ticket
+     */
+    public static function ticket()
     {
         return new Ticket();
     }
 
-    public static function tieAction(): TieAction
+    /**
+     * @return TieAction
+     */
+    public static function tieAction()
     {
         return new TieAction();
     }
 
-    public static function tipAction(): TipAction
+    /**
+     * @return TipAction
+     */
+    public static function tipAction()
     {
         return new TipAction();
     }
 
-    public static function tireShop(): TireShop
+    /**
+     * @return TireShop
+     */
+    public static function tireShop()
     {
         return new TireShop();
     }
 
-    public static function touristAttraction(): TouristAttraction
+    /**
+     * @return TouristAttraction
+     */
+    public static function touristAttraction()
     {
         return new TouristAttraction();
     }
 
-    public static function touristInformationCenter(): TouristInformationCenter
+    /**
+     * @return TouristInformationCenter
+     */
+    public static function touristInformationCenter()
     {
         return new TouristInformationCenter();
     }
 
-    public static function toyStore(): ToyStore
+    /**
+     * @return ToyStore
+     */
+    public static function toyStore()
     {
         return new ToyStore();
     }
 
-    public static function trackAction(): TrackAction
+    /**
+     * @return TrackAction
+     */
+    public static function trackAction()
     {
         return new TrackAction();
     }
 
-    public static function tradeAction(): TradeAction
+    /**
+     * @return TradeAction
+     */
+    public static function tradeAction()
     {
         return new TradeAction();
     }
 
-    public static function trainReservation(): TrainReservation
+    /**
+     * @return TrainReservation
+     */
+    public static function trainReservation()
     {
         return new TrainReservation();
     }
 
-    public static function trainStation(): TrainStation
+    /**
+     * @return TrainStation
+     */
+    public static function trainStation()
     {
         return new TrainStation();
     }
 
-    public static function trainTrip(): TrainTrip
+    /**
+     * @return TrainTrip
+     */
+    public static function trainTrip()
     {
         return new TrainTrip();
     }
 
-    public static function transferAction(): TransferAction
+    /**
+     * @return TransferAction
+     */
+    public static function transferAction()
     {
         return new TransferAction();
     }
 
-    public static function travelAction(): TravelAction
+    /**
+     * @return TravelAction
+     */
+    public static function travelAction()
     {
         return new TravelAction();
     }
 
-    public static function travelAgency(): TravelAgency
+    /**
+     * @return TravelAgency
+     */
+    public static function travelAgency()
     {
         return new TravelAgency();
     }
 
-    public static function trip(): Trip
+    /**
+     * @return Trip
+     */
+    public static function trip()
     {
         return new Trip();
     }
 
-    public static function typeAndQuantityNode(): TypeAndQuantityNode
+    /**
+     * @return TypeAndQuantityNode
+     */
+    public static function typeAndQuantityNode()
     {
         return new TypeAndQuantityNode();
     }
 
-    public static function unRegisterAction(): UnRegisterAction
+    /**
+     * @return UnRegisterAction
+     */
+    public static function unRegisterAction()
     {
         return new UnRegisterAction();
     }
 
-    public static function unitPriceSpecification(): UnitPriceSpecification
+    /**
+     * @return UnitPriceSpecification
+     */
+    public static function unitPriceSpecification()
     {
         return new UnitPriceSpecification();
     }
 
-    public static function updateAction(): UpdateAction
+    /**
+     * @return UpdateAction
+     */
+    public static function updateAction()
     {
         return new UpdateAction();
     }
 
-    public static function useAction(): UseAction
+    /**
+     * @return UseAction
+     */
+    public static function useAction()
     {
         return new UseAction();
     }
 
-    public static function userBlocks(): UserBlocks
+    /**
+     * @return UserBlocks
+     */
+    public static function userBlocks()
     {
         return new UserBlocks();
     }
 
-    public static function userCheckins(): UserCheckins
+    /**
+     * @return UserCheckins
+     */
+    public static function userCheckins()
     {
         return new UserCheckins();
     }
 
-    public static function userComments(): UserComments
+    /**
+     * @return UserComments
+     */
+    public static function userComments()
     {
         return new UserComments();
     }
 
-    public static function userDownloads(): UserDownloads
+    /**
+     * @return UserDownloads
+     */
+    public static function userDownloads()
     {
         return new UserDownloads();
     }
 
-    public static function userInteraction(): UserInteraction
+    /**
+     * @return UserInteraction
+     */
+    public static function userInteraction()
     {
         return new UserInteraction();
     }
 
-    public static function userLikes(): UserLikes
+    /**
+     * @return UserLikes
+     */
+    public static function userLikes()
     {
         return new UserLikes();
     }
 
-    public static function userPageVisits(): UserPageVisits
+    /**
+     * @return UserPageVisits
+     */
+    public static function userPageVisits()
     {
         return new UserPageVisits();
     }
 
-    public static function userPlays(): UserPlays
+    /**
+     * @return UserPlays
+     */
+    public static function userPlays()
     {
         return new UserPlays();
     }
 
-    public static function userPlusOnes(): UserPlusOnes
+    /**
+     * @return UserPlusOnes
+     */
+    public static function userPlusOnes()
     {
         return new UserPlusOnes();
     }
 
-    public static function userTweets(): UserTweets
+    /**
+     * @return UserTweets
+     */
+    public static function userTweets()
     {
         return new UserTweets();
     }
 
-    public static function vehicle(): Vehicle
+    /**
+     * @return Vehicle
+     */
+    public static function vehicle()
     {
         return new Vehicle();
     }
 
-    public static function videoGallery(): VideoGallery
+    /**
+     * @return VideoGallery
+     */
+    public static function videoGallery()
     {
         return new VideoGallery();
     }
 
-    public static function videoGame(): VideoGame
+    /**
+     * @return VideoGame
+     */
+    public static function videoGame()
     {
         return new VideoGame();
     }
 
-    public static function videoGameClip(): VideoGameClip
+    /**
+     * @return VideoGameClip
+     */
+    public static function videoGameClip()
     {
         return new VideoGameClip();
     }
 
-    public static function videoGameSeries(): VideoGameSeries
+    /**
+     * @return VideoGameSeries
+     */
+    public static function videoGameSeries()
     {
         return new VideoGameSeries();
     }
 
-    public static function videoObject(): VideoObject
+    /**
+     * @return VideoObject
+     */
+    public static function videoObject()
     {
         return new VideoObject();
     }
 
-    public static function viewAction(): ViewAction
+    /**
+     * @return ViewAction
+     */
+    public static function viewAction()
     {
         return new ViewAction();
     }
 
-    public static function visualArtsEvent(): VisualArtsEvent
+    /**
+     * @return VisualArtsEvent
+     */
+    public static function visualArtsEvent()
     {
         return new VisualArtsEvent();
     }
 
-    public static function visualArtwork(): VisualArtwork
+    /**
+     * @return VisualArtwork
+     */
+    public static function visualArtwork()
     {
         return new VisualArtwork();
     }
 
-    public static function volcano(): Volcano
+    /**
+     * @return Volcano
+     */
+    public static function volcano()
     {
         return new Volcano();
     }
 
-    public static function voteAction(): VoteAction
+    /**
+     * @return VoteAction
+     */
+    public static function voteAction()
     {
         return new VoteAction();
     }
 
-    public static function wPAdBlock(): WPAdBlock
+    /**
+     * @return WPAdBlock
+     */
+    public static function wPAdBlock()
     {
         return new WPAdBlock();
     }
 
-    public static function wPFooter(): WPFooter
+    /**
+     * @return WPFooter
+     */
+    public static function wPFooter()
     {
         return new WPFooter();
     }
 
-    public static function wPHeader(): WPHeader
+    /**
+     * @return WPHeader
+     */
+    public static function wPHeader()
     {
         return new WPHeader();
     }
 
-    public static function wPSideBar(): WPSideBar
+    /**
+     * @return WPSideBar
+     */
+    public static function wPSideBar()
     {
         return new WPSideBar();
     }
 
-    public static function wantAction(): WantAction
+    /**
+     * @return WantAction
+     */
+    public static function wantAction()
     {
         return new WantAction();
     }
 
-    public static function warrantyPromise(): WarrantyPromise
+    /**
+     * @return WarrantyPromise
+     */
+    public static function warrantyPromise()
     {
         return new WarrantyPromise();
     }
 
-    public static function warrantyScope(): WarrantyScope
+    /**
+     * @return WarrantyScope
+     */
+    public static function warrantyScope()
     {
         return new WarrantyScope();
     }
 
-    public static function watchAction(): WatchAction
+    /**
+     * @return WatchAction
+     */
+    public static function watchAction()
     {
         return new WatchAction();
     }
 
-    public static function waterfall(): Waterfall
+    /**
+     * @return Waterfall
+     */
+    public static function waterfall()
     {
         return new Waterfall();
     }
 
-    public static function wearAction(): WearAction
+    /**
+     * @return WearAction
+     */
+    public static function wearAction()
     {
         return new WearAction();
     }
 
-    public static function webApplication(): WebApplication
+    /**
+     * @return WebApplication
+     */
+    public static function webApplication()
     {
         return new WebApplication();
     }
 
-    public static function webPage(): WebPage
+    /**
+     * @return WebPage
+     */
+    public static function webPage()
     {
         return new WebPage();
     }
 
-    public static function webPageElement(): WebPageElement
+    /**
+     * @return WebPageElement
+     */
+    public static function webPageElement()
     {
         return new WebPageElement();
     }
 
-    public static function webSite(): WebSite
+    /**
+     * @return WebSite
+     */
+    public static function webSite()
     {
         return new WebSite();
     }
 
-    public static function wholesaleStore(): WholesaleStore
+    /**
+     * @return WholesaleStore
+     */
+    public static function wholesaleStore()
     {
         return new WholesaleStore();
     }
 
-    public static function winAction(): WinAction
+    /**
+     * @return WinAction
+     */
+    public static function winAction()
     {
         return new WinAction();
     }
 
-    public static function winery(): Winery
+    /**
+     * @return Winery
+     */
+    public static function winery()
     {
         return new Winery();
     }
 
-    public static function writeAction(): WriteAction
+    /**
+     * @return WriteAction
+     */
+    public static function writeAction()
     {
         return new WriteAction();
     }
 
-    public static function zoo(): Zoo
+    /**
+     * @return Zoo
+     */
+    public static function zoo()
     {
         return new Zoo();
     }
